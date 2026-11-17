@@ -1,27 +1,27 @@
 {
  "name": "Stromboat #1146",
- "description": "The Launch Dock \u2014 a 1,333-boat generative pixel collection. One hull, one sea, one storm, fixed by its number. An artwork. No token promises, no roadmap.",
- "image": "https://stromboat.com/nft/images/junk-legendary.webp",
+ "description": "The Launch Dock — a 1,333-boat generative pixel collection. One hull, one sea, one storm, fixed by its number. An artwork. No token promises, no roadmap.",
+ "image": "https://stromboat.com/nft/images/longship-epic.webp",
  "attributes": [
   {
    "trait_type": "Hull",
-   "value": "Junk"
+   "value": "Longship"
   },
   {
    "trait_type": "Sea",
-   "value": "Thunder Gold"
+   "value": "Night Violet"
   },
   {
    "trait_type": "Rarity",
-   "value": "Legendary"
+   "value": "Epic"
   },
   {
    "trait_type": "Lanterns",
-   "value": "Gold-trimmed"
+   "value": "Two, flaring"
   },
   {
    "trait_type": "Weather",
-   "value": "Golden thunder"
+   "value": "Lightning storm"
   }
  ]
 }
