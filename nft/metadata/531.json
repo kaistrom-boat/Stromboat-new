@@ -1,11 +1,11 @@
 {
  "name": "Stromboat #531",
- "description": "The Launch Dock \u2014 a 1,333-boat generative pixel collection. One hull, one sea, one storm, fixed by its number. An artwork. No token promises, no roadmap.",
- "image": "https://stromboat.com/nft/images/dinghy-common.webp",
+ "description": "The Launch Dock — a 1,333-boat generative pixel collection. One hull, one sea, one storm, fixed by its number. An artwork. No token promises, no roadmap.",
+ "image": "https://stromboat.com/nft/images/longship-common.webp",
  "attributes": [
   {
    "trait_type": "Hull",
-   "value": "Dinghy"
+   "value": "Longship"
   },
   {
    "trait_type": "Sea",
