@@ -36,12 +36,13 @@ async function reverts(name, thunk) {
   const abi = JSON.parse(fs.readFileSync(path.join(PROJ, 'Stromboat.abi.json'), 'utf8'));
   const creation = fs.readFileSync(path.join(PROJ, 'Stromboat.creation.txt'), 'utf8').trim();
   const factory = new ethers.ContractFactory(abi, creation, owner);
-  const c = await factory.deploy('https://stromboat.com/nft/metadata/');
+  const c = await factory.deploy('https://stromboat.com/nft/metadata/', REGISTRY);
   await c.waitForDeployment();
   console.log('deployed at', await c.getAddress());
 
   ok('mint closed at deploy', (await c.mintOpen()) === false);
   ok('price is 0.00144', (await c.currentPrice()) === PRICE);
+  ok('agentRegistry registered at deploy', (await c.agentRegistry()) === REGISTRY);
   await reverts('paid mint while closed', () => c.connect(alice).mint(1, { value: PRICE, gasLimit: 300000n }));
   await reverts('free mint while closed', () => c.connect(alice).freeMint(BigInt(alice.address), { gasLimit: 300000n }));
 

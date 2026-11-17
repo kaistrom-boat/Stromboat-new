@@ -44,6 +44,8 @@ button:disabled{opacity:.4;cursor:not-allowed}
 
 <div class="card">
   <h2>2 · DEPLOY KONTRAK BARU</h2>
+  <label>Binance Agent ID registry (registered at deploy, cannot be changed)</label>
+  <input id="inRegistry" value="0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F" readonly>
   <label>Base URI (metadata)</label>
   <input id="inBaseURI" value="https://stromboat.com/nft/metadata/">
   <button id="btnDeploy" disabled>Deploy Stromboat</button>
@@ -63,6 +65,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
   <h2>4 · ADMIN — <span class="addr" id="adminAddr"></span></h2>
   <div class="grid" id="statGrid">
     <div>Owner</div><b id="stOwner">—</b>
+    <div>Agent registry</div><b id="stRegistry">—</b>
     <div>Mint</div><b id="stOpen">—</b>
     <div>Total minted</div><b id="stTotal">—</b>
     <div>Free minted</div><b id="stFree">—</b>
@@ -139,12 +142,13 @@ async function attach(addr) {
 async function refresh() {
   if (!contract) return;
   try {
-    const [owner, open, total, free, paid, price] = await Promise.all([
+    const [owner, open, total, free, paid, price, registry] = await Promise.all([
       contract.owner(), contract.mintOpen(), contract.totalMinted(),
-      contract.freeMinted(), contract.paidMinted(), contract.currentPrice(),
+      contract.freeMinted(), contract.paidMinted(), contract.currentPrice(), contract.agentRegistry(),
     ]);
     const bal = await provider.getBalance(await contract.getAddress());
     $("stOwner").textContent = owner;
+    $("stRegistry").textContent = registry;
     $("stOpen").textContent = open ? "TERBUKA" : "tertutup";
     $("stTotal").textContent = total.toString() + " / 1333";
     $("stFree").textContent = free.toString() + " / 667";
@@ -161,7 +165,7 @@ $("btnDeploy").onclick = async () => {
     if (!signer) { log("Connect wallet dulu.", "bad"); return; }
     log("Menyiapkan deploy...");
     const factory = new ethers.ContractFactory(ABI, BYTECODE, signer);
-    const c = await factory.deploy($("inBaseURI").value.trim());
+    const c = await factory.deploy($("inBaseURI").value.trim(), $("inRegistry").value.trim());
     log("Transaksi terkirim: " + c.deploymentTransaction().hash);
     await c.waitForDeployment();
     const addr = await c.getAddress();

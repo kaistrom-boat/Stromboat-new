@@ -29,7 +29,10 @@ contract Stromboat is ERC721, Ownable, ReentrancyGuard {
     uint256 public constant MAX_FREE_PER_WALLET = 1;
     uint256 public constant MAX_PER_AGENT_ID = 1;
     uint256 public constant MAX_PAID_PER_WALLET = 7;
-    address public constant AGENT_REGISTRY = 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F;
+
+    /// @notice Binance Agent ID registry, registered once via the constructor
+    /// at deploy and immutable afterwards (same pattern as SpoxyFun).
+    address public immutable agentRegistry;
 
     uint256 public price = 0.00144 ether;
     uint256 public freeMinted;
@@ -47,11 +50,13 @@ contract Stromboat is ERC721, Ownable, ReentrancyGuard {
     event PriceChanged(uint256 newPrice);
     event BaseURIChanged(string newBaseURI);
 
-    constructor(string memory initialBaseURI)
+    constructor(string memory initialBaseURI, address agentRegistry_)
         ERC721("Stromboat", "STORM")
         Ownable(msg.sender)
     {
+        require(agentRegistry_ != address(0), "Registry is zero address");
         baseTokenURI = initialBaseURI;
+        agentRegistry = agentRegistry_;
     }
 
     function totalMinted() public view returns (uint256) {
@@ -66,7 +71,7 @@ contract Stromboat is ERC721, Ownable, ReentrancyGuard {
     /// Binance Agent ID. One per wallet and one per Agent ID.
     function freeMint(uint256 agentId) external nonReentrant {
         require(mintOpen, "Mint is closed");
-        require(IBinanceAgentRegistry(AGENT_REGISTRY).ownerOf(agentId) == msg.sender, "Agent ID not owned");
+        require(IBinanceAgentRegistry(agentRegistry).ownerOf(agentId) == msg.sender, "Agent ID not owned");
         require(!agentIdUsed[agentId], "Agent ID already used");
         require(freeMintedBy[msg.sender] < MAX_FREE_PER_WALLET, "Free limit reached");
         require(freeMinted < FREE_SUPPLY, "Free pool exhausted");
