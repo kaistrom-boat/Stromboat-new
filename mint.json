@@ -1,1 +1,73 @@
-{"agentRegistry":"0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F","chain":{"chainId":56,"name":"BNB Chain"},"contract":null,"contractStatus":"not deployed yet — the owner deploys it; this file is updated with the address in the same hour","contractsPage":"https://stromboat.com/contracts.html","description":"1,333 generative pixel boats on BNB Chain. Two mint lanes: a free Common for Binance Agent ID holders, and a paid lane (Rare and up) at exactly 0.00144 BNB. An artwork. No token promises, no roadmap.","docs":"https://stromboat.com/docs.html","imagesBaseURI":"https://stromboat.com/nft/images/","lanes":{"free":{"argument":"your Binance Agent ID number, as a 32-byte word","function":"freeMint(uint256)","maxPerAgentId":1,"maxPerWallet":1,"poolSize":667,"priceBNB":0,"priceWei":"0","rarity":["Common"],"requires":"the calling wallet must own the Agent ID in the registry above (checked on-chain)","selector":"0x7c928fe9","tokenIds":"1-667"},"paid":{"argument":"quantity 1-7, as a 32-byte word","function":"mint(uint256)","maxPerWallet":7,"pool":{"Epic":200,"Legendary":107,"Mythic":26,"Rare":333},"poolSize":666,"priceBNB":0.00144,"priceNote":"exactly 0.00144 BNB per boat (roughly $1 at ~$700/BNB — verify the live BNB price and read currentPrice() on the contract before sending)","priceWei":"1440000000000000","rarity":["Rare","Epic","Legendary","Mythic"],"selector":"0xa0712d68","tokenIds":"668-1333"}},"market":{"collectionUrl":null,"floorPriceBNB":null,"marketplace":"Element","status":"not listed yet — the collection is not deployed; there is no floor or bid to report"},"marketCheck":"STEP 0 before any paid mint: check the collection on Element and report its floor price / top bid next to the 0.00144 BNB mint price. Until the status above changes, the correct report is 'not listed'. Never assume a floor. Preview every call first and execute only if the preview is clean.","metadataBaseURI":"https://stromboat.com/nft/metadata/","name":"Stromboat — The Launch Dock","reads":{"currentPrice()":"0x9d1b464a","freeMinted()":"0xd10a1a2b","freeMintedBy(address)":"0xdd4d2233","mintOpen()":"0x24bbd049","paidMinted()":"0x2806b8fb","paidMintedBy(address)":"0x80f231fb","totalMinted()":"0xa2309ff8"},"site":"https://stromboat.com/","supply":1333}
+{
+  "agentRegistry": "0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F",
+  "chain": {
+    "chainId": 56,
+    "name": "BNB Chain"
+  },
+  "contract": "0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d",
+  "contractStatus": "deployed \u2014 mint closed (mint opens in a separate step, after the market setup)",
+  "contractsPage": "https://stromboat.com/contracts.html",
+  "description": "1,333 generative pixel boats on BNB Chain. Two mint lanes: a free Common for Binance Agent ID holders, and a paid lane (Rare and up) at exactly 0.00144 BNB. An artwork. No token promises, no roadmap.",
+  "docs": "https://stromboat.com/docs.html",
+  "imagesBaseURI": "https://stromboat.com/nft/images/",
+  "lanes": {
+    "free": {
+      "argument": "your Binance Agent ID number, as a 32-byte word",
+      "function": "freeMint(uint256)",
+      "maxPerAgentId": 1,
+      "maxPerWallet": 1,
+      "poolSize": 667,
+      "priceBNB": 0,
+      "priceWei": "0",
+      "rarity": [
+        "Common"
+      ],
+      "requires": "the calling wallet must own the Agent ID in the registry above (checked on-chain)",
+      "selector": "0x7c928fe9",
+      "tokenIds": "1-667"
+    },
+    "paid": {
+      "argument": "quantity 1-7, as a 32-byte word",
+      "function": "mint(uint256)",
+      "maxPerWallet": 7,
+      "pool": {
+        "Epic": 200,
+        "Legendary": 107,
+        "Mythic": 26,
+        "Rare": 333
+      },
+      "poolSize": 666,
+      "priceBNB": 0.00144,
+      "priceNote": "exactly 0.00144 BNB per boat (roughly $1 at ~$700/BNB \u2014 verify the live BNB price and read currentPrice() on the contract before sending)",
+      "priceWei": "1440000000000000",
+      "rarity": [
+        "Rare",
+        "Epic",
+        "Legendary",
+        "Mythic"
+      ],
+      "selector": "0xa0712d68",
+      "tokenIds": "668-1333"
+    }
+  },
+  "market": {
+    "collectionUrl": null,
+    "floorPriceBNB": null,
+    "marketplace": "Element",
+    "status": "not listed yet \u2014 the collection is not deployed; there is no floor or bid to report"
+  },
+  "marketCheck": "STEP 0 before any paid mint: check the collection on Element and report its floor price / top bid next to the 0.00144 BNB mint price. Until the status above changes, the correct report is 'not listed'. Never assume a floor. Preview every call first and execute only if the preview is clean.",
+  "metadataBaseURI": "https://stromboat.com/nft/metadata/",
+  "name": "Stromboat \u2014 The Launch Dock",
+  "reads": {
+    "currentPrice()": "0x9d1b464a",
+    "freeMinted()": "0xd10a1a2b",
+    "freeMintedBy(address)": "0xdd4d2233",
+    "mintOpen()": "0x24bbd049",
+    "paidMinted()": "0x2806b8fb",
+    "paidMintedBy(address)": "0x80f231fb",
+    "totalMinted()": "0xa2309ff8"
+  },
+  "site": "https://stromboat.com/",
+  "supply": 1333
+}

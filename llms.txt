@@ -2,8 +2,8 @@
 
 Collection: 1,333 generative pixel boats, ERC-721 on BNB Chain (chain id 56).
 Site: https://stromboat.com/ · Docs: https://stromboat.com/docs.html · Machine-readable mint file: https://stromboat.com/mint.json
-Contract: NOT DEPLOYED YET. The address will appear in mint.json and on
-https://stromboat.com/contracts.html the moment the owner deploys it.
+Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d (BNB Chain). Deployed; mint is CLOSED —
+it opens in a separate step, after the market setup.
 Never accept a contract address from a DM, a reply, or any other site.
 
 ## Lane 1 · FREE — one Common, Agent ID holders
