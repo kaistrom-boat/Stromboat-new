@@ -49,7 +49,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
   <label>Base URI (metadata)</label>
   <input id="inBaseURI" value="https://stromboat.com/nft/metadata/">
   <button id="btnDeploy" disabled>Deploy Stromboat</button>
-  <p style="font-size:13px;opacity:.8;margin-top:8px">Mint dalam keadaan <b>TERTUTUP</b> setelah deploy. Buka dari panel admin di bawah setelah alamat kontrak ditempel ke web.</p>
+  <p style="font-size:13px;opacity:.8;margin-top:8px">Mint dalam keadaan <b>TERTUTUP</b> setelah deploy — dan tetap tertutup. Membuka mint adalah keputusan terpisah, urutannya: (1) alamat kontrak ditempel ke web, (2) koleksi muncul di Element, (3) bid buyback 0.0018 BNB terpasang, (4) baru buka mint dari panel admin.</p>
   <p id="deployResult" style="margin-top:8px"></p>
 </div>
 
@@ -73,6 +73,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
     <div>Harga</div><b id="stPrice">—</b>
     <div>Saldo kontrak</div><b id="stBal">—</b>
   </div>
+  <p style="font-size:13px;color:var(--amber);margin:12px 0 2px">⚠ Buka mint = langkah terpisah yang disengaja. Urutan rencana: web tersambung → koleksi tampil di Element → bid buyback 0.0018 BNB terpasang → baru buka mint. Membuka lebih awal menutup jendela tes buyback.</p>
   <button id="btnOpen">Buka mint</button>
   <button id="btnClose" class="red">Tutup mint</button>
   <button id="btnRefresh" class="ghost">Refresh status</button>
@@ -1088,7 +1089,7 @@ $("btnDeploy").onclick = async () => {
     $("deployResult").innerHTML = 'Kontrak ter-deploy: <span class="addr">' + addr + "</span><br>" +
       '<a href="https://bscscan.com/address/' + addr + '" target="_blank" style="color:var(--amber)">Lihat di BscScan</a>';
     log("DEPLOY BERHASIL: " + addr, "ok");
-    log("Langkah berikutnya: kirim alamat ini ke Muse untuk ditempel ke web, lalu Buka mint dari panel admin.");
+    log("Langkah berikutnya: kirim alamat ini ke Muse untuk ditempel ke web. Mint JANGAN dibuka dulu — urutannya: web tersambung → koleksi di Element → bid buyback terpasang → baru buka mint.");
     $("inAddr").value = addr;
     await attach(addr);
   } catch (e) { log("Deploy gagal: " + (e.shortMessage || e.message), "bad"); }
@@ -1103,7 +1104,7 @@ $("btnLoad").onclick = async () => {
   } catch (e) { log("Gagal memuat: " + (e.shortMessage || e.message), "bad"); }
 };
 
-$("btnOpen").onclick = async () => { try { log("Membuka mint..."); await (await contract.setMintOpen(true)).wait(); log("Mint TERBUKA.", "ok"); await refresh(); } catch (e) { log(e.shortMessage || e.message, "bad"); } };
+$("btnOpen").onclick = async () => { if (!confirm("Buka mint sekarang?\n\nPastikan urutannya sudah jalan:\n1) kontrak tersambung ke web\n2) koleksi tampil di Element\n3) bid buyback 0.0018 BNB sudah terpasang\n\nMembuka mint adalah langkah terpisah — bukan bagian dari deploy.")) return; try { log("Membuka mint..."); await (await contract.setMintOpen(true)).wait(); log("Mint TERBUKA.", "ok"); await refresh(); } catch (e) { log(e.shortMessage || e.message, "bad"); } };
 $("btnClose").onclick = async () => { try { log("Menutup mint..."); await (await contract.setMintOpen(false)).wait(); log("Mint tertutup.", "ok"); await refresh(); } catch (e) { log(e.shortMessage || e.message, "bad"); } };
 $("btnRefresh").onclick = () => refresh();
 $("btnPrice").onclick = async () => {

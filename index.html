@@ -307,7 +307,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     <div class="sec-head reveal">
       <p class="no">▸ THE LAUNCH DOCK</p>
       <h2>Take the tarp off<br><span class="gold">your boat.</span></h2>
-      <p>The dock is lit and the fleet is painted. This collection gets its own contract, deployed by the owner, with two lanes that run side by side: a FREE lane — one Common boat per wallet for Binance Agent ID holders — and a PAID lane at 0.00144 BNB for Rare and up, max 7 per wallet. The terminal below goes live the moment the contract lands.</p>
+      <p>The dock is lit and the fleet is painted. This collection gets its own contract, deployed by the owner, with two lanes that run side by side: a FREE lane — one Common boat per wallet for Binance Agent ID holders — and a PAID lane at 0.00144 BNB for Rare and up, max 7 per wallet. The terminal below starts reading the contract the moment it lands — mint itself opens later, in a separate step, once the market setup is done.</p>
     </div>
     <div class="mintgrid">
       <div class="dockside reveal">
@@ -342,7 +342,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
         <div class="total"><span>Total due</span><b id="sbTotal">—</b></div>
         <button class="btn ghost" id="btnConnect" type="button">Connect wallet</button>
         <button class="btn red" id="btnMint" type="button" disabled>⚓ Launch — awaiting deployment</button>
-        <div class="logbox" id="mintStatus">&gt; the dock is built. the new contract is not deployed yet — this terminal goes live at deployment_</div>
+        <div class="logbox" id="mintStatus">&gt; the dock is built. the new contract is not deployed yet — this terminal activates at deployment; mint opens later, as a separate step_</div>
         <div class="checkrow">
           <input id="sbAddr" placeholder="Check a wallet · 0x…" spellcheck="false">
           <button type="button" id="sbCheck">Check</button>
@@ -537,7 +537,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
 <script>
 (function(){
   "use strict";
-  var C = ""; /* NEW COLLECTION CONTRACT — paste the deployed address here and the whole page goes live */
+  var C = ""; /* NEW COLLECTION CONTRACT — paste the deployed address here and the whole page wires up (mint still opens separately, on the contract) */
   var RPCS = ["https://bsc-rpc.publicnode.com","https://bsc-dataseed.bnbchain.org","https://bsc.drpc.org","https://binance.llamarpc.com"];
   var MAX_SUPPLY = 1333, MAX_PER_WALLET = 7, FREE_SUPPLY = 667, PAID_SUPPLY = 666;
   var SEL = { minted:"0xa2309ff8", price:"0x9d1b464a", open:"0x24bbd049", mint:"0xa0712d68", freeMinted:"0xd10a1a2b", paidMinted:"0x2806b8fb", freeBy:"0xdd4d2233", paidBy:"0x80f231fb", freeMint:"0x7c928fe9" };
