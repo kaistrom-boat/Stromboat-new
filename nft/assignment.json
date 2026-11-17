@@ -1,5334 +1,8000 @@
 {
-"1": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"2": {
-"hull": "junk",
-"sea": "rare"
-},
-"3": {
-"hull": "longship",
-"sea": "epic"
-},
-"4": {
-"hull": "longship",
-"sea": "common"
-},
-"5": {
-"hull": "raft",
-"sea": "common"
-},
-"6": {
-"hull": "longship",
-"sea": "rare"
-},
-"7": {
-"hull": "dinghy",
-"sea": "common"
-},
-"8": {
-"hull": "junk",
-"sea": "common"
-},
-"9": {
-"hull": "longship",
-"sea": "common"
-},
-"10": {
-"hull": "raft",
-"sea": "common"
-},
-"11": {
-"hull": "raft",
-"sea": "epic"
-},
-"12": {
-"hull": "dinghy",
-"sea": "common"
-},
-"13": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"14": {
-"hull": "raft",
-"sea": "rare"
-},
-"15": {
-"hull": "junk",
-"sea": "common"
-},
-"16": {
-"hull": "longship",
-"sea": "common"
-},
-"17": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"18": {
-"hull": "raft",
-"sea": "common"
-},
-"19": {
-"hull": "junk",
-"sea": "epic"
-},
-"20": {
-"hull": "raft",
-"sea": "legendary"
-},
-"21": {
-"hull": "junk",
-"sea": "rare"
-},
-"22": {
-"hull": "longship",
-"sea": "rare"
-},
-"23": {
-"hull": "dinghy",
-"sea": "common"
-},
-"24": {
-"hull": "junk",
-"sea": "common"
-},
-"25": {
-"hull": "longship",
-"sea": "common"
-},
-"26": {
-"hull": "raft",
-"sea": "common"
-},
-"27": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"28": {
-"hull": "dinghy",
-"sea": "common"
-},
-"29": {
-"hull": "junk",
-"sea": "common"
-},
-"30": {
-"hull": "longship",
-"sea": "common"
-},
-"31": {
-"hull": "raft",
-"sea": "rare"
-},
-"32": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"33": {
-"hull": "junk",
-"sea": "rare"
-},
-"34": {
-"hull": "junk",
-"sea": "legendary"
-},
-"35": {
-"hull": "raft",
-"sea": "common"
-},
-"36": {
-"hull": "longship",
-"sea": "epic"
-},
-"37": {
-"hull": "dinghy",
-"sea": "common"
-},
-"38": {
-"hull": "junk",
-"sea": "common"
-},
-"39": {
-"hull": "longship",
-"sea": "rare"
-},
-"40": {
-"hull": "raft",
-"sea": "rare"
-},
-"41": {
-"hull": "longship",
-"sea": "common"
-},
-"42": {
-"hull": "raft",
-"sea": "common"
-},
-"43": {
-"hull": "dinghy",
-"sea": "common"
-},
-"44": {
-"hull": "junk",
-"sea": "common"
-},
-"45": {
-"hull": "longship",
-"sea": "common"
-},
-"46": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"47": {
-"hull": "raft",
-"sea": "common"
-},
-"48": {
-"hull": "raft",
-"sea": "epic"
-},
-"49": {
-"hull": "dinghy",
-"sea": "common"
-},
-"50": {
-"hull": "junk",
-"sea": "common"
-},
-"51": {
-"hull": "longship",
-"sea": "legendary"
-},
-"52": {
-"hull": "junk",
-"sea": "rare"
-},
-"53": {
-"hull": "longship",
-"sea": "common"
-},
-"54": {
-"hull": "longship",
-"sea": "rare"
-},
-"55": {
-"hull": "raft",
-"sea": "rare"
-},
-"56": {
-"hull": "raft",
-"sea": "legendary"
-},
-"57": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"58": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"59": {
-"hull": "raft",
-"sea": "common"
-},
-"60": {
-"hull": "dinghy",
-"sea": "common"
-},
-"61": {
-"hull": "junk",
-"sea": "common"
-},
-"62": {
-"hull": "longship",
-"sea": "common"
-},
-"63": {
-"hull": "raft",
-"sea": "common"
-},
-"64": {
-"hull": "dinghy",
-"sea": "common"
-},
-"65": {
-"hull": "junk",
-"sea": "common"
-},
-"66": {
-"hull": "longship",
-"sea": "common"
-},
-"67": {
-"hull": "raft",
-"sea": "common"
-},
-"68": {
-"hull": "dinghy",
-"sea": "common"
-},
-"69": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"70": {
-"hull": "junk",
-"sea": "common"
-},
-"71": {
-"hull": "junk",
-"sea": "legendary"
-},
-"72": {
-"hull": "longship",
-"sea": "common"
-},
-"73": {
-"hull": "raft",
-"sea": "common"
-},
-"74": {
-"hull": "junk",
-"sea": "rare"
-},
-"75": {
-"hull": "longship",
-"sea": "legendary"
-},
-"76": {
-"hull": "dinghy",
-"sea": "common"
-},
-"77": {
-"hull": "junk",
-"sea": "common"
-},
-"78": {
-"hull": "longship",
-"sea": "common"
-},
-"79": {
-"hull": "raft",
-"sea": "common"
-},
-"80": {
-"hull": "dinghy",
-"sea": "common"
-},
-"81": {
-"hull": "junk",
-"sea": "epic"
-},
-"82": {
-"hull": "raft",
-"sea": "legendary"
-},
-"83": {
-"hull": "longship",
-"sea": "rare"
-},
-"84": {
-"hull": "junk",
-"sea": "common"
-},
-"85": {
-"hull": "longship",
-"sea": "common"
-},
-"86": {
-"hull": "raft",
-"sea": "common"
-},
-"87": {
-"hull": "raft",
-"sea": "rare"
-},
-"88": {
-"hull": "dinghy",
-"sea": "common"
-},
-"89": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"90": {
-"hull": "junk",
-"sea": "common"
-},
-"91": {
-"hull": "longship",
-"sea": "common"
-},
-"92": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"93": {
-"hull": "junk",
-"sea": "rare"
-},
-"94": {
-"hull": "raft",
-"sea": "common"
-},
-"95": {
-"hull": "longship",
-"sea": "rare"
-},
-"96": {
-"hull": "longship",
-"sea": "epic"
-},
-"97": {
-"hull": "raft",
-"sea": "rare"
-},
-"98": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"99": {
-"hull": "junk",
-"sea": "rare"
-},
-"100": {
-"hull": "raft",
-"sea": "epic"
-},
-"101": {
-"hull": "dinghy",
-"sea": "common"
-},
-"102": {
-"hull": "longship",
-"sea": "rare"
-},
-"103": {
-"hull": "junk",
-"sea": "common"
-},
-"104": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"105": {
-"hull": "junk",
-"sea": "epic"
-},
-"106": {
-"hull": "junk",
-"sea": "legendary"
-},
-"107": {
-"hull": "longship",
-"sea": "legendary"
-},
-"108": {
-"hull": "raft",
-"sea": "legendary"
-},
-"109": {
-"hull": "longship",
-"sea": "common"
-},
-"110": {
-"hull": "longship",
-"sea": "epic"
-},
-"111": {
-"hull": "raft",
-"sea": "common"
-},
-"112": {
-"hull": "dinghy",
-"sea": "common"
-},
-"113": {
-"hull": "junk",
-"sea": "common"
-},
-"114": {
-"hull": "raft",
-"sea": "rare"
-},
-"115": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"116": {
-"hull": "raft",
-"sea": "epic"
-},
-"117": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"118": {
-"hull": "junk",
-"sea": "rare"
-},
-"119": {
-"hull": "longship",
-"sea": "common"
-},
-"120": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"121": {
-"hull": "raft",
-"sea": "common"
-},
-"122": {
-"hull": "dinghy",
-"sea": "common"
-},
-"123": {
-"hull": "junk",
-"sea": "mythic"
-},
-"124": {
-"hull": "longship",
-"sea": "rare"
-},
-"125": {
-"hull": "junk",
-"sea": "common"
-},
-"126": {
-"hull": "longship",
-"sea": "common"
-},
-"127": {
-"hull": "raft",
-"sea": "common"
-},
-"128": {
-"hull": "dinghy",
-"sea": "common"
-},
-"129": {
-"hull": "junk",
-"sea": "epic"
-},
-"130": {
-"hull": "longship",
-"sea": "epic"
-},
-"131": {
-"hull": "junk",
-"sea": "legendary"
-},
-"132": {
-"hull": "junk",
-"sea": "common"
-},
-"133": {
-"hull": "raft",
-"sea": "rare"
-},
-"134": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"135": {
-"hull": "raft",
-"sea": "epic"
-},
-"136": {
-"hull": "longship",
-"sea": "common"
-},
-"137": {
-"hull": "raft",
-"sea": "common"
-},
-"138": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"139": {
-"hull": "dinghy",
-"sea": "common"
-},
-"140": {
-"hull": "junk",
-"sea": "common"
-},
-"141": {
-"hull": "longship",
-"sea": "common"
-},
-"142": {
-"hull": "raft",
-"sea": "common"
-},
-"143": {
-"hull": "junk",
-"sea": "epic"
-},
-"144": {
-"hull": "longship",
-"sea": "epic"
-},
-"145": {
-"hull": "junk",
-"sea": "rare"
-},
-"146": {
-"hull": "longship",
-"sea": "rare"
-},
-"147": {
-"hull": "raft",
-"sea": "epic"
-},
-"148": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"149": {
-"hull": "junk",
-"sea": "epic"
-},
-"150": {
-"hull": "dinghy",
-"sea": "common"
-},
-"151": {
-"hull": "longship",
-"sea": "epic"
-},
-"152": {
-"hull": "raft",
-"sea": "rare"
-},
-"153": {
-"hull": "junk",
-"sea": "common"
-},
-"154": {
-"hull": "raft",
-"sea": "epic"
-},
-"155": {
-"hull": "longship",
-"sea": "common"
-},
-"156": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"157": {
-"hull": "raft",
-"sea": "common"
-},
-"158": {
-"hull": "dinghy",
-"sea": "common"
-},
-"159": {
-"hull": "junk",
-"sea": "rare"
-},
-"160": {
-"hull": "longship",
-"sea": "mythic"
-},
-"161": {
-"hull": "junk",
-"sea": "common"
-},
-"162": {
-"hull": "longship",
-"sea": "rare"
-},
-"163": {
-"hull": "longship",
-"sea": "common"
-},
-"164": {
-"hull": "raft",
-"sea": "common"
-},
-"165": {
-"hull": "dinghy",
-"sea": "common"
-},
-"166": {
-"hull": "longship",
-"sea": "legendary"
-},
-"167": {
-"hull": "raft",
-"sea": "legendary"
-},
-"168": {
-"hull": "raft",
-"sea": "mythic"
-},
-"169": {
-"hull": "junk",
-"sea": "common"
-},
-"170": {
-"hull": "raft",
-"sea": "rare"
-},
-"171": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"172": {
-"hull": "junk",
-"sea": "rare"
-},
-"173": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"174": {
-"hull": "longship",
-"sea": "common"
-},
-"175": {
-"hull": "longship",
-"sea": "rare"
-},
-"176": {
-"hull": "junk",
-"sea": "epic"
-},
-"177": {
-"hull": "raft",
-"sea": "common"
-},
-"178": {
-"hull": "dinghy",
-"sea": "common"
-},
-"179": {
-"hull": "junk",
-"sea": "common"
-},
-"180": {
-"hull": "longship",
-"sea": "common"
-},
-"181": {
-"hull": "raft",
-"sea": "common"
-},
-"182": {
-"hull": "longship",
-"sea": "epic"
-},
-"183": {
-"hull": "dinghy",
-"sea": "common"
-},
-"184": {
-"hull": "junk",
-"sea": "common"
-},
-"185": {
-"hull": "longship",
-"sea": "common"
-},
-"186": {
-"hull": "dinghy",
-"sea": "mythic"
-},
-"187": {
-"hull": "raft",
-"sea": "rare"
-},
-"188": {
-"hull": "raft",
-"sea": "common"
-},
-"189": {
-"hull": "raft",
-"sea": "epic"
-},
-"190": {
-"hull": "dinghy",
-"sea": "common"
-},
-"191": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"192": {
-"hull": "junk",
-"sea": "mythic"
-},
-"193": {
-"hull": "junk",
-"sea": "common"
-},
-"194": {
-"hull": "longship",
-"sea": "common"
-},
-"195": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"196": {
-"hull": "raft",
-"sea": "common"
-},
-"197": {
-"hull": "dinghy",
-"sea": "common"
-},
-"198": {
-"hull": "junk",
-"sea": "common"
-},
-"199": {
-"hull": "longship",
-"sea": "common"
-},
-"200": {
-"hull": "junk",
-"sea": "rare"
-},
-"201": {
-"hull": "raft",
-"sea": "common"
-},
-"202": {
-"hull": "longship",
-"sea": "rare"
-},
-"203": {
-"hull": "dinghy",
-"sea": "common"
-},
-"204": {
-"hull": "junk",
-"sea": "common"
-},
-"205": {
-"hull": "longship",
-"sea": "common"
-},
-"206": {
-"hull": "raft",
-"sea": "rare"
-},
-"207": {
-"hull": "raft",
-"sea": "common"
-},
-"208": {
-"hull": "dinghy",
-"sea": "common"
-},
-"209": {
-"hull": "junk",
-"sea": "common"
-},
-"210": {
-"hull": "junk",
-"sea": "epic"
-},
-"211": {
-"hull": "longship",
-"sea": "common"
-},
-"212": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"213": {
-"hull": "junk",
-"sea": "legendary"
-},
-"214": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"215": {
-"hull": "raft",
-"sea": "common"
-},
-"216": {
-"hull": "dinghy",
-"sea": "common"
-},
-"217": {
-"hull": "junk",
-"sea": "common"
-},
-"218": {
-"hull": "junk",
-"sea": "rare"
-},
-"219": {
-"hull": "longship",
-"sea": "rare"
-},
-"220": {
-"hull": "raft",
-"sea": "rare"
-},
-"221": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"222": {
-"hull": "longship",
-"sea": "common"
-},
-"223": {
-"hull": "junk",
-"sea": "rare"
-},
-"224": {
-"hull": "raft",
-"sea": "common"
-},
-"225": {
-"hull": "dinghy",
-"sea": "common"
-},
-"226": {
-"hull": "junk",
-"sea": "common"
-},
-"227": {
-"hull": "longship",
-"sea": "rare"
-},
-"228": {
-"hull": "longship",
-"sea": "legendary"
-},
-"229": {
-"hull": "longship",
-"sea": "mythic"
-},
-"230": {
-"hull": "longship",
-"sea": "common"
-},
-"231": {
-"hull": "raft",
-"sea": "common"
-},
-"232": {
-"hull": "longship",
-"sea": "epic"
-},
-"233": {
-"hull": "raft",
-"sea": "epic"
-},
-"234": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"235": {
-"hull": "junk",
-"sea": "epic"
-},
-"236": {
-"hull": "raft",
-"sea": "rare"
-},
-"237": {
-"hull": "dinghy",
-"sea": "common"
-},
-"238": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"239": {
-"hull": "raft",
-"sea": "legendary"
-},
-"240": {
-"hull": "junk",
-"sea": "common"
-},
-"241": {
-"hull": "longship",
-"sea": "common"
-},
-"242": {
-"hull": "junk",
-"sea": "rare"
-},
-"243": {
-"hull": "raft",
-"sea": "common"
-},
-"244": {
-"hull": "dinghy",
-"sea": "common"
-},
-"245": {
-"hull": "junk",
-"sea": "common"
-},
-"246": {
-"hull": "longship",
-"sea": "common"
-},
-"247": {
-"hull": "raft",
-"sea": "common"
-},
-"248": {
-"hull": "longship",
-"sea": "epic"
-},
-"249": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"250": {
-"hull": "dinghy",
-"sea": "common"
-},
-"251": {
-"hull": "junk",
-"sea": "common"
-},
-"252": {
-"hull": "longship",
-"sea": "common"
-},
-"253": {
-"hull": "longship",
-"sea": "rare"
-},
-"254": {
-"hull": "junk",
-"sea": "legendary"
-},
-"255": {
-"hull": "raft",
-"sea": "common"
-},
-"256": {
-"hull": "longship",
-"sea": "legendary"
-},
-"257": {
-"hull": "raft",
-"sea": "rare"
-},
-"258": {
-"hull": "raft",
-"sea": "epic"
-},
-"259": {
-"hull": "dinghy",
-"sea": "common"
-},
-"260": {
-"hull": "junk",
-"sea": "common"
-},
-"261": {
-"hull": "raft",
-"sea": "legendary"
-},
-"262": {
-"hull": "longship",
-"sea": "common"
-},
-"263": {
-"hull": "raft",
-"sea": "common"
-},
-"264": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"265": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"266": {
-"hull": "junk",
-"sea": "epic"
-},
-"267": {
-"hull": "dinghy",
-"sea": "common"
-},
-"268": {
-"hull": "junk",
-"sea": "rare"
-},
-"269": {
-"hull": "longship",
-"sea": "rare"
-},
-"270": {
-"hull": "junk",
-"sea": "common"
-},
-"271": {
-"hull": "longship",
-"sea": "epic"
-},
-"272": {
-"hull": "raft",
-"sea": "rare"
-},
-"273": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"274": {
-"hull": "longship",
-"sea": "common"
-},
-"275": {
-"hull": "raft",
-"sea": "common"
-},
-"276": {
-"hull": "raft",
-"sea": "epic"
-},
-"277": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"278": {
-"hull": "dinghy",
-"sea": "common"
-},
-"279": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"280": {
-"hull": "junk",
-"sea": "common"
-},
-"281": {
-"hull": "junk",
-"sea": "legendary"
-},
-"282": {
-"hull": "longship",
-"sea": "common"
-},
-"283": {
-"hull": "junk",
-"sea": "rare"
-},
-"284": {
-"hull": "junk",
-"sea": "epic"
-},
-"285": {
-"hull": "raft",
-"sea": "common"
-},
-"286": {
-"hull": "dinghy",
-"sea": "common"
-},
-"287": {
-"hull": "longship",
-"sea": "epic"
-},
-"288": {
-"hull": "junk",
-"sea": "common"
-},
-"289": {
-"hull": "longship",
-"sea": "rare"
-},
-"290": {
-"hull": "longship",
-"sea": "common"
-},
-"291": {
-"hull": "raft",
-"sea": "common"
-},
-"292": {
-"hull": "raft",
-"sea": "rare"
-},
-"293": {
-"hull": "dinghy",
-"sea": "common"
-},
-"294": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"295": {
-"hull": "longship",
-"sea": "legendary"
-},
-"296": {
-"hull": "raft",
-"sea": "epic"
-},
-"297": {
-"hull": "junk",
-"sea": "rare"
-},
-"298": {
-"hull": "junk",
-"sea": "common"
-},
-"299": {
-"hull": "longship",
-"sea": "common"
-},
-"300": {
-"hull": "raft",
-"sea": "common"
-},
-"301": {
-"hull": "longship",
-"sea": "rare"
-},
-"302": {
-"hull": "raft",
-"sea": "rare"
-},
-"303": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"304": {
-"hull": "dinghy",
-"sea": "common"
-},
-"305": {
-"hull": "junk",
-"sea": "rare"
-},
-"306": {
-"hull": "junk",
-"sea": "common"
-},
-"307": {
-"hull": "longship",
-"sea": "common"
-},
-"308": {
-"hull": "raft",
-"sea": "common"
-},
-"309": {
-"hull": "dinghy",
-"sea": "common"
-},
-"310": {
-"hull": "longship",
-"sea": "rare"
-},
-"311": {
-"hull": "raft",
-"sea": "rare"
-},
-"312": {
-"hull": "junk",
-"sea": "common"
-},
-"313": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"314": {
-"hull": "longship",
-"sea": "common"
-},
-"315": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"316": {
-"hull": "raft",
-"sea": "legendary"
-},
-"317": {
-"hull": "raft",
-"sea": "mythic"
-},
-"318": {
-"hull": "raft",
-"sea": "common"
-},
-"319": {
-"hull": "dinghy",
-"sea": "common"
-},
-"320": {
-"hull": "junk",
-"sea": "common"
-},
-"321": {
-"hull": "longship",
-"sea": "common"
-},
-"322": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"323": {
-"hull": "junk",
-"sea": "rare"
-},
-"324": {
-"hull": "raft",
-"sea": "common"
-},
-"325": {
-"hull": "dinghy",
-"sea": "common"
-},
-"326": {
-"hull": "junk",
-"sea": "common"
-},
-"327": {
-"hull": "longship",
-"sea": "common"
-},
-"328": {
-"hull": "raft",
-"sea": "common"
-},
-"329": {
-"hull": "longship",
-"sea": "rare"
-},
-"330": {
-"hull": "dinghy",
-"sea": "common"
-},
-"331": {
-"hull": "junk",
-"sea": "common"
-},
-"332": {
-"hull": "longship",
-"sea": "common"
-},
-"333": {
-"hull": "raft",
-"sea": "common"
-},
-"334": {
-"hull": "raft",
-"sea": "rare"
-},
-"335": {
-"hull": "dinghy",
-"sea": "common"
-},
-"336": {
-"hull": "junk",
-"sea": "common"
-},
-"337": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"338": {
-"hull": "junk",
-"sea": "rare"
-},
-"339": {
-"hull": "longship",
-"sea": "common"
-},
-"340": {
-"hull": "junk",
-"sea": "epic"
-},
-"341": {
-"hull": "raft",
-"sea": "common"
-},
-"342": {
-"hull": "dinghy",
-"sea": "common"
-},
-"343": {
-"hull": "longship",
-"sea": "epic"
-},
-"344": {
-"hull": "longship",
-"sea": "rare"
-},
-"345": {
-"hull": "raft",
-"sea": "rare"
-},
-"346": {
-"hull": "junk",
-"sea": "common"
-},
-"347": {
-"hull": "raft",
-"sea": "epic"
-},
-"348": {
-"hull": "longship",
-"sea": "common"
-},
-"349": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"350": {
-"hull": "junk",
-"sea": "legendary"
-},
-"351": {
-"hull": "junk",
-"sea": "epic"
-},
-"352": {
-"hull": "raft",
-"sea": "common"
-},
-"353": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"354": {
-"hull": "junk",
-"sea": "rare"
-},
-"355": {
-"hull": "dinghy",
-"sea": "common"
-},
-"356": {
-"hull": "longship",
-"sea": "rare"
-},
-"357": {
-"hull": "junk",
-"sea": "common"
-},
-"358": {
-"hull": "longship",
-"sea": "legendary"
-},
-"359": {
-"hull": "raft",
-"sea": "legendary"
-},
-"360": {
-"hull": "longship",
-"sea": "common"
-},
-"361": {
-"hull": "raft",
-"sea": "common"
-},
-"362": {
-"hull": "raft",
-"sea": "rare"
-},
-"363": {
-"hull": "dinghy",
-"sea": "common"
-},
-"364": {
-"hull": "longship",
-"sea": "epic"
-},
-"365": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"366": {
-"hull": "raft",
-"sea": "epic"
-},
-"367": {
-"hull": "junk",
-"sea": "rare"
-},
-"368": {
-"hull": "longship",
-"sea": "rare"
-},
-"369": {
-"hull": "junk",
-"sea": "common"
-},
-"370": {
-"hull": "raft",
-"sea": "rare"
-},
-"371": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"372": {
-"hull": "longship",
-"sea": "common"
-},
-"373": {
-"hull": "raft",
-"sea": "common"
-},
-"374": {
-"hull": "junk",
-"sea": "rare"
-},
-"375": {
-"hull": "dinghy",
-"sea": "common"
-},
-"376": {
-"hull": "junk",
-"sea": "common"
-},
-"377": {
-"hull": "longship",
-"sea": "rare"
-},
-"378": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"379": {
-"hull": "junk",
-"sea": "epic"
-},
-"380": {
-"hull": "raft",
-"sea": "rare"
-},
-"381": {
-"hull": "longship",
-"sea": "common"
-},
-"382": {
-"hull": "raft",
-"sea": "common"
-},
-"383": {
-"hull": "dinghy",
-"sea": "common"
-},
-"384": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"385": {
-"hull": "junk",
-"sea": "rare"
-},
-"386": {
-"hull": "longship",
-"sea": "epic"
-},
-"387": {
-"hull": "junk",
-"sea": "common"
-},
-"388": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"389": {
-"hull": "longship",
-"sea": "common"
-},
-"390": {
-"hull": "longship",
-"sea": "rare"
-},
-"391": {
-"hull": "raft",
-"sea": "epic"
-},
-"392": {
-"hull": "raft",
-"sea": "rare"
-},
-"393": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"394": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"395": {
-"hull": "junk",
-"sea": "epic"
-},
-"396": {
-"hull": "raft",
-"sea": "common"
-},
-"397": {
-"hull": "junk",
-"sea": "rare"
-},
-"398": {
-"hull": "longship",
-"sea": "rare"
-},
-"399": {
-"hull": "dinghy",
-"sea": "common"
-},
-"400": {
-"hull": "junk",
-"sea": "common"
-},
-"401": {
-"hull": "raft",
-"sea": "rare"
-},
-"402": {
-"hull": "longship",
-"sea": "common"
-},
-"403": {
-"hull": "raft",
-"sea": "common"
-},
-"404": {
-"hull": "longship",
-"sea": "epic"
-},
-"405": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"406": {
-"hull": "dinghy",
-"sea": "common"
-},
-"407": {
-"hull": "junk",
-"sea": "common"
-},
-"408": {
-"hull": "longship",
-"sea": "common"
-},
-"409": {
-"hull": "raft",
-"sea": "common"
-},
-"410": {
-"hull": "dinghy",
-"sea": "common"
-},
-"411": {
-"hull": "junk",
-"sea": "common"
-},
-"412": {
-"hull": "longship",
-"sea": "common"
-},
-"413": {
-"hull": "junk",
-"sea": "rare"
-},
-"414": {
-"hull": "longship",
-"sea": "rare"
-},
-"415": {
-"hull": "raft",
-"sea": "epic"
-},
-"416": {
-"hull": "junk",
-"sea": "legendary"
-},
-"417": {
-"hull": "longship",
-"sea": "legendary"
-},
-"418": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"419": {
-"hull": "raft",
-"sea": "rare"
-},
-"420": {
-"hull": "raft",
-"sea": "common"
-},
-"421": {
-"hull": "dinghy",
-"sea": "common"
-},
-"422": {
-"hull": "raft",
-"sea": "legendary"
-},
-"423": {
-"hull": "junk",
-"sea": "common"
-},
-"424": {
-"hull": "junk",
-"sea": "epic"
-},
-"425": {
-"hull": "longship",
-"sea": "epic"
-},
-"426": {
-"hull": "dinghy",
-"sea": "mythic"
-},
-"427": {
-"hull": "longship",
-"sea": "common"
-},
-"428": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"429": {
-"hull": "junk",
-"sea": "rare"
-},
-"430": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"431": {
-"hull": "longship",
-"sea": "rare"
-},
-"432": {
-"hull": "junk",
-"sea": "mythic"
-},
-"433": {
-"hull": "raft",
-"sea": "epic"
-},
-"434": {
-"hull": "raft",
-"sea": "rare"
-},
-"435": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"436": {
-"hull": "raft",
-"sea": "common"
-},
-"437": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"438": {
-"hull": "junk",
-"sea": "epic"
-},
-"439": {
-"hull": "junk",
-"sea": "rare"
-},
-"440": {
-"hull": "longship",
-"sea": "rare"
-},
-"441": {
-"hull": "dinghy",
-"sea": "common"
-},
-"442": {
-"hull": "junk",
-"sea": "common"
-},
-"443": {
-"hull": "longship",
-"sea": "epic"
-},
-"444": {
-"hull": "raft",
-"sea": "rare"
-},
-"445": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"446": {
-"hull": "raft",
-"sea": "epic"
-},
-"447": {
-"hull": "junk",
-"sea": "rare"
-},
-"448": {
-"hull": "longship",
-"sea": "rare"
-},
-"449": {
-"hull": "junk",
-"sea": "legendary"
-},
-"450": {
-"hull": "longship",
-"sea": "common"
-},
-"451": {
-"hull": "raft",
-"sea": "rare"
-},
-"452": {
-"hull": "raft",
-"sea": "common"
-},
-"453": {
-"hull": "dinghy",
-"sea": "common"
-},
-"454": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"455": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"456": {
-"hull": "junk",
-"sea": "rare"
-},
-"457": {
-"hull": "longship",
-"sea": "rare"
-},
-"458": {
-"hull": "raft",
-"sea": "rare"
-},
-"459": {
-"hull": "junk",
-"sea": "common"
-},
-"460": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"461": {
-"hull": "junk",
-"sea": "rare"
-},
-"462": {
-"hull": "longship",
-"sea": "common"
-},
-"463": {
-"hull": "raft",
-"sea": "common"
-},
-"464": {
-"hull": "junk",
-"sea": "epic"
-},
-"465": {
-"hull": "dinghy",
-"sea": "common"
-},
-"466": {
-"hull": "longship",
-"sea": "rare"
-},
-"467": {
-"hull": "longship",
-"sea": "epic"
-},
-"468": {
-"hull": "junk",
-"sea": "common"
-},
-"469": {
-"hull": "longship",
-"sea": "common"
-},
-"470": {
-"hull": "raft",
-"sea": "rare"
-},
-"471": {
-"hull": "raft",
-"sea": "common"
-},
-"472": {
-"hull": "longship",
-"sea": "legendary"
-},
-"473": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"474": {
-"hull": "dinghy",
-"sea": "common"
-},
-"475": {
-"hull": "junk",
-"sea": "common"
-},
-"476": {
-"hull": "raft",
-"sea": "legendary"
-},
-"477": {
-"hull": "raft",
-"sea": "epic"
-},
-"478": {
-"hull": "longship",
-"sea": "mythic"
-},
-"479": {
-"hull": "longship",
-"sea": "common"
-},
-"480": {
-"hull": "junk",
-"sea": "rare"
-},
-"481": {
-"hull": "longship",
-"sea": "rare"
-},
-"482": {
-"hull": "raft",
-"sea": "common"
-},
-"483": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"484": {
-"hull": "junk",
-"sea": "legendary"
-},
-"485": {
-"hull": "raft",
-"sea": "rare"
-},
-"486": {
-"hull": "dinghy",
-"sea": "common"
-},
-"487": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"488": {
-"hull": "junk",
-"sea": "common"
-},
-"489": {
-"hull": "longship",
-"sea": "common"
-},
-"490": {
-"hull": "junk",
-"sea": "rare"
-},
-"491": {
-"hull": "raft",
-"sea": "common"
-},
-"492": {
-"hull": "dinghy",
-"sea": "common"
-},
-"493": {
-"hull": "junk",
-"sea": "common"
-},
-"494": {
-"hull": "longship",
-"sea": "common"
-},
-"495": {
-"hull": "raft",
-"sea": "common"
-},
-"496": {
-"hull": "longship",
-"sea": "rare"
-},
-"497": {
-"hull": "raft",
-"sea": "rare"
-},
-"498": {
-"hull": "dinghy",
-"sea": "common"
-},
-"499": {
-"hull": "junk",
-"sea": "common"
-},
-"500": {
-"hull": "longship",
-"sea": "legendary"
-},
-"501": {
-"hull": "longship",
-"sea": "common"
-},
-"502": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"503": {
-"hull": "junk",
-"sea": "rare"
-},
-"504": {
-"hull": "raft",
-"sea": "common"
-},
-"505": {
-"hull": "dinghy",
-"sea": "common"
-},
-"506": {
-"hull": "junk",
-"sea": "common"
-},
-"507": {
-"hull": "longship",
-"sea": "common"
-},
-"508": {
-"hull": "raft",
-"sea": "mythic"
-},
-"509": {
-"hull": "raft",
-"sea": "common"
-},
-"510": {
-"hull": "dinghy",
-"sea": "common"
-},
-"511": {
-"hull": "longship",
-"sea": "rare"
-},
-"512": {
-"hull": "junk",
-"sea": "common"
-},
-"513": {
-"hull": "longship",
-"sea": "common"
-},
-"514": {
-"hull": "raft",
-"sea": "common"
-},
-"515": {
-"hull": "dinghy",
-"sea": "common"
-},
-"516": {
-"hull": "raft",
-"sea": "legendary"
-},
-"517": {
-"hull": "junk",
-"sea": "common"
-},
-"518": {
-"hull": "longship",
-"sea": "common"
-},
-"519": {
-"hull": "raft",
-"sea": "common"
-},
-"520": {
-"hull": "raft",
-"sea": "rare"
-},
-"521": {
-"hull": "dinghy",
-"sea": "mythic"
-},
-"522": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"523": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"524": {
-"hull": "junk",
-"sea": "rare"
-},
-"525": {
-"hull": "dinghy",
-"sea": "common"
-},
-"526": {
-"hull": "junk",
-"sea": "common"
-},
-"527": {
-"hull": "longship",
-"sea": "common"
-},
-"528": {
-"hull": "longship",
-"sea": "rare"
-},
-"529": {
-"hull": "raft",
-"sea": "rare"
-},
-"530": {
-"hull": "raft",
-"sea": "common"
-},
-"531": {
-"hull": "dinghy",
-"sea": "common"
-},
-"532": {
-"hull": "junk",
-"sea": "common"
-},
-"533": {
-"hull": "longship",
-"sea": "common"
-},
-"534": {
-"hull": "raft",
-"sea": "common"
-},
-"535": {
-"hull": "dinghy",
-"sea": "common"
-},
-"536": {
-"hull": "junk",
-"sea": "common"
-},
-"537": {
-"hull": "junk",
-"sea": "epic"
-},
-"538": {
-"hull": "longship",
-"sea": "common"
-},
-"539": {
-"hull": "raft",
-"sea": "common"
-},
-"540": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"541": {
-"hull": "dinghy",
-"sea": "common"
-},
-"542": {
-"hull": "junk",
-"sea": "common"
-},
-"543": {
-"hull": "longship",
-"sea": "common"
-},
-"544": {
-"hull": "junk",
-"sea": "rare"
-},
-"545": {
-"hull": "raft",
-"sea": "common"
-},
-"546": {
-"hull": "longship",
-"sea": "rare"
-},
-"547": {
-"hull": "dinghy",
-"sea": "common"
-},
-"548": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"549": {
-"hull": "raft",
-"sea": "rare"
-},
-"550": {
-"hull": "junk",
-"sea": "legendary"
-},
-"551": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"552": {
-"hull": "junk",
-"sea": "common"
-},
-"553": {
-"hull": "longship",
-"sea": "common"
-},
-"554": {
-"hull": "longship",
-"sea": "legendary"
-},
-"555": {
-"hull": "raft",
-"sea": "common"
-},
-"556": {
-"hull": "dinghy",
-"sea": "common"
-},
-"557": {
-"hull": "junk",
-"sea": "rare"
-},
-"558": {
-"hull": "junk",
-"sea": "common"
-},
-"559": {
-"hull": "longship",
-"sea": "rare"
-},
-"560": {
-"hull": "longship",
-"sea": "common"
-},
-"561": {
-"hull": "raft",
-"sea": "common"
-},
-"562": {
-"hull": "dinghy",
-"sea": "common"
-},
-"563": {
-"hull": "junk",
-"sea": "common"
-},
-"564": {
-"hull": "junk",
-"sea": "mythic"
-},
-"565": {
-"hull": "longship",
-"sea": "common"
-},
-"566": {
-"hull": "raft",
-"sea": "rare"
-},
-"567": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"568": {
-"hull": "raft",
-"sea": "common"
-},
-"569": {
-"hull": "junk",
-"sea": "rare"
-},
-"570": {
-"hull": "longship",
-"sea": "epic"
-},
-"571": {
-"hull": "dinghy",
-"sea": "common"
-},
-"572": {
-"hull": "longship",
-"sea": "rare"
-},
-"573": {
-"hull": "raft",
-"sea": "epic"
-},
-"574": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"575": {
-"hull": "junk",
-"sea": "common"
-},
-"576": {
-"hull": "longship",
-"sea": "common"
-},
-"577": {
-"hull": "raft",
-"sea": "common"
-},
-"578": {
-"hull": "dinghy",
-"sea": "common"
-},
-"579": {
-"hull": "raft",
-"sea": "legendary"
-},
-"580": {
-"hull": "junk",
-"sea": "common"
-},
-"581": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"582": {
-"hull": "junk",
-"sea": "epic"
-},
-"583": {
-"hull": "longship",
-"sea": "common"
-},
-"584": {
-"hull": "raft",
-"sea": "rare"
-},
-"585": {
-"hull": "raft",
-"sea": "common"
-},
-"586": {
-"hull": "dinghy",
-"sea": "common"
-},
-"587": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"588": {
-"hull": "junk",
-"sea": "common"
-},
-"589": {
-"hull": "longship",
-"sea": "common"
-},
-"590": {
-"hull": "raft",
-"sea": "common"
-},
-"591": {
-"hull": "junk",
-"sea": "rare"
-},
-"592": {
-"hull": "dinghy",
-"sea": "common"
-},
-"593": {
-"hull": "longship",
-"sea": "epic"
-},
-"594": {
-"hull": "junk",
-"sea": "common"
-},
-"595": {
-"hull": "raft",
-"sea": "epic"
-},
-"596": {
-"hull": "longship",
-"sea": "common"
-},
-"597": {
-"hull": "junk",
-"sea": "legendary"
-},
-"598": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"599": {
-"hull": "raft",
-"sea": "common"
-},
-"600": {
-"hull": "dinghy",
-"sea": "common"
-},
-"601": {
-"hull": "junk",
-"sea": "common"
-},
-"602": {
-"hull": "longship",
-"sea": "common"
-},
-"603": {
-"hull": "raft",
-"sea": "common"
-},
-"604": {
-"hull": "junk",
-"sea": "epic"
-},
-"605": {
-"hull": "longship",
-"sea": "epic"
-},
-"606": {
-"hull": "dinghy",
-"sea": "common"
-},
-"607": {
-"hull": "raft",
-"sea": "epic"
-},
-"608": {
-"hull": "junk",
-"sea": "common"
-},
-"609": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"610": {
-"hull": "longship",
-"sea": "common"
-},
-"611": {
-"hull": "longship",
-"sea": "rare"
-},
-"612": {
-"hull": "raft",
-"sea": "common"
-},
-"613": {
-"hull": "raft",
-"sea": "rare"
-},
-"614": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"615": {
-"hull": "dinghy",
-"sea": "common"
-},
-"616": {
-"hull": "junk",
-"sea": "common"
-},
-"617": {
-"hull": "longship",
-"sea": "common"
-},
-"618": {
-"hull": "raft",
-"sea": "common"
-},
-"619": {
-"hull": "dinghy",
-"sea": "common"
-},
-"620": {
-"hull": "junk",
-"sea": "common"
-},
-"621": {
-"hull": "longship",
-"sea": "mythic"
-},
-"622": {
-"hull": "junk",
-"sea": "rare"
-},
-"623": {
-"hull": "longship",
-"sea": "common"
-},
-"624": {
-"hull": "longship",
-"sea": "legendary"
-},
-"625": {
-"hull": "longship",
-"sea": "rare"
-},
-"626": {
-"hull": "raft",
-"sea": "rare"
-},
-"627": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"628": {
-"hull": "raft",
-"sea": "common"
-},
-"629": {
-"hull": "junk",
-"sea": "epic"
-},
-"630": {
-"hull": "junk",
-"sea": "rare"
-},
-"631": {
-"hull": "longship",
-"sea": "epic"
-},
-"632": {
-"hull": "dinghy",
-"sea": "common"
-},
-"633": {
-"hull": "raft",
-"sea": "epic"
-},
-"634": {
-"hull": "longship",
-"sea": "rare"
-},
-"635": {
-"hull": "junk",
-"sea": "common"
-},
-"636": {
-"hull": "longship",
-"sea": "common"
-},
-"637": {
-"hull": "raft",
-"sea": "common"
-},
-"638": {
-"hull": "raft",
-"sea": "legendary"
-},
-"639": {
-"hull": "dinghy",
-"sea": "common"
-},
-"640": {
-"hull": "junk",
-"sea": "common"
-},
-"641": {
-"hull": "longship",
-"sea": "common"
-},
-"642": {
-"hull": "raft",
-"sea": "common"
-},
-"643": {
-"hull": "dinghy",
-"sea": "common"
-},
-"644": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"645": {
-"hull": "raft",
-"sea": "rare"
-},
-"646": {
-"hull": "junk",
-"sea": "common"
-},
-"647": {
-"hull": "longship",
-"sea": "common"
-},
-"648": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"649": {
-"hull": "raft",
-"sea": "common"
-},
-"650": {
-"hull": "dinghy",
-"sea": "common"
-},
-"651": {
-"hull": "junk",
-"sea": "common"
-},
-"652": {
-"hull": "longship",
-"sea": "common"
-},
-"653": {
-"hull": "raft",
-"sea": "common"
-},
-"654": {
-"hull": "junk",
-"sea": "legendary"
-},
-"655": {
-"hull": "junk",
-"sea": "epic"
-},
-"656": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"657": {
-"hull": "dinghy",
-"sea": "common"
-},
-"658": {
-"hull": "junk",
-"sea": "rare"
-},
-"659": {
-"hull": "junk",
-"sea": "common"
-},
-"660": {
-"hull": "longship",
-"sea": "common"
-},
-"661": {
-"hull": "raft",
-"sea": "common"
-},
-"662": {
-"hull": "dinghy",
-"sea": "common"
-},
-"663": {
-"hull": "longship",
-"sea": "legendary"
-},
-"664": {
-"hull": "raft",
-"sea": "mythic"
-},
-"665": {
-"hull": "junk",
-"sea": "common"
-},
-"666": {
-"hull": "longship",
-"sea": "rare"
-},
-"667": {
-"hull": "longship",
-"sea": "common"
-},
-"668": {
-"hull": "raft",
-"sea": "common"
-},
-"669": {
-"hull": "dinghy",
-"sea": "common"
-},
-"670": {
-"hull": "junk",
-"sea": "common"
-},
-"671": {
-"hull": "raft",
-"sea": "rare"
-},
-"672": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"673": {
-"hull": "longship",
-"sea": "common"
-},
-"674": {
-"hull": "junk",
-"sea": "rare"
-},
-"675": {
-"hull": "longship",
-"sea": "rare"
-},
-"676": {
-"hull": "raft",
-"sea": "rare"
-},
-"677": {
-"hull": "raft",
-"sea": "common"
-},
-"678": {
-"hull": "dinghy",
-"sea": "common"
-},
-"679": {
-"hull": "junk",
-"sea": "common"
-},
-"680": {
-"hull": "longship",
-"sea": "common"
-},
-"681": {
-"hull": "longship",
-"sea": "epic"
-},
-"682": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"683": {
-"hull": "junk",
-"sea": "rare"
-},
-"684": {
-"hull": "longship",
-"sea": "rare"
-},
-"685": {
-"hull": "raft",
-"sea": "epic"
-},
-"686": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"687": {
-"hull": "junk",
-"sea": "epic"
-},
-"688": {
-"hull": "raft",
-"sea": "common"
-},
-"689": {
-"hull": "dinghy",
-"sea": "common"
-},
-"690": {
-"hull": "junk",
-"sea": "common"
-},
-"691": {
-"hull": "raft",
-"sea": "rare"
-},
-"692": {
-"hull": "longship",
-"sea": "common"
-},
-"693": {
-"hull": "raft",
-"sea": "common"
-},
-"694": {
-"hull": "dinghy",
-"sea": "common"
-},
-"695": {
-"hull": "longship",
-"sea": "epic"
-},
-"696": {
-"hull": "raft",
-"sea": "epic"
-},
-"697": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"698": {
-"hull": "junk",
-"sea": "common"
-},
-"699": {
-"hull": "raft",
-"sea": "legendary"
-},
-"700": {
-"hull": "longship",
-"sea": "common"
-},
-"701": {
-"hull": "raft",
-"sea": "common"
-},
-"702": {
-"hull": "dinghy",
-"sea": "common"
-},
-"703": {
-"hull": "junk",
-"sea": "epic"
-},
-"704": {
-"hull": "longship",
-"sea": "epic"
-},
-"705": {
-"hull": "junk",
-"sea": "common"
-},
-"706": {
-"hull": "longship",
-"sea": "common"
-},
-"707": {
-"hull": "raft",
-"sea": "common"
-},
-"708": {
-"hull": "dinghy",
-"sea": "common"
-},
-"709": {
-"hull": "raft",
-"sea": "epic"
-},
-"710": {
-"hull": "junk",
-"sea": "common"
-},
-"711": {
-"hull": "longship",
-"sea": "common"
-},
-"712": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"713": {
-"hull": "raft",
-"sea": "common"
-},
-"714": {
-"hull": "dinghy",
-"sea": "common"
-},
-"715": {
-"hull": "junk",
-"sea": "epic"
-},
-"716": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"717": {
-"hull": "dinghy",
-"sea": "mythic"
-},
-"718": {
-"hull": "junk",
-"sea": "common"
-},
-"719": {
-"hull": "longship",
-"sea": "common"
-},
-"720": {
-"hull": "raft",
-"sea": "common"
-},
-"721": {
-"hull": "dinghy",
-"sea": "common"
-},
-"722": {
-"hull": "junk",
-"sea": "rare"
-},
-"723": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"724": {
-"hull": "junk",
-"sea": "common"
-},
-"725": {
-"hull": "longship",
-"sea": "common"
-},
-"726": {
-"hull": "raft",
-"sea": "common"
-},
-"727": {
-"hull": "dinghy",
-"sea": "common"
-},
-"728": {
-"hull": "junk",
-"sea": "common"
-},
-"729": {
-"hull": "longship",
-"sea": "rare"
-},
-"730": {
-"hull": "junk",
-"sea": "legendary"
-},
-"731": {
-"hull": "longship",
-"sea": "common"
-},
-"732": {
-"hull": "raft",
-"sea": "common"
-},
-"733": {
-"hull": "raft",
-"sea": "rare"
-},
-"734": {
-"hull": "dinghy",
-"sea": "common"
-},
-"735": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"736": {
-"hull": "junk",
-"sea": "common"
-},
-"737": {
-"hull": "junk",
-"sea": "rare"
-},
-"738": {
-"hull": "longship",
-"sea": "rare"
-},
-"739": {
-"hull": "longship",
-"sea": "common"
-},
-"740": {
-"hull": "raft",
-"sea": "rare"
-},
-"741": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"742": {
-"hull": "junk",
-"sea": "rare"
-},
-"743": {
-"hull": "longship",
-"sea": "rare"
-},
-"744": {
-"hull": "raft",
-"sea": "common"
-},
-"745": {
-"hull": "dinghy",
-"sea": "common"
-},
-"746": {
-"hull": "raft",
-"sea": "rare"
-},
-"747": {
-"hull": "longship",
-"sea": "epic"
-},
-"748": {
-"hull": "junk",
-"sea": "common"
-},
-"749": {
-"hull": "junk",
-"sea": "mythic"
-},
-"750": {
-"hull": "raft",
-"sea": "epic"
-},
-"751": {
-"hull": "longship",
-"sea": "common"
-},
-"752": {
-"hull": "raft",
-"sea": "common"
-},
-"753": {
-"hull": "dinghy",
-"sea": "common"
-},
-"754": {
-"hull": "junk",
-"sea": "common"
-},
-"755": {
-"hull": "longship",
-"sea": "common"
-},
-"756": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"757": {
-"hull": "raft",
-"sea": "common"
-},
-"758": {
-"hull": "dinghy",
-"sea": "common"
-},
-"759": {
-"hull": "junk",
-"sea": "common"
-},
-"760": {
-"hull": "longship",
-"sea": "common"
-},
-"761": {
-"hull": "raft",
-"sea": "common"
-},
-"762": {
-"hull": "junk",
-"sea": "rare"
-},
-"763": {
-"hull": "longship",
-"sea": "legendary"
-},
-"764": {
-"hull": "raft",
-"sea": "legendary"
-},
-"765": {
-"hull": "dinghy",
-"sea": "common"
-},
-"766": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"767": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"768": {
-"hull": "longship",
-"sea": "rare"
-},
-"769": {
-"hull": "raft",
-"sea": "rare"
-},
-"770": {
-"hull": "junk",
-"sea": "epic"
-},
-"771": {
-"hull": "junk",
-"sea": "common"
-},
-"772": {
-"hull": "longship",
-"sea": "common"
-},
-"773": {
-"hull": "raft",
-"sea": "common"
-},
-"774": {
-"hull": "dinghy",
-"sea": "common"
-},
-"775": {
-"hull": "junk",
-"sea": "common"
-},
-"776": {
-"hull": "longship",
-"sea": "common"
-},
-"777": {
-"hull": "junk",
-"sea": "legendary"
-},
-"778": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"779": {
-"hull": "junk",
-"sea": "rare"
-},
-"780": {
-"hull": "raft",
-"sea": "common"
-},
-"781": {
-"hull": "dinghy",
-"sea": "common"
-},
-"782": {
-"hull": "junk",
-"sea": "common"
-},
-"783": {
-"hull": "longship",
-"sea": "common"
-},
-"784": {
-"hull": "longship",
-"sea": "epic"
-},
-"785": {
-"hull": "longship",
-"sea": "rare"
-},
-"786": {
-"hull": "raft",
-"sea": "common"
-},
-"787": {
-"hull": "dinghy",
-"sea": "common"
-},
-"788": {
-"hull": "raft",
-"sea": "rare"
-},
-"789": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"790": {
-"hull": "junk",
-"sea": "common"
-},
-"791": {
-"hull": "longship",
-"sea": "common"
-},
-"792": {
-"hull": "raft",
-"sea": "common"
-},
-"793": {
-"hull": "raft",
-"sea": "epic"
-},
-"794": {
-"hull": "dinghy",
-"sea": "common"
-},
-"795": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"796": {
-"hull": "junk",
-"sea": "rare"
-},
-"797": {
-"hull": "junk",
-"sea": "common"
-},
-"798": {
-"hull": "longship",
-"sea": "common"
-},
-"799": {
-"hull": "junk",
-"sea": "epic"
-},
-"800": {
-"hull": "longship",
-"sea": "rare"
-},
-"801": {
-"hull": "raft",
-"sea": "common"
-},
-"802": {
-"hull": "dinghy",
-"sea": "common"
-},
-"803": {
-"hull": "junk",
-"sea": "common"
-},
-"804": {
-"hull": "longship",
-"sea": "legendary"
-},
-"805": {
-"hull": "longship",
-"sea": "epic"
-},
-"806": {
-"hull": "longship",
-"sea": "common"
-},
-"807": {
-"hull": "raft",
-"sea": "common"
-},
-"808": {
-"hull": "dinghy",
-"sea": "common"
-},
-"809": {
-"hull": "raft",
-"sea": "rare"
-},
-"810": {
-"hull": "junk",
-"sea": "common"
-},
-"811": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"812": {
-"hull": "longship",
-"sea": "common"
-},
-"813": {
-"hull": "raft",
-"sea": "epic"
-},
-"814": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"815": {
-"hull": "junk",
-"sea": "epic"
-},
-"816": {
-"hull": "junk",
-"sea": "rare"
-},
-"817": {
-"hull": "longship",
-"sea": "rare"
-},
-"818": {
-"hull": "longship",
-"sea": "epic"
-},
-"819": {
-"hull": "raft",
-"sea": "legendary"
-},
-"820": {
-"hull": "raft",
-"sea": "common"
-},
-"821": {
-"hull": "dinghy",
-"sea": "common"
-},
-"822": {
-"hull": "junk",
-"sea": "common"
-},
-"823": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"824": {
-"hull": "raft",
-"sea": "epic"
-},
-"825": {
-"hull": "longship",
-"sea": "common"
-},
-"826": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"827": {
-"hull": "raft",
-"sea": "common"
-},
-"828": {
-"hull": "dinghy",
-"sea": "common"
-},
-"829": {
-"hull": "raft",
-"sea": "rare"
-},
-"830": {
-"hull": "junk",
-"sea": "common"
-},
-"831": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"832": {
-"hull": "junk",
-"sea": "rare"
-},
-"833": {
-"hull": "longship",
-"sea": "common"
-},
-"834": {
-"hull": "raft",
-"sea": "common"
-},
-"835": {
-"hull": "dinghy",
-"sea": "common"
-},
-"836": {
-"hull": "longship",
-"sea": "rare"
-},
-"837": {
-"hull": "raft",
-"sea": "rare"
-},
-"838": {
-"hull": "junk",
-"sea": "common"
-},
-"839": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"840": {
-"hull": "longship",
-"sea": "common"
-},
-"841": {
-"hull": "junk",
-"sea": "rare"
-},
-"842": {
-"hull": "junk",
-"sea": "legendary"
-},
-"843": {
-"hull": "junk",
-"sea": "epic"
-},
-"844": {
-"hull": "longship",
-"sea": "legendary"
-},
-"845": {
-"hull": "longship",
-"sea": "rare"
-},
-"846": {
-"hull": "raft",
-"sea": "common"
-},
-"847": {
-"hull": "dinghy",
-"sea": "common"
-},
-"848": {
-"hull": "longship",
-"sea": "epic"
-},
-"849": {
-"hull": "raft",
-"sea": "legendary"
-},
-"850": {
-"hull": "junk",
-"sea": "common"
-},
-"851": {
-"hull": "raft",
-"sea": "rare"
-},
-"852": {
-"hull": "longship",
-"sea": "common"
-},
-"853": {
-"hull": "raft",
-"sea": "common"
-},
-"854": {
-"hull": "dinghy",
-"sea": "common"
-},
-"855": {
-"hull": "junk",
-"sea": "common"
-},
-"856": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"857": {
-"hull": "raft",
-"sea": "epic"
-},
-"858": {
-"hull": "junk",
-"sea": "rare"
-},
-"859": {
-"hull": "longship",
-"sea": "common"
-},
-"860": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"861": {
-"hull": "raft",
-"sea": "common"
-},
-"862": {
-"hull": "junk",
-"sea": "epic"
-},
-"863": {
-"hull": "longship",
-"sea": "rare"
-},
-"864": {
-"hull": "dinghy",
-"sea": "common"
-},
-"865": {
-"hull": "raft",
-"sea": "rare"
-},
-"866": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"867": {
-"hull": "junk",
-"sea": "common"
-},
-"868": {
-"hull": "longship",
-"sea": "common"
-},
-"869": {
-"hull": "raft",
-"sea": "common"
-},
-"870": {
-"hull": "dinghy",
-"sea": "common"
-},
-"871": {
-"hull": "longship",
-"sea": "epic"
-},
-"872": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"873": {
-"hull": "junk",
-"sea": "rare"
-},
-"874": {
-"hull": "junk",
-"sea": "legendary"
-},
-"875": {
-"hull": "junk",
-"sea": "common"
-},
-"876": {
-"hull": "longship",
-"sea": "rare"
-},
-"877": {
-"hull": "longship",
-"sea": "common"
-},
-"878": {
-"hull": "raft",
-"sea": "epic"
-},
-"879": {
-"hull": "raft",
-"sea": "common"
-},
-"880": {
-"hull": "longship",
-"sea": "legendary"
-},
-"881": {
-"hull": "dinghy",
-"sea": "common"
-},
-"882": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"883": {
-"hull": "raft",
-"sea": "rare"
-},
-"884": {
-"hull": "raft",
-"sea": "legendary"
-},
-"885": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"886": {
-"hull": "junk",
-"sea": "epic"
-},
-"887": {
-"hull": "junk",
-"sea": "common"
-},
-"888": {
-"hull": "longship",
-"sea": "common"
-},
-"889": {
-"hull": "junk",
-"sea": "rare"
-},
-"890": {
-"hull": "longship",
-"sea": "epic"
-},
-"891": {
-"hull": "longship",
-"sea": "rare"
-},
-"892": {
-"hull": "raft",
-"sea": "common"
-},
-"893": {
-"hull": "dinghy",
-"sea": "common"
-},
-"894": {
-"hull": "raft",
-"sea": "epic"
-},
-"895": {
-"hull": "junk",
-"sea": "common"
-},
-"896": {
-"hull": "raft",
-"sea": "rare"
-},
-"897": {
-"hull": "longship",
-"sea": "common"
-},
-"898": {
-"hull": "raft",
-"sea": "common"
-},
-"899": {
-"hull": "dinghy",
-"sea": "common"
-},
-"900": {
-"hull": "junk",
-"sea": "common"
-},
-"901": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"902": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"903": {
-"hull": "junk",
-"sea": "epic"
-},
-"904": {
-"hull": "longship",
-"sea": "common"
-},
-"905": {
-"hull": "longship",
-"sea": "epic"
-},
-"906": {
-"hull": "junk",
-"sea": "rare"
-},
-"907": {
-"hull": "raft",
-"sea": "epic"
-},
-"908": {
-"hull": "longship",
-"sea": "rare"
-},
-"909": {
-"hull": "longship",
-"sea": "mythic"
-},
-"910": {
-"hull": "raft",
-"sea": "rare"
-},
-"911": {
-"hull": "raft",
-"sea": "common"
-},
-"912": {
-"hull": "dinghy",
-"sea": "common"
-},
-"913": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"914": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"915": {
-"hull": "junk",
-"sea": "common"
-},
-"916": {
-"hull": "junk",
-"sea": "legendary"
-},
-"917": {
-"hull": "longship",
-"sea": "common"
-},
-"918": {
-"hull": "raft",
-"sea": "common"
-},
-"919": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"920": {
-"hull": "dinghy",
-"sea": "common"
-},
-"921": {
-"hull": "junk",
-"sea": "epic"
-},
-"922": {
-"hull": "junk",
-"sea": "common"
-},
-"923": {
-"hull": "longship",
-"sea": "common"
-},
-"924": {
-"hull": "raft",
-"sea": "common"
-},
-"925": {
-"hull": "dinghy",
-"sea": "common"
-},
-"926": {
-"hull": "junk",
-"sea": "common"
-},
-"927": {
-"hull": "junk",
-"sea": "rare"
-},
-"928": {
-"hull": "longship",
-"sea": "rare"
-},
-"929": {
-"hull": "raft",
-"sea": "rare"
-},
-"930": {
-"hull": "raft",
-"sea": "mythic"
-},
-"931": {
-"hull": "longship",
-"sea": "common"
-},
-"932": {
-"hull": "raft",
-"sea": "common"
-},
-"933": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"934": {
-"hull": "longship",
-"sea": "legendary"
-},
-"935": {
-"hull": "longship",
-"sea": "epic"
-},
-"936": {
-"hull": "dinghy",
-"sea": "common"
-},
-"937": {
-"hull": "junk",
-"sea": "common"
-},
-"938": {
-"hull": "raft",
-"sea": "epic"
-},
-"939": {
-"hull": "junk",
-"sea": "rare"
-},
-"940": {
-"hull": "longship",
-"sea": "common"
-},
-"941": {
-"hull": "longship",
-"sea": "rare"
-},
-"942": {
-"hull": "raft",
-"sea": "rare"
-},
-"943": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"944": {
-"hull": "junk",
-"sea": "rare"
-},
-"945": {
-"hull": "longship",
-"sea": "rare"
-},
-"946": {
-"hull": "raft",
-"sea": "rare"
-},
-"947": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"948": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"949": {
-"hull": "raft",
-"sea": "legendary"
-},
-"950": {
-"hull": "junk",
-"sea": "epic"
-},
-"951": {
-"hull": "raft",
-"sea": "common"
-},
-"952": {
-"hull": "junk",
-"sea": "rare"
-},
-"953": {
-"hull": "longship",
-"sea": "epic"
-},
-"954": {
-"hull": "dinghy",
-"sea": "common"
-},
-"955": {
-"hull": "longship",
-"sea": "rare"
-},
-"956": {
-"hull": "junk",
-"sea": "common"
-},
-"957": {
-"hull": "longship",
-"sea": "common"
-},
-"958": {
-"hull": "raft",
-"sea": "rare"
-},
-"959": {
-"hull": "raft",
-"sea": "common"
-},
-"960": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"961": {
-"hull": "dinghy",
-"sea": "common"
-},
-"962": {
-"hull": "junk",
-"sea": "rare"
-},
-"963": {
-"hull": "dinghy",
-"sea": "mythic"
-},
-"964": {
-"hull": "junk",
-"sea": "common"
-},
-"965": {
-"hull": "longship",
-"sea": "common"
-},
-"966": {
-"hull": "raft",
-"sea": "common"
-},
-"967": {
-"hull": "dinghy",
-"sea": "common"
-},
-"968": {
-"hull": "junk",
-"sea": "common"
-},
-"969": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"970": {
-"hull": "longship",
-"sea": "common"
-},
-"971": {
-"hull": "longship",
-"sea": "rare"
-},
-"972": {
-"hull": "raft",
-"sea": "common"
-},
-"973": {
-"hull": "dinghy",
-"sea": "common"
-},
-"974": {
-"hull": "raft",
-"sea": "epic"
-},
-"975": {
-"hull": "raft",
-"sea": "rare"
-},
-"976": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"977": {
-"hull": "junk",
-"sea": "common"
-},
-"978": {
-"hull": "longship",
-"sea": "common"
-},
-"979": {
-"hull": "raft",
-"sea": "common"
-},
-"980": {
-"hull": "junk",
-"sea": "mythic"
-},
-"981": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"982": {
-"hull": "junk",
-"sea": "epic"
-},
-"983": {
-"hull": "longship",
-"sea": "epic"
-},
-"984": {
-"hull": "junk",
-"sea": "rare"
-},
-"985": {
-"hull": "dinghy",
-"sea": "common"
-},
-"986": {
-"hull": "junk",
-"sea": "common"
-},
-"987": {
-"hull": "junk",
-"sea": "legendary"
-},
-"988": {
-"hull": "longship",
-"sea": "common"
-},
-"989": {
-"hull": "longship",
-"sea": "rare"
-},
-"990": {
-"hull": "raft",
-"sea": "epic"
-},
-"991": {
-"hull": "raft",
-"sea": "common"
-},
-"992": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"993": {
-"hull": "dinghy",
-"sea": "common"
-},
-"994": {
-"hull": "junk",
-"sea": "epic"
-},
-"995": {
-"hull": "longship",
-"sea": "epic"
-},
-"996": {
-"hull": "junk",
-"sea": "common"
-},
-"997": {
-"hull": "raft",
-"sea": "rare"
-},
-"998": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"999": {
-"hull": "raft",
-"sea": "epic"
-},
-"1000": {
-"hull": "junk",
-"sea": "rare"
-},
-"1001": {
-"hull": "longship",
-"sea": "common"
-},
-"1002": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1003": {
-"hull": "longship",
-"sea": "rare"
-},
-"1004": {
-"hull": "raft",
-"sea": "rare"
-},
-"1005": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1006": {
-"hull": "junk",
-"sea": "rare"
-},
-"1007": {
-"hull": "longship",
-"sea": "mythic"
-},
-"1008": {
-"hull": "raft",
-"sea": "common"
-},
-"1009": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1010": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1011": {
-"hull": "junk",
-"sea": "common"
-},
-"1012": {
-"hull": "longship",
-"sea": "common"
-},
-"1013": {
-"hull": "raft",
-"sea": "common"
-},
-"1014": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1015": {
-"hull": "junk",
-"sea": "common"
-},
-"1016": {
-"hull": "longship",
-"sea": "common"
-},
-"1017": {
-"hull": "raft",
-"sea": "common"
-},
-"1018": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1019": {
-"hull": "junk",
-"sea": "common"
-},
-"1020": {
-"hull": "longship",
-"sea": "rare"
-},
-"1021": {
-"hull": "raft",
-"sea": "rare"
-},
-"1022": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1023": {
-"hull": "junk",
-"sea": "rare"
-},
-"1024": {
-"hull": "longship",
-"sea": "common"
-},
-"1025": {
-"hull": "raft",
-"sea": "common"
-},
-"1026": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1027": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1028": {
-"hull": "longship",
-"sea": "rare"
-},
-"1029": {
-"hull": "raft",
-"sea": "rare"
-},
-"1030": {
-"hull": "junk",
-"sea": "common"
-},
-"1031": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1032": {
-"hull": "longship",
-"sea": "common"
-},
-"1033": {
-"hull": "junk",
-"sea": "epic"
-},
-"1034": {
-"hull": "raft",
-"sea": "common"
-},
-"1035": {
-"hull": "longship",
-"sea": "epic"
-},
-"1036": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1037": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1038": {
-"hull": "junk",
-"sea": "common"
-},
-"1039": {
-"hull": "longship",
-"sea": "common"
-},
-"1040": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1041": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1042": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1043": {
-"hull": "raft",
-"sea": "epic"
-},
-"1044": {
-"hull": "junk",
-"sea": "rare"
-},
-"1045": {
-"hull": "raft",
-"sea": "common"
-},
-"1046": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1047": {
-"hull": "longship",
-"sea": "rare"
-},
-"1048": {
-"hull": "junk",
-"sea": "common"
-},
-"1049": {
-"hull": "longship",
-"sea": "common"
-},
-"1050": {
-"hull": "raft",
-"sea": "rare"
-},
-"1051": {
-"hull": "raft",
-"sea": "common"
-},
-"1052": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1053": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1054": {
-"hull": "junk",
-"sea": "common"
-},
-"1055": {
-"hull": "junk",
-"sea": "rare"
-},
-"1056": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1057": {
-"hull": "longship",
-"sea": "common"
-},
-"1058": {
-"hull": "raft",
-"sea": "common"
-},
-"1059": {
-"hull": "longship",
-"sea": "rare"
-},
-"1060": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1061": {
-"hull": "junk",
-"sea": "common"
-},
-"1062": {
-"hull": "longship",
-"sea": "common"
-},
-"1063": {
-"hull": "raft",
-"sea": "common"
-},
-"1064": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1065": {
-"hull": "junk",
-"sea": "common"
-},
-"1066": {
-"hull": "longship",
-"sea": "common"
-},
-"1067": {
-"hull": "raft",
-"sea": "common"
-},
-"1068": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1069": {
-"hull": "junk",
-"sea": "common"
-},
-"1070": {
-"hull": "longship",
-"sea": "common"
-},
-"1071": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1072": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1073": {
-"hull": "raft",
-"sea": "common"
-},
-"1074": {
-"hull": "junk",
-"sea": "epic"
-},
-"1075": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1076": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1077": {
-"hull": "raft",
-"sea": "rare"
-},
-"1078": {
-"hull": "junk",
-"sea": "common"
-},
-"1079": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1080": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1081": {
-"hull": "longship",
-"sea": "common"
-},
-"1082": {
-"hull": "raft",
-"sea": "common"
-},
-"1083": {
-"hull": "longship",
-"sea": "epic"
-},
-"1084": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1085": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1086": {
-"hull": "junk",
-"sea": "rare"
-},
-"1087": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1088": {
-"hull": "junk",
-"sea": "common"
-},
-"1089": {
-"hull": "longship",
-"sea": "common"
-},
-"1090": {
-"hull": "raft",
-"sea": "common"
-},
-"1091": {
-"hull": "raft",
-"sea": "epic"
-},
-"1092": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1093": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1094": {
-"hull": "longship",
-"sea": "rare"
-},
-"1095": {
-"hull": "junk",
-"sea": "common"
-},
-"1096": {
-"hull": "longship",
-"sea": "common"
-},
-"1097": {
-"hull": "raft",
-"sea": "common"
-},
-"1098": {
-"hull": "junk",
-"sea": "epic"
-},
-"1099": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1100": {
-"hull": "junk",
-"sea": "common"
-},
-"1101": {
-"hull": "raft",
-"sea": "rare"
-},
-"1102": {
-"hull": "longship",
-"sea": "epic"
-},
-"1103": {
-"hull": "longship",
-"sea": "common"
-},
-"1104": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1105": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1106": {
-"hull": "raft",
-"sea": "common"
-},
-"1107": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1108": {
-"hull": "junk",
-"sea": "rare"
-},
-"1109": {
-"hull": "raft",
-"sea": "epic"
-},
-"1110": {
-"hull": "junk",
-"sea": "common"
-},
-"1111": {
-"hull": "longship",
-"sea": "common"
-},
-"1112": {
-"hull": "longship",
-"sea": "rare"
-},
-"1113": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1114": {
-"hull": "raft",
-"sea": "rare"
-},
-"1115": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1116": {
-"hull": "junk",
-"sea": "epic"
-},
-"1117": {
-"hull": "raft",
-"sea": "common"
-},
-"1118": {
-"hull": "longship",
-"sea": "epic"
-},
-"1119": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1120": {
-"hull": "raft",
-"sea": "mythic"
-},
-"1121": {
-"hull": "junk",
-"sea": "rare"
-},
-"1122": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1123": {
-"hull": "junk",
-"sea": "common"
-},
-"1124": {
-"hull": "longship",
-"sea": "common"
-},
-"1125": {
-"hull": "raft",
-"sea": "epic"
-},
-"1126": {
-"hull": "raft",
-"sea": "common"
-},
-"1127": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1128": {
-"hull": "longship",
-"sea": "rare"
-},
-"1129": {
-"hull": "junk",
-"sea": "common"
-},
-"1130": {
-"hull": "raft",
-"sea": "rare"
-},
-"1131": {
-"hull": "longship",
-"sea": "common"
-},
-"1132": {
-"hull": "raft",
-"sea": "common"
-},
-"1133": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1134": {
-"hull": "junk",
-"sea": "common"
-},
-"1135": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1136": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1137": {
-"hull": "longship",
-"sea": "common"
-},
-"1138": {
-"hull": "raft",
-"sea": "common"
-},
-"1139": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1140": {
-"hull": "junk",
-"sea": "epic"
-},
-"1141": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1142": {
-"hull": "junk",
-"sea": "common"
-},
-"1143": {
-"hull": "longship",
-"sea": "common"
-},
-"1144": {
-"hull": "longship",
-"sea": "epic"
-},
-"1145": {
-"hull": "raft",
-"sea": "common"
-},
-"1146": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1147": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1148": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1149": {
-"hull": "junk",
-"sea": "common"
-},
-"1150": {
-"hull": "junk",
-"sea": "rare"
-},
-"1151": {
-"hull": "longship",
-"sea": "common"
-},
-"1152": {
-"hull": "raft",
-"sea": "common"
-},
-"1153": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1154": {
-"hull": "junk",
-"sea": "common"
-},
-"1155": {
-"hull": "longship",
-"sea": "common"
-},
-"1156": {
-"hull": "raft",
-"sea": "epic"
-},
-"1157": {
-"hull": "raft",
-"sea": "common"
-},
-"1158": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1159": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1160": {
-"hull": "junk",
-"sea": "common"
-},
-"1161": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1162": {
-"hull": "junk",
-"sea": "epic"
-},
-"1163": {
-"hull": "longship",
-"sea": "common"
-},
-"1164": {
-"hull": "longship",
-"sea": "rare"
-},
-"1165": {
-"hull": "raft",
-"sea": "rare"
-},
-"1166": {
-"hull": "raft",
-"sea": "common"
-},
-"1167": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1168": {
-"hull": "junk",
-"sea": "common"
-},
-"1169": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1170": {
-"hull": "longship",
-"sea": "common"
-},
-"1171": {
-"hull": "longship",
-"sea": "epic"
-},
-"1172": {
-"hull": "raft",
-"sea": "epic"
-},
-"1173": {
-"hull": "raft",
-"sea": "common"
-},
-"1174": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1175": {
-"hull": "junk",
-"sea": "common"
-},
-"1176": {
-"hull": "longship",
-"sea": "common"
-},
-"1177": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1178": {
-"hull": "raft",
-"sea": "common"
-},
-"1179": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1180": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1181": {
-"hull": "junk",
-"sea": "common"
-},
-"1182": {
-"hull": "junk",
-"sea": "epic"
-},
-"1183": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1184": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1185": {
-"hull": "longship",
-"sea": "common"
-},
-"1186": {
-"hull": "junk",
-"sea": "rare"
-},
-"1187": {
-"hull": "longship",
-"sea": "rare"
-},
-"1188": {
-"hull": "raft",
-"sea": "rare"
-},
-"1189": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1190": {
-"hull": "junk",
-"sea": "rare"
-},
-"1191": {
-"hull": "longship",
-"sea": "rare"
-},
-"1192": {
-"hull": "raft",
-"sea": "common"
-},
-"1193": {
-"hull": "raft",
-"sea": "rare"
-},
-"1194": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1195": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1196": {
-"hull": "junk",
-"sea": "rare"
-},
-"1197": {
-"hull": "longship",
-"sea": "rare"
-},
-"1198": {
-"hull": "junk",
-"sea": "common"
-},
-"1199": {
-"hull": "longship",
-"sea": "common"
-},
-"1200": {
-"hull": "raft",
-"sea": "common"
-},
-"1201": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1202": {
-"hull": "junk",
-"sea": "common"
-},
-"1203": {
-"hull": "longship",
-"sea": "common"
-},
-"1204": {
-"hull": "raft",
-"sea": "common"
-},
-"1205": {
-"hull": "raft",
-"sea": "rare"
-},
-"1206": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1207": {
-"hull": "junk",
-"sea": "common"
-},
-"1208": {
-"hull": "longship",
-"sea": "common"
-},
-"1209": {
-"hull": "raft",
-"sea": "common"
-},
-"1210": {
-"hull": "longship",
-"sea": "epic"
-},
-"1211": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1212": {
-"hull": "junk",
-"sea": "rare"
-},
-"1213": {
-"hull": "longship",
-"sea": "rare"
-},
-"1214": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1215": {
-"hull": "raft",
-"sea": "rare"
-},
-"1216": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1217": {
-"hull": "junk",
-"sea": "common"
-},
-"1218": {
-"hull": "longship",
-"sea": "common"
-},
-"1219": {
-"hull": "raft",
-"sea": "common"
-},
-"1220": {
-"hull": "raft",
-"sea": "epic"
-},
-"1221": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1222": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1223": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1224": {
-"hull": "junk",
-"sea": "epic"
-},
-"1225": {
-"hull": "junk",
-"sea": "common"
-},
-"1226": {
-"hull": "longship",
-"sea": "common"
-},
-"1227": {
-"hull": "junk",
-"sea": "rare"
-},
-"1228": {
-"hull": "longship",
-"sea": "rare"
-},
-"1229": {
-"hull": "raft",
-"sea": "common"
-},
-"1230": {
-"hull": "longship",
-"sea": "epic"
-},
-"1231": {
-"hull": "dinghy",
-"sea": "mythic"
-},
-"1232": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1233": {
-"hull": "raft",
-"sea": "epic"
-},
-"1234": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1235": {
-"hull": "junk",
-"sea": "common"
-},
-"1236": {
-"hull": "longship",
-"sea": "common"
-},
-"1237": {
-"hull": "raft",
-"sea": "rare"
-},
-"1238": {
-"hull": "raft",
-"sea": "common"
-},
-"1239": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1240": {
-"hull": "junk",
-"sea": "common"
-},
-"1241": {
-"hull": "longship",
-"sea": "common"
-},
-"1242": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1243": {
-"hull": "raft",
-"sea": "common"
-},
-"1244": {
-"hull": "junk",
-"sea": "epic"
-},
-"1245": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1246": {
-"hull": "longship",
-"sea": "epic"
-},
-"1247": {
-"hull": "raft",
-"sea": "epic"
-},
-"1248": {
-"hull": "junk",
-"sea": "common"
-},
-"1249": {
-"hull": "longship",
-"sea": "common"
-},
-"1250": {
-"hull": "raft",
-"sea": "common"
-},
-"1251": {
-"hull": "junk",
-"sea": "mythic"
-},
-"1252": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1253": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1254": {
-"hull": "junk",
-"sea": "rare"
-},
-"1255": {
-"hull": "longship",
-"sea": "rare"
-},
-"1256": {
-"hull": "raft",
-"sea": "rare"
-},
-"1257": {
-"hull": "junk",
-"sea": "common"
-},
-"1258": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1259": {
-"hull": "junk",
-"sea": "rare"
-},
-"1260": {
-"hull": "longship",
-"sea": "common"
-},
-"1261": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1262": {
-"hull": "junk",
-"sea": "epic"
-},
-"1263": {
-"hull": "longship",
-"sea": "rare"
-},
-"1264": {
-"hull": "raft",
-"sea": "common"
-},
-"1265": {
-"hull": "raft",
-"sea": "rare"
-},
-"1266": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1267": {
-"hull": "longship",
-"sea": "epic"
-},
-"1268": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1269": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1270": {
-"hull": "junk",
-"sea": "common"
-},
-"1271": {
-"hull": "longship",
-"sea": "common"
-},
-"1272": {
-"hull": "junk",
-"sea": "rare"
-},
-"1273": {
-"hull": "longship",
-"sea": "rare"
-},
-"1274": {
-"hull": "raft",
-"sea": "common"
-},
-"1275": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1276": {
-"hull": "raft",
-"sea": "rare"
-},
-"1277": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1278": {
-"hull": "junk",
-"sea": "common"
-},
-"1279": {
-"hull": "raft",
-"sea": "epic"
-},
-"1280": {
-"hull": "longship",
-"sea": "common"
-},
-"1281": {
-"hull": "raft",
-"sea": "common"
-},
-"1282": {
-"hull": "junk",
-"sea": "rare"
-},
-"1283": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1284": {
-"hull": "longship",
-"sea": "legendary"
-},
-"1285": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1286": {
-"hull": "junk",
-"sea": "common"
-},
-"1287": {
-"hull": "junk",
-"sea": "epic"
-},
-"1288": {
-"hull": "longship",
-"sea": "common"
-},
-"1289": {
-"hull": "raft",
-"sea": "common"
-},
-"1290": {
-"hull": "longship",
-"sea": "epic"
-},
-"1291": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1292": {
-"hull": "longship",
-"sea": "mythic"
-},
-"1293": {
-"hull": "junk",
-"sea": "common"
-},
-"1294": {
-"hull": "longship",
-"sea": "common"
-},
-"1295": {
-"hull": "raft",
-"sea": "legendary"
-},
-"1296": {
-"hull": "raft",
-"sea": "common"
-},
-"1297": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1298": {
-"hull": "junk",
-"sea": "common"
-},
-"1299": {
-"hull": "raft",
-"sea": "epic"
-},
-"1300": {
-"hull": "longship",
-"sea": "common"
-},
-"1301": {
-"hull": "dinghy",
-"sea": "legendary"
-},
-"1302": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1303": {
-"hull": "raft",
-"sea": "common"
-},
-"1304": {
-"hull": "junk",
-"sea": "epic"
-},
-"1305": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1306": {
-"hull": "junk",
-"sea": "legendary"
-},
-"1307": {
-"hull": "junk",
-"sea": "common"
-},
-"1308": {
-"hull": "longship",
-"sea": "epic"
-},
-"1309": {
-"hull": "raft",
-"sea": "epic"
-},
-"1310": {
-"hull": "dinghy",
-"sea": "epic"
-},
-"1311": {
-"hull": "longship",
-"sea": "common"
-},
-"1312": {
-"hull": "raft",
-"sea": "common"
-},
-"1313": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1314": {
-"hull": "longship",
-"sea": "rare"
-},
-"1315": {
-"hull": "raft",
-"sea": "rare"
-},
-"1316": {
-"hull": "junk",
-"sea": "epic"
-},
-"1317": {
-"hull": "junk",
-"sea": "common"
-},
-"1318": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1319": {
-"hull": "longship",
-"sea": "common"
-},
-"1320": {
-"hull": "raft",
-"sea": "common"
-},
-"1321": {
-"hull": "junk",
-"sea": "rare"
-},
-"1322": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1323": {
-"hull": "junk",
-"sea": "common"
-},
-"1324": {
-"hull": "longship",
-"sea": "rare"
-},
-"1325": {
-"hull": "raft",
-"sea": "rare"
-},
-"1326": {
-"hull": "longship",
-"sea": "common"
-},
-"1327": {
-"hull": "raft",
-"sea": "common"
-},
-"1328": {
-"hull": "dinghy",
-"sea": "rare"
-},
-"1329": {
-"hull": "dinghy",
-"sea": "common"
-},
-"1330": {
-"hull": "junk",
-"sea": "common"
-},
-"1331": {
-"hull": "longship",
-"sea": "common"
-},
-"1332": {
-"hull": "raft",
-"sea": "common"
-},
-"1333": {
-"hull": "dinghy",
-"sea": "common"
-}
+ "1": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "2": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "3": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "4": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "5": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "6": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "7": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "8": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "9": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "10": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "11": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "12": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "13": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "14": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "15": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "16": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "17": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "18": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "19": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "20": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "21": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "22": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "23": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "24": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "25": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "26": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "27": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "28": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "29": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "30": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "31": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "32": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "33": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "34": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "35": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "36": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "37": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "38": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "39": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "40": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "41": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "42": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "43": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "44": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "45": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "46": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "47": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "48": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "49": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "50": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "51": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "52": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "53": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "54": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "55": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "56": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "57": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "58": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "59": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "60": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "61": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "62": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "63": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "64": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "65": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "66": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "67": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "68": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "69": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "70": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "71": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "72": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "73": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "74": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "75": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "76": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "77": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "78": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "79": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "80": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "81": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "82": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "83": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "84": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "85": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "86": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "87": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "88": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "89": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "90": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "91": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "92": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "93": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "94": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "95": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "96": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "97": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "98": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "99": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "100": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "101": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "102": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "103": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "104": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "105": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "106": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "107": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "108": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "109": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "110": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "111": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "112": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "113": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "114": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "115": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "116": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "117": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "118": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "119": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "120": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "121": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "122": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "123": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "124": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "125": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "126": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "127": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "128": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "129": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "130": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "131": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "132": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "133": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "134": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "135": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "136": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "137": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "138": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "139": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "140": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "141": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "142": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "143": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "144": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "145": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "146": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "147": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "148": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "149": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "150": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "151": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "152": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "153": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "154": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "155": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "156": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "157": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "158": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "159": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "160": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "161": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "162": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "163": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "164": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "165": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "166": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "167": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "168": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "169": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "170": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "171": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "172": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "173": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "174": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "175": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "176": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "177": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "178": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "179": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "180": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "181": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "182": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "183": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "184": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "185": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "186": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "187": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "188": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "189": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "190": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "191": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "192": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "193": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "194": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "195": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "196": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "197": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "198": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "199": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "200": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "201": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "202": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "203": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "204": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "205": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "206": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "207": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "208": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "209": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "210": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "211": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "212": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "213": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "214": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "215": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "216": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "217": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "218": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "219": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "220": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "221": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "222": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "223": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "224": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "225": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "226": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "227": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "228": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "229": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "230": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "231": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "232": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "233": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "234": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "235": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "236": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "237": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "238": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "239": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "240": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "241": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "242": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "243": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "244": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "245": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "246": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "247": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "248": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "249": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "250": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "251": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "252": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "253": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "254": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "255": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "256": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "257": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "258": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "259": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "260": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "261": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "262": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "263": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "264": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "265": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "266": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "267": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "268": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "269": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "270": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "271": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "272": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "273": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "274": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "275": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "276": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "277": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "278": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "279": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "280": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "281": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "282": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "283": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "284": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "285": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "286": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "287": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "288": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "289": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "290": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "291": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "292": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "293": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "294": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "295": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "296": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "297": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "298": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "299": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "300": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "301": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "302": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "303": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "304": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "305": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "306": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "307": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "308": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "309": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "310": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "311": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "312": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "313": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "314": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "315": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "316": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "317": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "318": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "319": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "320": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "321": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "322": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "323": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "324": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "325": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "326": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "327": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "328": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "329": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "330": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "331": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "332": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "333": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "334": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "335": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "336": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "337": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "338": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "339": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "340": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "341": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "342": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "343": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "344": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "345": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "346": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "347": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "348": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "349": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "350": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "351": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "352": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "353": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "354": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "355": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "356": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "357": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "358": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "359": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "360": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "361": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "362": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "363": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "364": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "365": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "366": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "367": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "368": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "369": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "370": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "371": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "372": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "373": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "374": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "375": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "376": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "377": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "378": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "379": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "380": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "381": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "382": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "383": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "384": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "385": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "386": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "387": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "388": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "389": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "390": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "391": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "392": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "393": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "394": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "395": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "396": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "397": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "398": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "399": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "400": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "401": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "402": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "403": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "404": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "405": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "406": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "407": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "408": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "409": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "410": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "411": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "412": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "413": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "414": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "415": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "416": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "417": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "418": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "419": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "420": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "421": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "422": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "423": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "424": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "425": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "426": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "427": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "428": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "429": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "430": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "431": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "432": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "433": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "434": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "435": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "436": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "437": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "438": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "439": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "440": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "441": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "442": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "443": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "444": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "445": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "446": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "447": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "448": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "449": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "450": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "451": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "452": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "453": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "454": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "455": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "456": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "457": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "458": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "459": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "460": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "461": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "462": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "463": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "464": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "465": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "466": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "467": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "468": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "469": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "470": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "471": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "472": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "473": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "474": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "475": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "476": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "477": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "478": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "479": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "480": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "481": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "482": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "483": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "484": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "485": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "486": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "487": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "488": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "489": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "490": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "491": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "492": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "493": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "494": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "495": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "496": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "497": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "498": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "499": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "500": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "501": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "502": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "503": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "504": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "505": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "506": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "507": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "508": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "509": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "510": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "511": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "512": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "513": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "514": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "515": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "516": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "517": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "518": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "519": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "520": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "521": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "522": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "523": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "524": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "525": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "526": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "527": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "528": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "529": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "530": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "531": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "532": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "533": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "534": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "535": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "536": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "537": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "538": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "539": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "540": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "541": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "542": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "543": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "544": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "545": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "546": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "547": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "548": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "549": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "550": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "551": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "552": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "553": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "554": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "555": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "556": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "557": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "558": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "559": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "560": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "561": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "562": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "563": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "564": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "565": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "566": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "567": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "568": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "569": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "570": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "571": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "572": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "573": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "574": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "575": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "576": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "577": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "578": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "579": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "580": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "581": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "582": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "583": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "584": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "585": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "586": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "587": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "588": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "589": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "590": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "591": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "592": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "593": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "594": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "595": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "596": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "597": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "598": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "599": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "600": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "601": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "602": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "603": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "604": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "605": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "606": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "607": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "608": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "609": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "610": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "611": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "612": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "613": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "614": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "615": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "616": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "617": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "618": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "619": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "620": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "621": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "622": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "623": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "624": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "625": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "626": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "627": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "628": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "629": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "630": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "631": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "632": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "633": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "634": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "635": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "636": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "637": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "638": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "639": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "640": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "641": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "642": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "643": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "644": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "645": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "646": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "647": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "648": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "649": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "650": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "651": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "652": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "653": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "654": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "655": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "656": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "657": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "658": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "659": {
+  "hull": "raft",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "660": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "661": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "662": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "663": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "664": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "665": {
+  "hull": "dinghy",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "666": {
+  "hull": "longship",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "667": {
+  "hull": "junk",
+  "sea": "common",
+  "rarity": "Common",
+  "lane": "free"
+ },
+ "668": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "669": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "670": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "671": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "672": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "673": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "674": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "675": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "676": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "677": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "678": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "679": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "680": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "681": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "682": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "683": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "684": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "685": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "686": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "687": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "688": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "689": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "690": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "691": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "692": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "693": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "694": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "695": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "696": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "697": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "698": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "699": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "700": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "701": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "702": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "703": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "704": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "705": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "706": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "707": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "708": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "709": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "710": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "711": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "712": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "713": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "714": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "715": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "716": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "717": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "718": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "719": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "720": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "721": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "722": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "723": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "724": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "725": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "726": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "727": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "728": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "729": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "730": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "731": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "732": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "733": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "734": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "735": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "736": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "737": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "738": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "739": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "740": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "741": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "742": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "743": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "744": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "745": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "746": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "747": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "748": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "749": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "750": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "751": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "752": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "753": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "754": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "755": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "756": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "757": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "758": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "759": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "760": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "761": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "762": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "763": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "764": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "765": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "766": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "767": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "768": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "769": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "770": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "771": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "772": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "773": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "774": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "775": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "776": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "777": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "778": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "779": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "780": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "781": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "782": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "783": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "784": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "785": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "786": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "787": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "788": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "789": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "790": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "791": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "792": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "793": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "794": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "795": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "796": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "797": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "798": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "799": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "800": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "801": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "802": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "803": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "804": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "805": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "806": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "807": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "808": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "809": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "810": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "811": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "812": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "813": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "814": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "815": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "816": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "817": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "818": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "819": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "820": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "821": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "822": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "823": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "824": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "825": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "826": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "827": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "828": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "829": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "830": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "831": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "832": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "833": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "834": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "835": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "836": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "837": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "838": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "839": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "840": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "841": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "842": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "843": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "844": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "845": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "846": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "847": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "848": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "849": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "850": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "851": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "852": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "853": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "854": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "855": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "856": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "857": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "858": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "859": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "860": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "861": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "862": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "863": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "864": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "865": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "866": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "867": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "868": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "869": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "870": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "871": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "872": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "873": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "874": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "875": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "876": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "877": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "878": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "879": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "880": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "881": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "882": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "883": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "884": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "885": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "886": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "887": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "888": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "889": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "890": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "891": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "892": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "893": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "894": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "895": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "896": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "897": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "898": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "899": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "900": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "901": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "902": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "903": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "904": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "905": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "906": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "907": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "908": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "909": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "910": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "911": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "912": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "913": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "914": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "915": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "916": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "917": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "918": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "919": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "920": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "921": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "922": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "923": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "924": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "925": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "926": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "927": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "928": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "929": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "930": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "931": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "932": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "933": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "934": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "935": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "936": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "937": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "938": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "939": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "940": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "941": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "942": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "943": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "944": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "945": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "946": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "947": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "948": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "949": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "950": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "951": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "952": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "953": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "954": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "955": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "956": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "957": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "958": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "959": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "960": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "961": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "962": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "963": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "964": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "965": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "966": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "967": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "968": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "969": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "970": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "971": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "972": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "973": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "974": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "975": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "976": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "977": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "978": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "979": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "980": {
+  "hull": "raft",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "981": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "982": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "983": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "984": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "985": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "986": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "987": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "988": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "989": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "990": {
+  "hull": "junk",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "991": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "992": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "993": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "994": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "995": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "996": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "997": {
+  "hull": "dinghy",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "998": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "999": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "1000": {
+  "hull": "longship",
+  "sea": "rare",
+  "rarity": "Rare",
+  "lane": "paid"
+ },
+ "1001": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1002": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1003": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1004": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1005": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1006": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1007": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1008": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1009": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1010": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1011": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1012": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1013": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1014": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1015": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1016": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1017": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1018": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1019": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1020": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1021": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1022": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1023": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1024": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1025": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1026": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1027": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1028": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1029": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1030": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1031": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1032": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1033": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1034": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1035": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1036": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1037": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1038": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1039": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1040": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1041": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1042": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1043": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1044": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1045": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1046": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1047": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1048": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1049": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1050": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1051": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1052": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1053": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1054": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1055": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1056": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1057": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1058": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1059": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1060": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1061": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1062": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1063": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1064": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1065": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1066": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1067": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1068": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1069": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1070": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1071": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1072": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1073": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1074": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1075": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1076": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1077": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1078": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1079": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1080": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1081": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1082": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1083": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1084": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1085": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1086": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1087": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1088": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1089": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1090": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1091": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1092": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1093": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1094": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1095": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1096": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1097": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1098": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1099": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1100": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1101": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1102": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1103": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1104": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1105": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1106": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1107": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1108": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1109": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1110": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1111": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1112": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1113": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1114": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1115": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1116": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1117": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1118": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1119": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1120": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1121": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1122": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1123": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1124": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1125": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1126": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1127": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1128": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1129": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1130": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1131": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1132": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1133": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1134": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1135": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1136": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1137": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1138": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1139": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1140": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1141": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1142": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1143": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1144": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1145": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1146": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1147": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1148": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1149": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1150": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1151": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1152": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1153": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1154": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1155": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1156": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1157": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1158": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1159": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1160": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1161": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1162": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1163": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1164": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1165": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1166": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1167": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1168": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1169": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1170": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1171": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1172": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1173": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1174": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1175": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1176": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1177": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1178": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1179": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1180": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1181": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1182": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1183": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1184": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1185": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1186": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1187": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1188": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1189": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1190": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1191": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1192": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1193": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1194": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1195": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1196": {
+  "hull": "longship",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1197": {
+  "hull": "junk",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1198": {
+  "hull": "dinghy",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1199": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1200": {
+  "hull": "raft",
+  "sea": "epic",
+  "rarity": "Epic",
+  "lane": "paid"
+ },
+ "1201": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1202": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1203": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1204": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1205": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1206": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1207": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1208": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1209": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1210": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1211": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1212": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1213": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1214": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1215": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1216": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1217": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1218": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1219": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1220": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1221": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1222": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1223": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1224": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1225": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1226": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1227": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1228": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1229": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1230": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1231": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1232": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1233": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1234": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1235": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1236": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1237": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1238": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1239": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1240": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1241": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1242": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1243": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1244": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1245": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1246": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1247": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1248": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1249": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1250": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1251": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1252": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1253": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1254": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1255": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1256": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1257": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1258": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1259": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1260": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1261": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1262": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1263": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1264": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1265": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1266": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1267": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1268": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1269": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1270": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1271": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1272": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1273": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1274": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1275": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1276": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1277": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1278": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1279": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1280": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1281": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1282": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1283": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1284": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1285": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1286": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1287": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1288": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1289": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1290": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1291": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1292": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1293": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1294": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1295": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1296": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1297": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1298": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1299": {
+  "hull": "junk",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1300": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1301": {
+  "hull": "raft",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1302": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1303": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1304": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1305": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1306": {
+  "hull": "longship",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1307": {
+  "hull": "dinghy",
+  "sea": "legendary",
+  "rarity": "Legendary",
+  "lane": "paid"
+ },
+ "1308": {
+  "hull": "junk",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1309": {
+  "hull": "junk",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1310": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1311": {
+  "hull": "longship",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1312": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1313": {
+  "hull": "junk",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1314": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1315": {
+  "hull": "longship",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1316": {
+  "hull": "junk",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1317": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1318": {
+  "hull": "longship",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1319": {
+  "hull": "longship",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1320": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1321": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1322": {
+  "hull": "junk",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1323": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1324": {
+  "hull": "longship",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1325": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1326": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1327": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1328": {
+  "hull": "junk",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1329": {
+  "hull": "longship",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1330": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1331": {
+  "hull": "dinghy",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1332": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ },
+ "1333": {
+  "hull": "raft",
+  "sea": "mythic",
+  "rarity": "Mythic",
+  "lane": "paid"
+ }
 }

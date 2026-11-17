@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>STROMBOAT · The Launch Dock — Small boats. Endless storms.</title>
-<meta name="description" content="The Launch Dock: a 1,333-boat generative pixel collection on BNB Chain — 4 hulls across 5 seas, every rarity visibly different, fixed by a single seed. Max 4 per wallet.">
+<meta name="description" content="The Launch Dock: a 1,333-boat generative pixel collection on BNB Chain — 4 hulls across 5 seas, every rarity visibly different, fixed by its number. Free 1 per wallet with a Binance Agent ID (Common only); paid max 7 per wallet (Rare and up).">
 <meta property="og:title" content="STROMBOAT · The Launch Dock">
 <meta property="og:description" content="1,333 generative boats on BNB Chain. The tarp only comes off at mint.">
 <meta property="og:type" content="website">
@@ -150,6 +150,11 @@ section{padding:92px 0;position:relative}
 .pricerow{display:flex;justify-content:space-between;align-items:center;border-top:2px dashed #ffffff2a;border-bottom:2px dashed #ffffff2a;padding:15px 0;margin:17px 0}
 .pricerow small{font-family:var(--silk);font-size:9.5px;letter-spacing:.14em;color:#8fb0c4;line-height:2}
 .pricerow b{font-family:var(--silk);font-size:19px;color:var(--amber2)}
+.freelane{border:2px dashed #ffb03a66;padding:14px;margin-top:17px;background:#ffb03a0d}
+.freelane small{font-family:var(--silk);font-size:9.5px;letter-spacing:.14em;color:var(--amber2)}
+.freelane p{font-size:13.5px;color:#c8dde9;margin-top:5px}
+.freelane .checkrow{margin-top:11px}
+.freelane .checkrow button{background:var(--amber);color:#221100;font-weight:700}
 .qtyrow{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
 .stepper{display:flex;align-items:center;gap:10px}
 .stepper button{width:44px;height:44px;font-family:var(--silk);font-size:16px;background:var(--stone2);color:var(--foam);border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);cursor:pointer}
@@ -239,7 +244,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     <a class="logo" href="#top">STROM<span>BOAT</span></a>
     <div class="season">SEASON OF THE LONG STORM · SERIES I</div>
     <div class="chip live">⛵ FLEET <b id="hudFleet">0 / 1,333</b></div>
-    <div class="chip">PRICE <b id="hudPrice">TBA</b></div>
+    <div class="chip">PRICE <b id="hudPrice">0.00144 BNB</b></div>
     <nav>
       <a href="#mint">Dock</a><a href="#rarity">Rarity</a><a href="#fleet">Fleet</a><a href="#hulls">Hulls</a>
       <a href="#tide">Tide Table</a><a href="#agent">Agent Office</a><a href="#faq">Log</a>
@@ -264,7 +269,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
           <a class="btn big red" href="#mint">⚓ Launch a boat</a>
           <a class="btn big ghost" href="#agent">&lt;/&gt; Agent mint</a>
         </div>
-        <p class="note">MAX 4 PER WALLET · 4 HULLS × 5 SEAS · 20 ARTWORKS<br>NEW COLLECTION — ITS OWN CONTRACT, DEPLOYED BY THE OWNER</p>
+        <p class="note">FREE 1 · AGENT ID · COMMON ONLY — PAID 0.00144 BNB · MAX 7 · RARE AND UP<br>NEW COLLECTION — ITS OWN CONTRACT, DEPLOYED BY THE OWNER</p>
       </div>
       <div class="dockside">
         <div class="shroud"><div class="shroud-in"><div class="q">?</div><small>UNDER THE TARP</small></div></div>
@@ -274,7 +279,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     <div class="hero-stats">
       <div class="hstat"><b>1,333</b><small>Total boats</small></div>
       <div class="hstat"><b id="stMinted">0</b><small>Launched</small></div>
-      <div class="hstat"><b id="stPrice">TBA</b><small>Per boat · set at deploy</small></div>
+      <div class="hstat"><b id="stPrice">0.00144</b><small>Per paid boat · free for Agent IDs</small></div>
       <div class="hstat"><b>4</b><small>Hulls</small></div>
       <div class="hstat"><b>5</b><small>Seas</small></div>
     </div>
@@ -285,9 +290,9 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
 <div class="logstrip">
   <div class="wrap log-in">
     <h4>HARBOUR<br>LOG</h4>
-    <div class="quest"><div class="n">1</div><div><b>Connect a wallet</b><span>Binance Agentic Wallet or any EOA — contracts are turned away.</span></div></div>
+    <div class="quest"><div class="n">1</div><div><b>Connect a wallet</b><span>Any wallet — and bring your Binance Agent ID for the free lane.</span></div></div>
     <div class="quest"><div class="n">2</div><div><b>Read the tide</b><span>Price and supply are fixed in the new contract before mint opens.</span></div></div>
-    <div class="quest"><div class="n">3</div><div><b>Launch 1–4 boats</b><span>One mint(quantity) call. The tarp comes off. The storm is yours.</span></div></div>
+    <div class="quest"><div class="n">3</div><div><b>Launch your boats</b><span>One free Common with your Agent ID, or 1–7 paid boats in one call. The tarp comes off.</span></div></div>
   </div>
 </div>
 
@@ -298,7 +303,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     <div class="sec-head reveal">
       <p class="no">▸ THE LAUNCH DOCK</p>
       <h2>Take the tarp off<br><span class="gold">your boat.</span></h2>
-      <p>The dock is lit and the fleet is painted. This collection gets its own contract — the same mint logic as the original Stromboat (one mint(quantity) call, max 4 per wallet), deployed by the owner. The terminal below goes live the moment it lands.</p>
+      <p>The dock is lit and the fleet is painted. This collection gets its own contract, deployed by the owner, with two lanes that run side by side: a FREE lane — one Common boat per wallet for Binance Agent ID holders — and a PAID lane at 0.00144 BNB for Rare and up, max 7 per wallet. The terminal below goes live the moment the contract lands.</p>
     </div>
     <div class="mintgrid">
       <div class="dockside reveal">
@@ -312,14 +317,23 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
         <p class="sub">New collection contract · BNB Chain (56) · Status: <span id="sbStatus">awaiting deployment</span></p>
         <div class="waterbar"><i id="barFill"></i></div>
         <div class="barrow"><span><b id="sbMinted">0</b> LAUNCHED</span><span id="sbPct">0.0%</span><span><b id="sbLeft">1,333</b> AT THE DOCK</span></div>
-        <div class="pricerow"><small>PRICE<br>PER BOAT</small><b id="sbPrice">Set at deploy</b></div>
+        <div class="barrow"><span>FREE <b id="sbFree">0</b> / 667</span><span>PAID <b id="sbPaid">0</b> / 666</span></div>
+        <div class="freelane">
+          <small>FREE LANE · BINANCE AGENT ID</small>
+          <p>One free boat — always a Common (Calm Grey). Max 1 per wallet, one claim per Agent ID.</p>
+          <div class="checkrow">
+            <input id="sbAgentId" placeholder="Your Agent ID number" spellcheck="false" inputmode="numeric">
+            <button type="button" id="btnFree" disabled>Claim free — awaiting deployment</button>
+          </div>
+        </div>
+        <div class="pricerow"><small>PAID PRICE<br>PER BOAT</small><b id="sbPrice">0.00144 BNB</b></div>
         <div class="qtyrow">
           <div class="stepper">
             <button type="button" id="qMinus" aria-label="Less">−</button>
             <output id="qVal">1</output>
             <button type="button" id="qPlus" aria-label="More">+</button>
           </div>
-          <small>boat(s) — max 4 per wallet, ever</small>
+          <small>paid boat(s) — max 7 per wallet</small>
         </div>
         <div class="total"><span>Total due</span><b id="sbTotal">—</b></div>
         <button class="btn ghost" id="btnConnect" type="button">Connect wallet</button>
@@ -330,7 +344,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
           <button type="button" id="sbCheck">Check</button>
         </div>
         <p class="checkout" id="sbCheckOut"></p>
-        <p class="note">At launch: normal wallets and Binance Agentic Wallets only — the contract turns away other contracts on-chain. Quantity 1–4 per call, max 4 per wallet.</p>
+        <p class="note">Two lanes, both open from launch, neither blocking the other: FREE — one Common per wallet with a Binance Agent ID (IDs 1–667). PAID — 0.00144 BNB per boat, Rare and up only (IDs 668–1,333), max 7 per wallet.</p>
       </div>
     </div>
   </div>
@@ -342,7 +356,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     <div class="sec-head reveal">
       <p class="no">▸ RARITY</p>
       <h2>Every rarity <span class="gold">looks the part.</span></h2>
-      <p>Same dock, same boats — five seas, five tempers. The tier is not a label: it is painted into the sky, the sail, the lanterns and the water. One hull, the Dinghy, shown in all five seas; every hull sails all five. Counts are fixed: 667 / 333 / 200 / 107 / 26.</p>
+      <p>Same dock, same boats — five seas, five tempers. The tier is not a label: it is painted into the sky, the sail, the lanterns and the water. One hull, the Dinghy, shown in all five seas; every hull sails all five. Counts are fixed: 667 / 333 / 200 / 107 / 26. Common is the free lane — Rare and up are paid only.</p>
     </div>
     <div class="grid5">
       <div class="tile reveal"><div class="im"><img src="img/dinghy-common.webp" alt="Dinghy in Calm Grey"></div><div class="t"><p class="fig">COMMON · 50% · 667</p><h4>Calm Grey</h4><p>Flat grey water. One dim lantern. No sail.</p></div></div>
@@ -415,7 +429,7 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     <div class="sec-head reveal">
       <p class="no">▸ AGENT HARBOUR OFFICE</p>
       <h2>Built for <span class="gold">agents.</span></h2>
-      <p>The new collection keeps the original Stromboat mint logic — built to be minted by Binance Agentic Wallets with one call. The address below fills in automatically once the owner deploys the contract.</p>
+      <p>Two calls cover the whole dock: freeMint(agentId) claims the free Common, mint(quantity) buys the paid rarities. The address below fills in automatically once the owner deploys the contract.</p>
     </div>
     <div class="term reveal">
       <div class="tbar">
@@ -426,31 +440,43 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
           <button type="button" id="tabCli">baw-cli.sh</button>
         </div>
       </div>
-      <pre id="agentPrompt"><span class="cm"># Mint one Stromboat — BNB Chain (chain id 56)</span>
+      <pre id="agentPrompt"><span class="cm"># Mint Stromboat — BNB Chain (chain id 56) · two lanes</span>
 <span class="kw">contract</span>  &lt;NEW CONTRACT — FILLED IN AFTER DEPLOYMENT&gt;
+
+<span class="cm"># LANE 1 · FREE — one Common, for Agent ID holders</span>
+<span class="kw">call</span>      <span class="fn2">freeMint(uint256)</span> — your Agent ID number
+<span class="kw">calldata</span>  0x7c928fe9 + your Agent ID as a 32-byte word
+<span class="kw">value</span>     <span class="st">0</span> — max 1 per wallet, one claim per Agent ID
+
+<span class="cm"># LANE 2 · PAID — Rare and up only, max 7 per wallet</span>
 <span class="kw">call</span>      <span class="fn2">mint(uint256)</span> quantity = <span class="st">1</span>
 <span class="kw">calldata</span>  0xa0712d6800000000000000000000000000
             00000000000000000000000000000001
 <span class="kw">value</span>     read <span class="fn2">currentPrice()</span> on the contract
-            and send exactly that — no more, no less.
-<span class="cm"># max 4 per wallet · contract wallets are rejected on-chain</span></pre>
-      <pre id="bawCli" hidden><span class="cm"># preview the call</span>
+            and send exactly that × quantity — no more, no less.</pre>
+      <pre id="bawCli" hidden><span class="cm"># LANE 1 · FREE — claim one Common with your Agent ID</span>
+<span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
+  --from &lt;your agentic wallet&gt; \
+  --to <NEW CONTRACT> \
+  --value <span class="st">0</span> \
+  --inputData 0x7c928fe9&lt;your Agent ID, 32-byte word&gt; --json
+<span class="fn2">baw</span> contract-call execute --requestId &lt;requestId&gt; --json
+
+<span class="cm"># LANE 2 · PAID — buy Rare and up (max 7 per wallet)</span>
 <span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
   --from &lt;your agentic wallet&gt; \
   --to <NEW CONTRACT> \
   --value &lt;currentPrice() in wei&gt; \
   --inputData 0xa0712d68…0001 --json
-
-<span class="cm"># then execute it</span>
 <span class="fn2">baw</span> contract-call execute --requestId &lt;requestId&gt; --json</pre>
       <div class="termfoot">
         <button class="btn" type="button" id="btnCopyTerm">Copy prompt</button>
-        <small>For 2, 3 or 4 boats: change the last digit of the calldata to 2, 3 or 4 and multiply the value.</small>
+        <small>Paid quantity 1–7: change the last calldata digit and multiply the value. The free lane is one call, one boat.</small>
       </div>
     </div>
     <div class="flow">
-      <div class="step reveal"><p class="n">PAPERWORK · 01</p><h4>Use your Agentic Wallet</h4><p>Set it up in the Binance Wallet app. Calls from contracts are rejected on-chain.</p></div>
-      <div class="step reveal"><p class="n">PAPERWORK · 02</p><h4>Call mint(quantity)</h4><p>Quantity 1 to 4. Read currentPrice() and send exactly price × quantity.</p></div>
+      <div class="step reveal"><p class="n">PAPERWORK · 01</p><h4>Use your Agentic Wallet</h4><p>Set it up in the Binance Wallet app — your Agent ID lives there, and it is the key to the free lane.</p></div>
+      <div class="step reveal"><p class="n">PAPERWORK · 02</p><h4>Two calls, two lanes</h4><p>freeMint(agentId) takes one free Common at 0 BNB. mint(quantity) buys 1–7 paid boats at exactly price × quantity.</p></div>
       <div class="step reveal"><p class="n">PAPERWORK · 03</p><h4>The storm is fixed</h4><p>Each token number decides its sea and hull on-chain. Nothing is curated after the fact.</p></div>
     </div>
   </div>
@@ -465,8 +491,8 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     </div>
     <div class="reveal">
       <details open><summary>How many are there?</summary><p>1,333. Four hulls across five seas — twenty artworks, and every token’s hull and sea are fixed by its number.</p></details>
-      <details><summary>What decides my boat?</summary><p>The token number. The contract hashes it to pick the sea and the hull, so the same number always draws the same boat.</p></details>
-      <details><summary>How much does it cost?</summary><p>The price is set in the new contract at deployment, and this page reads it live once the contract lands. Send exactly price × quantity, nothing more.</p></details>
+      <details><summary>What decides my boat?</summary><p>Its token number. Numbers 1–667 are the free Common pool; 668–1,333 are the paid rarities. Every number was assigned its hull and sea before launch — the same number always draws the same boat.</p></details>
+      <details><summary>How much does it cost?</summary><p>Two lanes. FREE: one Common boat, 0 BNB, with a Binance Agent ID — max 1 per wallet. PAID: 0.00144 BNB per boat, Rare and up only, max 7 per wallet. This page reads the price live from the contract; send exactly price × quantity, nothing more.</p></details>
       <details><summary>Where does the art live?</summary><p>Each boat is one of twenty night-dock artworks — its hull in its sea — served from this site.</p></details>
       <details><summary>What comes with it?</summary><p>An artwork. No token promises, no roadmap.</p></details>
     </div>
@@ -494,14 +520,14 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
   "use strict";
   var C = ""; /* NEW COLLECTION CONTRACT — paste the deployed address here and the whole page goes live */
   var RPCS = ["https://bsc-rpc.publicnode.com","https://bsc-dataseed.bnbchain.org","https://bsc.drpc.org","https://binance.llamarpc.com"];
-  var MAX_SUPPLY = 1333, MAX_PER_WALLET = 4;
-  var SEL = { minted:"0xa2309ff8", price:"0x9d1b464a", open:"0x24bbd049", remaining:"0xa6f4a84c", mint:"0xa0712d68" };
+  var MAX_SUPPLY = 1333, MAX_PER_WALLET = 7, FREE_SUPPLY = 667, PAID_SUPPLY = 666;
+  var SEL = { minted:"0xa2309ff8", price:"0x9d1b464a", open:"0x24bbd049", mint:"0xa0712d68", freeMinted:"0xd10a1a2b", paidMinted:"0x2806b8fb", freeBy:"0xdd4d2233", paidBy:"0x80f231fb", freeMint:"0x7c928fe9" };
   var FLEET_ART = ["img/dinghy-legendary.webp","img/junk-epic.webp","img/dock-longship.webp","img/dock-raft.webp","img/junk-legendary.webp","img/dinghy-epic.webp","img/longship-legendary.webp","img/longship-epic.webp"];
   var PLAIN = {
-    agentPrompt: "Mint one Stromboat on BNB Chain (chain id 56).\nContract: <NEW CONTRACT — filled in after deployment>\nCall mint(uint256) with quantity 1, calldata\n0xa0712d680000000000000000000000000000000000000000000000000000000000000001\nValue: read currentPrice() on the contract and send exactly that.",
-    bawCli: "baw contract-call preview --binanceChainId 56 \\\n  --from <your agentic wallet> \\\n  --to <NEW CONTRACT> \\\n  --value <currentPrice() in wei> \\\n  --inputData 0xa0712d680000000000000000000000000000000000000000000000000000000000000001 --json\nbaw contract-call execute --requestId <requestId> --json"
+    agentPrompt: "Mint Stromboat on BNB Chain (chain id 56). Two lanes.\nContract: <NEW CONTRACT — filled in after deployment>\nLANE 1 · FREE (Agent ID holders): call freeMint(uint256) with your Agent ID number, calldata 0x7c928fe9 followed by the Agent ID as a 32-byte word, value 0. One free Common per wallet, one claim per Agent ID.\nLANE 2 · PAID: call mint(uint256) with quantity 1-7, calldata 0xa0712d68 followed by the quantity as a 32-byte word. Value: read currentPrice() on the contract and send exactly price x quantity. Rare and up only, max 7 per wallet.",
+    bawCli: "baw contract-call preview --binanceChainId 56 \\\n  --from <your agentic wallet> \\\n  --to <NEW CONTRACT> \\\n  --value 0 \\\n  --inputData 0x7c928fe9<your Agent ID, 32-byte word> --json\nbaw contract-call execute --requestId <requestId> --json\n\n# PAID lane: same flow with --value <currentPrice() x quantity, in wei> and --inputData 0xa0712d68<quantity, 32-byte word>"
   };
-  var state = { priceWei:null, minted:null, open:null, qty:1, account:null };
+  var state = { priceWei:null, minted:null, free:null, paid:null, open:null, qty:1, account:null };
   function $(i){ return document.getElementById(i); }
   function rpcCall(data){
     var i = 0;
@@ -535,17 +561,22 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
       $("hudPrice").textContent = bnb(state.priceWei);
       $("sbTotal").textContent = bnb(state.priceWei * BigInt(state.qty));
     }
+    if(state.free !== null){ $("sbFree").textContent = state.free.toLocaleString("en"); }
+    if(state.paid !== null){ $("sbPaid").textContent = state.paid.toLocaleString("en"); }
+    var freeBtn = $("btnFree");
+    freeBtn.disabled = !(state.account && state.open === true && state.free !== null && state.free < FREE_SUPPLY);
+    freeBtn.textContent = !C ? "Claim free — awaiting deployment" : state.open === true ? "Claim free Common" : "Claim free — not open yet";
     $("qVal").textContent = state.qty;
     $("sbStatus").textContent = state.minted !== null && state.minted >= MAX_SUPPLY ? "sold out" : state.open === true ? "mint open" : state.open === false ? "not open yet" : "reading…";
     $("sbStatus").style.color = state.open === true ? "var(--ok)" : "var(--amber)";
     var mintBtn = $("btnMint");
-    mintBtn.disabled = !(state.account && state.open === true && state.priceWei !== null && state.minted !== null && state.minted < MAX_SUPPLY);
+    mintBtn.disabled = !(state.account && state.open === true && state.priceWei !== null && state.paid !== null && state.paid < PAID_SUPPLY);
     mintBtn.textContent = !C ? "⚓ Launch — awaiting deployment" : state.account ? ("⚓ Launch " + state.qty + " boat" + (state.qty>1?"s":"")) : "⚓ Launch — connect first";
     $("footUpdated").textContent = "Live from the contract · updated " + new Date().toUTCString();
   }
   function load(){
-    Promise.all([rpcCall(SEL.minted), rpcCall(SEL.price), rpcCall(SEL.open)]).then(function(v){
-      state.minted = Number(v[0]); state.priceWei = v[1]; state.open = v[2] !== 0n; paint();
+    Promise.all([rpcCall(SEL.minted), rpcCall(SEL.price), rpcCall(SEL.open), rpcCall(SEL.freeMinted), rpcCall(SEL.paidMinted)]).then(function(v){
+      state.minted = Number(v[0]); state.priceWei = v[1]; state.open = v[2] !== 0n; state.free = Number(v[3]); state.paid = Number(v[4]); paint();
     }).catch(function(){ $("sbStatus").textContent = "could not read contract"; });
   }
   if(C){ load(); setInterval(load, 30000); }
@@ -577,10 +608,11 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
     var a = $("sbAddr").value.trim();
     if(!/^0x[0-9a-fA-F]{40}$/.test(a)){ o.textContent = "Enter a full 0x wallet address."; o.style.color = "var(--bad)"; return; }
     o.textContent = "Checking…"; o.style.color = "#9db8c8";
-    rpcCall(SEL.remaining + a.slice(2).toLowerCase().padStart(64,"0")).then(function(n){
-      n = Number(n);
-      o.textContent = n > 0 ? "✓ This wallet can still mint " + n + " of 4." : "✕ This wallet has reached the 4 per wallet limit.";
-      o.style.color = n > 0 ? "var(--ok)" : "var(--bad)";
+    var arg = a.slice(2).toLowerCase().padStart(64,"0");
+    Promise.all([rpcCall(SEL.freeBy + arg), rpcCall(SEL.paidBy + arg)]).then(function(v){
+      var f = Number(v[0]), p = Number(v[1]);
+      o.textContent = "✓ " + short(a) + ": " + (f === 0 ? "free Common still available (bring your Agent ID)" : "free Common already claimed") + " · paid " + p + "/7" + (p < MAX_PER_WALLET ? " — can still buy " + (MAX_PER_WALLET - p) : " — paid cap reached");
+      o.style.color = "var(--ok)";
     }).catch(function(){ o.textContent = "Could not read the contract. Try again in a moment."; o.style.color = "var(--bad)"; });
   };
 
@@ -619,10 +651,30 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
       $("revealImg").src = FLEET_ART[Math.floor(Math.random() * FLEET_ART.length)];
       $("revealBox").classList.add("open");
       $("plaqueTitle").textContent = "THE TARP IS OFF ⚓";
-      $("plaqueText").textContent = "One of the fleet's nine artworks, shown as a preview — your boat's exact hull and sea are drawn by its token number on-chain.";
+      $("plaqueText").textContent = "One of the fleet's twenty artworks, shown as a preview — your boat's exact hull and sea are drawn by its token number on-chain.";
       setTimeout(load, 4000);
     }).catch(function(e){
-      log("launch cancelled or failed: " + (e && e.message ? e.message : e) + " — contract wallets are rejected; use a normal or Agentic wallet.", true);
+      log("launch cancelled or failed: " + (e && e.message ? e.message : e) + " — check the paid lane is open and your wallet is under the 7-boat cap.", true);
+    });
+  };
+  $("btnFree").onclick = function(){
+    if(!state.account) return;
+    var raw = $("sbAgentId").value.trim();
+    if(!/^[0-9]+$/.test(raw)){ log("enter your Binance Agent ID number first — it is the number of the Agent ID in your Binance Wallet.", true); return; }
+    var data = SEL.freeMint + BigInt(raw).toString(16).padStart(64,"0");
+    log("claiming your free Common with Agent ID " + raw + " — confirm in your wallet…");
+    window.ethereum.request({method:"eth_sendTransaction", params:[{ from: state.account, to: C, data: data, value: "0x0" }]})
+    .then(function(tx){
+      $("mintStatus").innerHTML = "&gt; free Common claimed ✓ calm water, one dim lantern — yours. <a href='https://bscscan.com/tx/" + tx + "' target='_blank' rel='noopener'>View tx on BscScan ↗</a>";
+      $("mintStatus").style.color = "#9fe8b1";
+      $("mintShroud").style.display = "none";
+      $("revealImg").src = "img/dinghy-common.webp";
+      $("revealBox").classList.add("open");
+      $("plaqueTitle").textContent = "THE TARP IS OFF ⚓";
+      $("plaqueText").textContent = "Your free Common — one of the Calm Grey boats, drawn by its token number on-chain.";
+      setTimeout(load, 4000);
+    }).catch(function(e){
+      log("free claim failed: " + (e && e.message ? e.message : e) + " — the wallet must own that Agent ID, and each wallet and ID claims only once.", true);
     });
   };
   if(window.ethereum && window.ethereum.on){

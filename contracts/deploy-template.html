@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STROMBOAT · Deploy Console — The Launch Dock</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#06121c;--stone:#0e2233;--stone2:#14334d;--foam:#eaf6ff;--amber:#ffb03a;--buoy:#ff5340;--ok:#7dff9a;--bad:#ff7d6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--deep);color:var(--foam);font-family:'Pixelify Sans',sans-serif;line-height:1.55;padding:28px 16px 60px}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-size:26px;letter-spacing:1px}
+h1 span{color:var(--amber)}
+.sub{opacity:.75;font-size:14px;margin:4px 0 22px}
+.card{background:var(--stone);border:2px solid #000;box-shadow:6px 6px 0 #000;padding:18px;margin-bottom:18px}
+.card h2{font-size:17px;margin-bottom:10px;color:var(--amber)}
+label{display:block;font-size:13px;opacity:.85;margin:10px 0 4px}
+input{width:100%;background:var(--deep);border:2px solid var(--stone2);color:var(--foam);padding:10px;font-family:'Silkscreen',monospace;font-size:13px}
+button{background:var(--amber);color:#221100;border:2px solid #000;box-shadow:4px 4px 0 #000;padding:11px 18px;font-family:'Pixelify Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;margin:8px 8px 0 0}
+button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 #000}
+button.red{background:var(--buoy);color:#fff}
+button.ghost{background:var(--stone2);color:var(--foam)}
+button:disabled{opacity:.4;cursor:not-allowed}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;font-family:'Silkscreen',monospace;font-size:13px}
+.grid b{color:var(--amber)}
+.log{background:#020a11;border:2px solid var(--stone2);padding:12px;font-family:'Silkscreen',monospace;font-size:12px;white-space:pre-wrap;word-break:break-all;min-height:70px;max-height:260px;overflow:auto}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+.addr{color:var(--amber);word-break:break-all}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>STROMBOAT <span>· DEPLOY CONSOLE</span></h1>
+<p class="sub">Kontrak koleksi baru The Launch Dock — 1.333 NFT, free Agent ID (Common, maks 1) + paid 0.00144 BNB (Rare ke atas, maks 7). Halaman ini hanya untuk owner. Deploy dan semua tanda tangan dari wallet Anda sendiri.</p>
+
+<div class="card">
+  <h2>1 · WALLET</h2>
+  <button id="btnConnect">Connect wallet</button>
+  <p id="walletLine" style="margin-top:8px;font-family:'Silkscreen',monospace;font-size:13px">Belum terhubung.</p>
+</div>
+
+<div class="card">
+  <h2>2 · DEPLOY KONTRAK BARU</h2>
+  <label>Base URI (metadata)</label>
+  <input id="inBaseURI" value="https://stromboat.com/nft/metadata/">
+  <button id="btnDeploy" disabled>Deploy Stromboat</button>
+  <p style="font-size:13px;opacity:.8;margin-top:8px">Mint dalam keadaan <b>TERTUTUP</b> setelah deploy. Buka dari panel admin di bawah setelah alamat kontrak ditempel ke web.</p>
+  <p id="deployResult" style="margin-top:8px"></p>
+</div>
+
+<div class="card">
+  <h2>3 · MUAT KONTRAK (sudah deploy)</h2>
+  <label>Alamat kontrak</label>
+  <input id="inAddr" placeholder="0x...">
+  <button id="btnLoad" class="ghost">Muat kontrak</button>
+  <p style="font-size:13px;opacity:.8;margin-top:6px">Alamat tersimpan otomatis di browser ini dan dimuat lagi saat halaman dibuka ulang.</p>
+</div>
+
+<div class="card hidden" id="adminCard">
+  <h2>4 · ADMIN — <span class="addr" id="adminAddr"></span></h2>
+  <div class="grid" id="statGrid">
+    <div>Owner</div><b id="stOwner">—</b>
+    <div>Mint</div><b id="stOpen">—</b>
+    <div>Total minted</div><b id="stTotal">—</b>
+    <div>Free minted</div><b id="stFree">—</b>
+    <div>Paid minted</div><b id="stPaid">—</b>
+    <div>Harga</div><b id="stPrice">—</b>
+    <div>Saldo kontrak</div><b id="stBal">—</b>
+  </div>
+  <button id="btnOpen">Buka mint</button>
+  <button id="btnClose" class="red">Tutup mint</button>
+  <button id="btnRefresh" class="ghost">Refresh status</button>
+  <label>Harga baru (BNB) — kosongkan untuk tetap 0.00144</label>
+  <input id="inPrice" placeholder="0.00144">
+  <button id="btnPrice" class="ghost">Set harga</button>
+  <button id="btnWithdraw">Withdraw saldo</button>
+</div>
+
+<div class="card">
+  <h2>LOG</h2>
+  <div class="log" id="log">Siap.</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+<script>
+const ABI = __ABI__;
+const BYTECODE = "__BYTECODE__";
+const LS_KEY = "stromboat_contract";
+let provider, signer, contract;
+
+const $ = (id) => document.getElementById(id);
+function log(msg, cls) {
+  const el = $("log");
+  const line = document.createElement("div");
+  if (cls) line.className = cls;
+  line.textContent = msg;
+  el.appendChild(line);
+  el.scrollTop = el.scrollHeight;
+}
+
+async function connect() {
+  if (!window.ethereum) { log("Tidak ada wallet di browser ini.", "bad"); return; }
+  provider = new ethers.BrowserProvider(window.ethereum);
+  await provider.send("eth_requestAccounts", []);
+  const net = await provider.getNetwork();
+  if (net.chainId !== 56n) {
+    log("Beralih ke BNB Chain (56)...");
+    await window.ethereum.request({ method: "wallet_switchEthereumChain", params: [{ chainId: "0x38" }] });
+    provider = new ethers.BrowserProvider(window.ethereum);
+  }
+  signer = await provider.getSigner();
+  const a = await signer.getAddress();
+  $("walletLine").textContent = "Terhubung: " + a;
+  $("btnDeploy").disabled = false;
+  log("Wallet terhubung: " + a, "ok");
+  const saved = localStorage.getItem(LS_KEY);
+  if (saved && !$("inAddr").value) { $("inAddr").value = saved; log("Alamat tersimpan ditemukan: " + saved); }
+}
+
+async function attach(addr) {
+  contract = new ethers.Contract(addr, ABI, signer);
+  const owner = await contract.owner();
+  const me = await signer.getAddress();
+  $("adminAddr").textContent = addr;
+  $("adminCard").classList.remove("hidden");
+  if (owner.toLowerCase() !== me.toLowerCase()) {
+    log("PERINGATAN: wallet ini bukan owner kontrak (owner: " + owner + "). Tombol admin akan gagal.", "bad");
+  } else {
+    log("Kontrak dimuat, wallet ini adalah owner.", "ok");
+  }
+  localStorage.setItem(LS_KEY, addr);
+  await refresh();
+}
+
+async function refresh() {
+  if (!contract) return;
+  try {
+    const [owner, open, total, free, paid, price] = await Promise.all([
+      contract.owner(), contract.mintOpen(), contract.totalMinted(),
+      contract.freeMinted(), contract.paidMinted(), contract.currentPrice(),
+    ]);
+    const bal = await provider.getBalance(await contract.getAddress());
+    $("stOwner").textContent = owner;
+    $("stOpen").textContent = open ? "TERBUKA" : "tertutup";
+    $("stTotal").textContent = total.toString() + " / 1333";
+    $("stFree").textContent = free.toString() + " / 667";
+    $("stPaid").textContent = paid.toString() + " / 666";
+    $("stPrice").textContent = ethers.formatEther(price) + " BNB";
+    $("stBal").textContent = ethers.formatEther(bal) + " BNB";
+  } catch (e) { log("Gagal membaca status: " + (e.shortMessage || e.message), "bad"); }
+}
+
+$("btnConnect").onclick = () => connect().catch((e) => log(e.message, "bad"));
+
+$("btnDeploy").onclick = async () => {
+  try {
+    if (!signer) { log("Connect wallet dulu.", "bad"); return; }
+    log("Menyiapkan deploy...");
+    const factory = new ethers.ContractFactory(ABI, BYTECODE, signer);
+    const c = await factory.deploy($("inBaseURI").value.trim());
+    log("Transaksi terkirim: " + c.deploymentTransaction().hash);
+    await c.waitForDeployment();
+    const addr = await c.getAddress();
+    $("deployResult").innerHTML = 'Kontrak ter-deploy: <span class="addr">' + addr + "</span><br>" +
+      '<a href="https://bscscan.com/address/' + addr + '" target="_blank" style="color:var(--amber)">Lihat di BscScan</a>';
+    log("DEPLOY BERHASIL: " + addr, "ok");
+    log("Langkah berikutnya: kirim alamat ini ke Muse untuk ditempel ke web, lalu Buka mint dari panel admin.");
+    $("inAddr").value = addr;
+    await attach(addr);
+  } catch (e) { log("Deploy gagal: " + (e.shortMessage || e.message), "bad"); }
+};
+
+$("btnLoad").onclick = async () => {
+  try {
+    if (!signer) { log("Connect wallet dulu.", "bad"); return; }
+    const addr = $("inAddr").value.trim();
+    if (!ethers.isAddress(addr)) { log("Alamat tidak valid.", "bad"); return; }
+    await attach(addr);
+  } catch (e) { log("Gagal memuat: " + (e.shortMessage || e.message), "bad"); }
+};
+
+$("btnOpen").onclick = async () => { try { log("Membuka mint..."); await (await contract.setMintOpen(true)).wait(); log("Mint TERBUKA.", "ok"); await refresh(); } catch (e) { log(e.shortMessage || e.message, "bad"); } };
+$("btnClose").onclick = async () => { try { log("Menutup mint..."); await (await contract.setMintOpen(false)).wait(); log("Mint tertutup.", "ok"); await refresh(); } catch (e) { log(e.shortMessage || e.message, "bad"); } };
+$("btnRefresh").onclick = () => refresh();
+$("btnPrice").onclick = async () => {
+  try {
+    const v = $("inPrice").value.trim();
+    if (!v) { log("Isi harga baru dulu.", "bad"); return; }
+    log("Mengubah harga ke " + v + " BNB...");
+    await (await contract.setPrice(ethers.parseEther(v))).wait();
+    log("Harga diperbarui.", "ok"); await refresh();
+  } catch (e) { log(e.shortMessage || e.message, "bad"); }
+};
+$("btnWithdraw").onclick = async () => { try { log("Withdraw..."); await (await contract.withdraw()).wait(); log("Saldo ditarik ke wallet owner.", "ok"); await refresh(); } catch (e) { log(e.shortMessage || e.message, "bad"); } };
+
+// Restore the saved address into the loader field on page load.
+window.addEventListener("load", () => {
+  const saved = localStorage.getItem(LS_KEY);
+  if (saved) { $("inAddr").value = saved; log("Alamat kontrak tersimpan: " + saved + " — connect wallet lalu klik Muat kontrak."); }
+});
+</script>
+</body>
+</html>
