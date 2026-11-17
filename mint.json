@@ -5,7 +5,7 @@
     "name": "BNB Chain"
   },
   "contract": "0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d",
-  "contractStatus": "deployed \u2014 mint closed (mint opens in a separate step, after the market setup)",
+  "contractStatus": "deployed \u2014 mint open (both lanes live)",
   "contractsPage": "https://stromboat.com/contracts.html",
   "description": "1,333 generative pixel boats on BNB Chain. Two mint lanes: a free Common for Binance Agent ID holders, and a paid lane (Rare and up) at exactly 0.00144 BNB. An artwork. No token promises, no roadmap.",
   "docs": "https://stromboat.com/docs.html",
