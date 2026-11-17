@@ -1,0 +1,27 @@
+{
+ "name": "Stromboat #980",
+ "description": "The Launch Dock \u2014 a 1,333-boat generative pixel collection. One hull, one sea, one storm, fixed by its number. An artwork. No token promises, no roadmap.",
+ "image": "https://stromboat.com/nft/images/junk-mythic.webp",
+ "attributes": [
+  {
+   "trait_type": "Hull",
+   "value": "Junk"
+  },
+  {
+   "trait_type": "Sea",
+   "value": "Eye of the Storm"
+  },
+  {
+   "trait_type": "Rarity",
+   "value": "Mythic"
+  },
+  {
+   "trait_type": "Lanterns",
+   "value": "The Great Lantern"
+  },
+  {
+   "trait_type": "Weather",
+   "value": "Dead calm \u2014 the Eye"
+  }
+ ]
+}
