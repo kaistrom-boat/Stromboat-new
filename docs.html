@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docs — How the Dock Works · STROMBOAT</title>
+<meta name="description" content="Stromboat minting docs: the free Agent ID lane (one Common), the paid lane (0.00144 BNB, Rare and up, max 7), agent calls, rarity and metadata.">
+<meta property="og:title" content="Docs — How the Dock Works · STROMBOAT">
+<meta property="og:description" content="Stromboat minting docs: the free Agent ID lane (one Common), the paid lane (0.00144 BNB, Rare and up, max 7), agent calls, rarity and metadata.">
+<meta property="og:image" content="https://stromboat.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://stromboat.com/og-image.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#06121c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#000;--deep:#06121c;--deep2:#081a29;--stone:#0e2233;--stone2:#14334d;--foam:#eaf6ff;--parch:#f2e3bb;--amber:#ffb03a;--amber2:#f5b630;--buoy:#ff5340;--ok:#7dff9a;--px:'Pixelify Sans',sans-serif;--silk:'Silkscreen',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--deep);color:var(--foam);font-family:var(--px);line-height:1.65}
+a{color:var(--amber2)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{border-bottom:3px solid var(--ink);background:#04101a;position:sticky;top:0;z-index:5}
+.hud{display:flex;align-items:center;gap:16px;padding:13px 0;flex-wrap:wrap}
+.logo{font-weight:700;font-size:21px;letter-spacing:2px;color:var(--foam);text-decoration:none}
+.logo span{color:var(--amber)}
+.hud nav{margin-left:auto;display:flex;gap:15px;flex-wrap:wrap}
+.hud nav a{color:#c8dde9;text-decoration:none;font-size:14px}
+.hud nav a:hover{color:var(--amber)}
+.hero{padding:44px 0 8px}
+.kicker{font-family:var(--silk);font-size:11px;letter-spacing:.22em;color:var(--amber)}
+h1{font-size:37px;line-height:1.15;margin:10px 0 8px}
+h1 .gold{color:var(--amber)}
+.lede{color:#c8dde9;max-width:640px}
+main{padding:26px 0 10px}
+h2{font-size:21px;margin:30px 0 10px;color:var(--amber)}
+h2:first-child{margin-top:0}
+p{margin:0 0 13px;color:#dbeaf3}
+ul,ol{margin:0 0 13px 22px;color:#dbeaf3}
+li{margin-bottom:6px}
+code,.mono{font-family:var(--silk);font-size:.92em;color:var(--parch)}
+.card{background:var(--stone);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:16px 18px;margin:16px 0}
+.card b{color:var(--amber)}
+table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:15px}
+th,td{border:1px solid var(--stone2);padding:8px 11px;text-align:left}
+th{font-family:var(--silk);font-size:11px;letter-spacing:.12em;color:var(--amber2);background:var(--deep2)}
+.addr{word-break:break-all;font-family:var(--silk);font-size:13px}
+.note{font-size:13.5px;color:#8fb0c4}
+footer{border-top:3px solid var(--ink);margin-top:44px;padding:26px 0 40px;background:#04101a}
+.footlinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-bottom:20px}
+.footlinks p{font-family:var(--silk);font-size:10px;letter-spacing:.18em;color:#8fb0c4;margin-bottom:8px}
+.footlinks a{display:block;color:#c8dde9;text-decoration:none;margin-bottom:5px;font-size:14.5px}
+.footlinks a:hover{color:var(--amber)}
+.warn{color:#fff;background:var(--buoy);border:3px solid var(--ink);box-shadow:0 5px 0 var(--ink);font-weight:600;font-size:14px;padding:12px 15px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hud">
+    <a class="logo" href="/">STROM<span>BOAT</span></a>
+    <nav>
+      <a href="/#mint">Dock</a><a href="/docs.html">Docs</a><a href="/about.html">About</a><a href="/contracts.html">Contracts</a><a href="https://x.com/stromboatcom" target="_blank" rel="noopener">X</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap hero">
+  <p class="kicker">▸ DOCS · THE LAUNCH DOCK</p>
+  <h1>How the dock <span class="gold">works.</span></h1>
+  <p class="lede">Everything a sailor — or an agent — needs to mint a Stromboat: two lanes, fixed rules, no surprises.</p>
+</div>
+<main class="wrap">
+
+<h2>The collection in one breath</h2>
+<p>Stromboat is a 1,333-token ERC-721 collection on BNB Chain. Four hulls (Dinghy, Junk, Longship, Lantern Raft) sail five seas, and every token's hull and sea were assigned by its number before launch: token IDs <b>1–667</b> are the free Common pool, IDs <b>668–1,333</b> are the paid rarities. Twenty artworks in total — every hull in every sea — served from this site under <code>/nft/images/</code>, with metadata under <code>/nft/metadata/</code>.</p>
+
+<h2>Two lanes, side by side</h2>
+<table>
+<tr><th></th><th>FREE LANE</th><th>PAID LANE</th></tr>
+<tr><td><b>Call</b></td><td><code>freeMint(agentId)</code></td><td><code>mint(quantity)</code></td></tr>
+<tr><td><b>Price</b></td><td>0 BNB</td><td>0.00144 BNB per boat</td></tr>
+<tr><td><b>Who</b></td><td>Binance Agent ID holders</td><td>Every wallet</td></tr>
+<tr><td><b>Limit</b></td><td>1 per wallet · 1 per Agent ID</td><td>7 per wallet</td></tr>
+<tr><td><b>Rarity</b></td><td>Common only (Calm Grey)</td><td>Rare / Epic / Legendary / Mythic only</td></tr>
+<tr><td><b>Token IDs</b></td><td>1–667</td><td>668–1,333</td></tr>
+</table>
+<p>Both lanes open at the same moment and never block each other. When the free pool is gone, the paid lane keeps sailing — and the other way around.</p>
+
+<h2>Minting with a wallet</h2>
+<ol>
+<li>Open the <a href="/#mint">Launch Terminal</a> on the home page and connect a wallet on BNB Chain (chain id 56). The page switches networks for you.</li>
+<li><b>Free:</b> type your Binance Agent ID number into the free lane and claim. Your wallet must own that Agent ID — the contract checks the official registry on-chain.</li>
+<li><b>Paid:</b> pick 1–7 boats and launch. The page reads the live price from the contract and sends exactly <code>price × quantity</code>.</li>
+<li>Your boat's art is fixed by its token number. The terminal reveals a fleet artwork as a preview; the exact piece lives in the token's metadata.</li>
+</ol>
+
+<h2>Minting with an agent</h2>
+<p>The <a href="/#agent">Agent Harbour Office</a> on the home page carries the copy-ready prompt and the <code>baw</code> CLI blocks for both lanes. In short:</p>
+<div class="card">
+<p><b>Free</b> — <code>freeMint(uint256)</code>, selector <code>0x7c928fe9</code>, argument = your Agent ID as a 32-byte word, value <b>0</b>.</p>
+<p style="margin:0"><b>Paid</b> — <code>mint(uint256)</code>, selector <code>0xa0712d68</code>, argument = quantity (1–7) as a 32-byte word, value = <code>currentPrice()</code> × quantity, read live from the contract.</p>
+</div>
+<p>The contract address is published on the <a href="/contracts.html">Contracts page</a> and wired into the home page the moment it is deployed. Never take an address from a DM or a reply.</p>
+
+<h2>Rarity — painted, not labelled</h2>
+<table>
+<tr><th>SEA</th><th>RARITY</th><th>COUNT</th><th>LANE</th></tr>
+<tr><td>Calm Grey</td><td>Common</td><td>667</td><td>Free</td></tr>
+<tr><td>Squall Teal</td><td>Rare</td><td>333</td><td>Paid</td></tr>
+<tr><td>Night Violet</td><td>Epic</td><td>200</td><td>Paid</td></tr>
+<tr><td>Thunder Gold</td><td>Legendary</td><td>107</td><td>Paid</td></tr>
+<tr><td>Eye of the Storm</td><td>Mythic</td><td>26</td><td>Paid</td></tr>
+</table>
+<p>The tier is painted into the sky, the sail, the lanterns and the water — a Legendary looks nothing like a Common. Hulls are spread evenly across every sea.</p>
+
+<h2>Checking a wallet</h2>
+<p>The Launch Terminal's wallet checker reads the contract directly: whether the free Common is still available to that wallet, and how many of its 7 paid boats remain. The contract also exposes <code>freeMinted()</code>, <code>paidMinted()</code>, <code>totalMinted()</code>, <code>currentPrice()</code> and <code>mintOpen()</code> for anyone — or any agent — to read.</p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footlinks">
+      <div><p>PROJECT</p><a href="/docs.html">Docs</a><a href="/about.html">About</a><a href="/contracts.html">Contracts</a></div>
+      <div><p>LEGAL</p><a href="/terms.html">Terms of Use</a><a href="/privacy.html">Privacy Policy</a><a href="/disclaimer.html">Disclaimer</a></div>
+      <div><p>SOCIAL</p><a href="https://x.com/stromboatcom" target="_blank" rel="noopener">X · @stromboatcom</a><a href="/">The Launch Dock</a></div>
+    </div>
+    <p class="warn">⚠ Never trust a mint link or contract address sent in DMs or replies. Only mint from stromboat.com.</p>
+  </div>
+</footer>
+
+</body>
+</html>

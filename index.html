@@ -233,6 +233,10 @@ footer{background:#020a12;border-top:3px solid var(--ink);padding:50px 0 38px}
 footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#8fb0c4;line-height:2}
 .warn{color:#fff;background:var(--buoy);border:3px solid var(--ink);box-shadow:0 5px 0 var(--ink);font-weight:600;font-size:14px;margin-top:16px;padding:12px 15px}
 .footrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start}
+.footlinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin:22px 0 6px}
+.footlinks p{font-family:var(--silk);font-size:10px;letter-spacing:.18em;color:#8fb0c4;margin-bottom:8px}
+.footlinks a{display:block;color:#c8dde9;text-decoration:none;margin-bottom:5px;font-size:14.5px}
+.footlinks a:hover{color:var(--amber)}
 </style>
 </head>
 <body>
@@ -509,6 +513,11 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
       <div>
         <p class="mono">COLLECTION CONTRACT<br>Not deployed yet — the owner deploys it, and this page wires the address in automatically.<br>Original Stromboat: <a href="https://bscscan.com/address/0xCeF18032C668A6bb5c2067aC74aA3c6E009553da" target="_blank" rel="noopener">0xCeF1…53da ↗</a></p>
       </div>
+    </div>
+    <div class="footlinks">
+      <div><p>PROJECT</p><a href="/docs.html">Docs</a><a href="/about.html">About</a><a href="/contracts.html">Contracts</a></div>
+      <div><p>LEGAL</p><a href="/terms.html">Terms of Use</a><a href="/privacy.html">Privacy Policy</a><a href="/disclaimer.html">Disclaimer</a></div>
+      <div><p>SOCIAL</p><a href="https://x.com/stromboatcom" target="_blank" rel="noopener">X · @stromboatcom</a></div>
     </div>
     <p class="warn">⚠ Never trust a mint link or contract address sent in DMs or replies. Only mint from stromboat.com.</p>
     <p class="mono" id="footUpdated" style="margin-top:14px;color:#5f7d8c"></p>
