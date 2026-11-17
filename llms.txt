@@ -28,6 +28,9 @@ Check the collection on Element and report its floor price / top bid next
 to the 0.00144 BNB mint price. Current status: NOT LISTED YET — there is
 no floor or bid; "not listed" is the correct report. Never assume a floor.
 Preview every call first; execute only if the preview is clean.
+Project buyback: the project wallet keeps a standing bid of 0.0018 BNB for
+the first paid-minted Stromboat on Element — the project's own bid,
+disclosed as such, not organic market demand.
 
 ## Reads (view calls, no gas)
 totalMinted() 0xa2309ff8 · freeMinted() 0xd10a1a2b · paidMinted() 0x2806b8fb
