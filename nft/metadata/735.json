@@ -1,0 +1,27 @@
+{
+ "name": "Stromboat #735",
+ "description": "The Launch Dock \u2014 a 1,333-boat generative pixel collection. One hull, one sea, one storm, fixed by its number. An artwork. No token promises, no roadmap.",
+ "image": "https://stromboat.com/nft/images/dinghy-rare.webp",
+ "attributes": [
+  {
+   "trait_type": "Hull",
+   "value": "Dinghy"
+  },
+  {
+   "trait_type": "Sea",
+   "value": "Squall Teal"
+  },
+  {
+   "trait_type": "Rarity",
+   "value": "Rare"
+  },
+  {
+   "trait_type": "Lanterns",
+   "value": "Two, lit"
+  },
+  {
+   "trait_type": "Weather",
+   "value": "Light rain"
+  }
+ ]
+}
