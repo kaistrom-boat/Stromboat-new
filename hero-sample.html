@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STROMBOAT · The Launch Dock — hero sample</title>
+<link rel="icon" href="https://stromboat.com/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#000; --deep:#06121c; --stone:#0e2233; --stone2:#14334d;
+  --foam:#eaf6ff; --parch:#f2e3bb; --amber:#ffb03a; --amber2:#f5b630;
+  --buoy:#ff5340; --sea:#2e7d86;
+  --px:'Pixelify Sans',sans-serif; --silk:'Silkscreen',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--deep);color:var(--foam);font-family:var(--px);overflow:hidden}
+button{font-family:inherit}
+
+/* ---------- loader ---------- */
+#loader{position:fixed;inset:0;z-index:100;background:var(--deep);display:flex;flex-direction:column;gap:16px;align-items:center;justify-content:center;transition:opacity .7s}
+#loader.done{opacity:0;pointer-events:none}
+#loader .lamp{width:16px;height:16px;background:var(--amber);border:3px solid var(--ink);box-shadow:0 0 34px 12px #ffb03a66;animation:flick 1s ease-in-out infinite alternate}
+@keyframes flick{from{opacity:.55}to{opacity:1}}
+#loader p{font-family:var(--silk);font-size:13px;letter-spacing:.22em;color:var(--parch)}
+
+/* ---------- scene ---------- */
+#scene{position:fixed;inset:0;width:100%;height:100%;image-rendering:pixelated}
+.vignette{position:fixed;inset:0;pointer-events:none;background:radial-gradient(90% 75% at 50% 42%,transparent 55%,#020a12cc 100%)}
+.glow{position:fixed;width:52vmin;height:52vmin;border-radius:50%;pointer-events:none;background:radial-gradient(circle,#ffb03a59,rgba(255,150,40,.10) 45%,transparent 70%);animation:flick 2.4s ease-in-out infinite alternate}
+.glow.l{left:-16vmin;bottom:6vmin}.glow.r{right:-14vmin;bottom:16vmin;animation-delay:-1.2s}
+.scan{position:fixed;inset:0;pointer-events:none;opacity:.5;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 2px,transparent 2px 34px),repeating-linear-gradient(90deg,rgba(0,0,0,.10) 0 2px,transparent 2px 68px)}
+
+/* ---------- HUD ---------- */
+.hud{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;gap:12px;padding:14px 18px;flex-wrap:wrap}
+.logo{font-family:var(--silk);font-weight:700;font-size:19px;letter-spacing:.06em;color:var(--foam);text-shadow:3px 3px 0 var(--ink)}
+.logo span{color:var(--amber)}
+.season{font-family:var(--silk);font-size:10.5px;letter-spacing:.14em;color:var(--parch);border:2px solid var(--ink);background:#0e2233cc;padding:6px 10px;box-shadow:0 3px 0 var(--ink)}
+.hud .sp{flex:1}
+.chip{font-family:var(--silk);font-size:11px;color:var(--foam);border:2px solid var(--ink);background:#0e2233cc;padding:7px 11px;box-shadow:0 3px 0 var(--ink)}
+.chip b{color:var(--amber2);font-weight:700}
+.chip.live b{color:#7dff9a}
+.btn{font-family:var(--silk);font-size:12px;letter-spacing:.05em;padding:11px 16px;border:3px solid var(--ink);box-shadow:0 4px 0 var(--ink);cursor:pointer;background:var(--amber);color:#221100;transition:transform .06s,box-shadow .06s}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.btn.ghost{background:var(--stone2);color:var(--foam)}
+
+/* ---------- stage ---------- */
+.stage{position:fixed;inset:0;z-index:10;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:4vw;padding:96px 5vw 120px;max-width:1360px;margin:0 auto;left:0;right:0}
+@media(max-width:880px){.stage{grid-template-columns:1fr;padding-top:118px;align-content:start;overflow-y:auto}}
+.kicker{font-family:var(--silk);font-size:11px;letter-spacing:.26em;color:var(--amber);text-shadow:2px 2px 0 var(--ink)}
+h1{font-size:clamp(44px,6.6vw,84px);line-height:1.04;font-weight:700;text-shadow:4px 4px 0 var(--ink);margin:16px 0 6px}
+h1 .gold{color:var(--amber2)}
+.lede{font-size:clamp(16px,1.7vw,19.5px);color:#cfe4f2;max-width:520px;line-height:1.55;text-shadow:1px 1px 0 var(--ink)}
+.lede b{color:#fff}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn.big{font-size:14px;padding:15px 22px}
+.btn.red{background:var(--buoy);color:#fff}
+.note{font-family:var(--silk);font-size:10.5px;color:#9db8c8;letter-spacing:.12em;margin-top:18px}
+
+/* shrouded boat — the "slab" of this world */
+.dockside{display:flex;flex-direction:column;align-items:center;gap:16px}
+.shroud{position:relative;width:min(320px,70vw);aspect-ratio:3/3.6;background:
+  repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 3px,transparent 3px 26px),
+  linear-gradient(160deg,#7d99ad,#55738c 55%,#39536b);
+  clip-path:polygon(10% 0,90% 0,100% 7%,100% 100%,0 100%,0 7%);
+  box-shadow:0 30px 60px rgba(0,0,0,.6);animation:bob 3.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px) rotate(-.5deg)}}
+.shroud-in{position:absolute;inset:8%;border:3px solid rgba(8,24,38,.6);box-shadow:inset 0 0 0 6px rgba(230,245,255,.10),inset 0 0 44px rgba(0,0,0,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.shroud-in .q{font-family:var(--silk);font-weight:700;font-size:110px;color:#0a1f30;opacity:.75;line-height:1;text-shadow:0 2px 0 rgba(240,250,255,.25)}
+.shroud-in small{font-family:var(--silk);font-size:10px;letter-spacing:.24em;color:#0a1f30cc}
+.plaque{background:linear-gradient(180deg,#8a5a2a,#6e4420);border:3px solid var(--ink);box-shadow:0 5px 0 var(--ink);padding:11px 18px;text-align:center;max-width:340px}
+.plaque b{font-family:var(--silk);font-size:12.5px;letter-spacing:.1em;color:#ffe9bd;display:block}
+.plaque span{font-size:13.5px;color:#e8cf9f}
+
+/* ---------- harbour log (missions strip) ---------- */
+.log{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:0 18px 16px}
+.log-in{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:12px;align-items:stretch}
+@media(max-width:880px){.log-in{grid-template-columns:1fr 1fr}}
+.log h4{font-family:var(--silk);font-size:11px;letter-spacing:.18em;color:var(--parch);border:2px solid var(--ink);background:#0e2233d9;padding:12px;box-shadow:0 3px 0 var(--ink);display:flex;align-items:center}
+.quest{border:2px solid var(--ink);background:#0e2233d9;padding:10px 13px;box-shadow:0 3px 0 var(--ink);display:flex;gap:11px;align-items:center}
+.quest .n{font-family:var(--silk);font-weight:700;font-size:15px;color:var(--amber);border:2px solid var(--ink);background:var(--stone2);width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex:none}
+.quest b{display:block;font-size:14.5px;line-height:1.25}
+.quest span{font-size:12.5px;color:#9db8c8;line-height:1.3;display:block}
+.sample-tag{position:fixed;right:16px;bottom:108px;z-index:30;font-family:var(--silk);font-size:10px;letter-spacing:.16em;color:#08131d;background:var(--amber);border:2px solid var(--ink);padding:6px 10px;box-shadow:0 3px 0 var(--ink);transform:rotate(-3deg)}
+@media(max-width:880px){.sample-tag{bottom:auto;top:64px}}
+</style>
+</head>
+<body>
+
+<div id="loader"><div class="lamp"></div><p>LIGHTING THE LANTERNS…</p></div>
+
+<canvas id="scene"></canvas>
+<div class="vignette"></div>
+<div class="glow l"></div><div class="glow r"></div>
+<div class="scan"></div>
+
+<header class="hud">
+  <div class="logo">STROM<span>BOAT</span></div>
+  <div class="season">SEASON OF THE LONG STORM · SERIES I</div>
+  <div class="sp"></div>
+  <div class="chip live">⛵ FLEET <b id="hudFleet">… / 3,333</b></div>
+  <div class="chip">PRICE <b id="hudPrice">… BNB</b></div>
+  <button class="btn" type="button" onclick="document.getElementById('sampleNote').textContent='▸ SAMPLE ONLY — connect lives in the full build'">Connect</button>
+</header>
+
+<main class="stage">
+  <div>
+    <p class="kicker">▸ THE LAUNCH DOCK · BNB CHAIN</p>
+    <h1>Small boats.<br><span class="gold">Endless storms.</span></h1>
+    <p class="lede"><b>3,333 generative pixel boats.</b> Every Stromboat leaves this dock exactly once — one hull, one sail, one lantern, and the storm it was born into, fixed forever by a single seed.</p>
+    <div class="cta">
+      <button class="btn big red" type="button" onclick="document.getElementById('sampleNote').textContent='▸ SAMPLE ONLY — the full build launches mint(quantity) here'">⚓ Launch a boat</button>
+      <button class="btn big ghost" type="button" onclick="document.getElementById('sampleNote').textContent='▸ SAMPLE ONLY — agent prompt + baw CLI live in the full build'">&lt;/&gt; Agent mint</button>
+    </div>
+    <p class="note" id="sampleNote">MAX 4 PER WALLET · PRICE READ LIVE FROM THE CONTRACT · AGENTIC WALLETS WELCOME</p>
+  </div>
+
+  <div class="dockside">
+    <div class="shroud"><div class="shroud-in"><div class="q">?</div><small>UNDER THE TARP</small></div></div>
+    <div class="plaque"><b>YOUR BOAT IS ALREADY HERE</b><span>Its hull, sea and storm were decided by its number — the tarp only comes off at mint.</span></div>
+  </div>
+</main>
+
+<div class="sample-tag">HERO SAMPLE v4</div>
+
+<footer class="log">
+  <div class="log-in">
+    <h4>HARBOUR<br>LOG</h4>
+    <div class="quest"><div class="n">1</div><div><b>Connect a wallet</b><span>Binance Agentic Wallet or any EOA — contracts are turned away.</span></div></div>
+    <div class="quest"><div class="n">2</div><div><b>Read the tide</b><span>The price is read live from the contract. No surprises at signing.</span></div></div>
+    <div class="quest"><div class="n">3</div><div><b>Launch 1–4 boats</b><span>One <span style="font-family:var(--silk);font-size:11px">mint(quantity)</span> call. The tarp comes off. The storm is yours.</span></div></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* live harbour numbers — same contract logic as stromboat.com */
+  var C = "0xCeF18032C668A6bb5c2067aC74aA3c6E009553da";
+  var RPCS = ["https://bsc-rpc.publicnode.com","https://bsc-dataseed.bnbchain.org","https://bsc.drpc.org"];
+  function call(d){
+    var i = 0;
+    function t(){
+      return fetch(RPCS[i], {method:"POST", headers:{"content-type":"application/json"}, body:JSON.stringify({jsonrpc:"2.0", id:1, method:"eth_call", params:[{to:C, data:d}, "latest"]})})
+      .then(function(r){ return r.json(); }).then(function(j){ if(!j.result) throw 0; return BigInt(j.result); })
+      .catch(function(e){ if(++i < RPCS.length) return t(); throw e; });
+    }
+    return t();
+  }
+  function bnb(w){ var s = w.toString().padStart(19,"0"), a = s.slice(0,-18), b = s.slice(-18).replace(/0+$/,""); return a + (b ? "." + b : ""); }
+  Promise.all([call("0xa2309ff8"), call("0x9d1b464a")]).then(function(v){
+    document.getElementById("hudFleet").textContent = Number(v[0]).toLocaleString("en") + " / 3,333";
+    document.getElementById("hudPrice").textContent = bnb(v[1]) + " BNB";
+  }).catch(function(){});
+  setTimeout(function(){ document.getElementById("loader").classList.add("done"); }, 900);
+
+  /* ---------- coded pixel harbour scene ---------- */
+  var cv = document.getElementById("scene"), ctx = cv.getContext("2d");
+  var W, H, f = 0, drops = [];
+  function size(){ W = cv.width = Math.ceil(innerWidth / 5); H = cv.height = Math.ceil(innerHeight / 5); }
+  size(); addEventListener("resize", size);
+  for(var i = 0; i < 80; i++) drops.push({x:Math.random(), y:Math.random(), s:1 + Math.random()});
+  function R(x, y, w, h, c){ ctx.fillStyle = c; ctx.fillRect(x, y, w, h); }
+  function boat(bx, by, sail){
+    /* hull */
+    R(bx, by, 34, 4, "#6e4420"); R(bx + 2, by + 4, 30, 3, "#54331a"); R(bx + 5, by + 7, 24, 2, "#3c2412");
+    R(bx, by, 4, 2, "#8a5a2a"); R(bx + 30, by, 4, 2, "#8a5a2a");
+    /* mast + sail */
+    R(bx + 16, by - 20, 2, 20, "#3c2412");
+    ctx.fillStyle = sail;
+    for(var r = 0; r < 16; r++){ R(bx + 18, by - 19 + r, Math.floor((16 - r) * .8), 1, sail); }
+    for(var r2 = 0; r2 < 12; r2++){ R(bx + 15 - Math.floor((12 - r2) * .55), by - 18 + r2, Math.floor((12 - r2) * .55), 1, "#d8e6ee"); }
+    /* lantern */
+    var fl = .75 + Math.sin(f * .35) * .25;
+    ctx.globalAlpha = fl; R(bx + 31, by - 6, 2, 3, "#ffb03a"); ctx.globalAlpha = 1;
+    R(bx + 30, by - 7, 4, 1, "#000");
+  }
+  function frame(){
+    f++;
+    /* sky */
+    var g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, "#040d16"); g.addColorStop(.62, "#0a2438"); g.addColorStop(1, "#0e2f47");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    /* stars + moon */
+    ctx.fillStyle = "#ffffff66";
+    for(var s = 0; s < 34; s++){ if(((s * 7 + (f >> 4)) % 6)) ctx.fillRect((s * 41) % W, (s * 29) % Math.floor(H * .4), 1, 1); }
+    R(W - 30, 8, 10, 10, "#f2e3bb"); R(W - 30, 8, 4, 4, "#fff6da");
+    /* lighthouse, far left, sweeping beam */
+    var lx = 12, ly = Math.floor(H * .52);
+    R(lx, ly - 26, 7, 26, "#12293d"); R(lx - 1, ly - 29, 9, 3, "#000"); R(lx + 2, ly - 28, 3, 3, "#ffb03a");
+    var beam = Math.sin(f * .011) * .5 + .5;
+    ctx.globalAlpha = .10 + beam * .10; ctx.fillStyle = "#ffe9a8";
+    ctx.beginPath(); ctx.moveTo(lx + 3, ly - 27); ctx.lineTo(lx + 90 + beam * 60, ly - 34 - beam * 10); ctx.lineTo(lx + 90 + beam * 60, ly - 12 + beam * 6); ctx.closePath(); ctx.fill(); ctx.globalAlpha = 1;
+    /* rain */
+    ctx.fillStyle = "#9fd4e888";
+    drops.forEach(function(d){ ctx.fillRect(Math.floor(d.x * W), Math.floor(d.y * H), 1, 3); d.y += .014 * d.s; d.x -= .002 * d.s; if(d.y > 1){ d.y = -.02; d.x = Math.random(); } });
+    /* waves */
+    var layers = [ {y:.66, a:2, sp:.8, c:"#17506b"}, {y:.74, a:3, sp:-.55, c:"#0f3a56"}, {y:.83, a:3, sp:.4, c:"#0a2a42"}, {y:.92, a:2, sp:-.28, c:"#06182a"} ];
+    layers.forEach(function(L, li){
+      ctx.fillStyle = L.c; ctx.beginPath(); ctx.moveTo(0, H);
+      for(var x = 0; x <= W; x += 4){ var y = Math.floor(H * L.y + Math.sin(x * .085 + f * .05 * L.sp + li * 2.1) * L.a); ctx.lineTo(x, y); ctx.lineTo(x + 4, y); }
+      ctx.lineTo(W, H); ctx.closePath(); ctx.fill();
+      if(li === 1){ ctx.fillStyle = "#eaf6ff55"; for(var fx = 6; fx < W; fx += 26){ var fy = Math.floor(H * L.y + Math.sin(fx * .085 + f * .05 * L.sp + li * 2.1) * L.a); ctx.fillRect(fx, fy - 1, 5, 1); } }
+    });
+    /* the fleet: two small boats riding */
+    boat(Math.floor(W * .16), Math.floor(H * .70 + Math.sin(f * .05) * 2), "#f2e3bb");
+    boat(Math.floor(W * .68), Math.floor(H * .76 + Math.cos(f * .042) * 2), "#ff8a6a");
+    /* dock planks, bottom right */
+    var dy = Math.floor(H * .93);
+    R(Math.floor(W * .55), dy, Math.floor(W * .45), 3, "#4a3016");
+    for(var p = 0; p < 7; p++) R(Math.floor(W * .55) + p * Math.floor(W * .065), dy, 2, Math.floor(H * .07), "#33200e");
+    R(Math.floor(W * .90), dy - 12, 2, 12, "#33200e"); R(Math.floor(W * .90) - 1, dy - 14, 4, 3, "#ffb03a");
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+</script>
+</body>
+</html>

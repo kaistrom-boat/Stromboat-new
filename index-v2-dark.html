@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stromboat — Mint · Small boats. Endless storms.</title>
+<meta name="description" content="Mint a Stromboat on BNB Chain. 3,333 generative NFTs — one hull, one sail, one lantern, and the storm it was born into. Live price from the contract, max 4 per wallet.">
+<meta property="og:title" content="Stromboat — Mint">
+<meta property="og:description" content="3,333 generative boats on BNB Chain. One boat, one storm, one seed. Mint open.">
+<meta property="og:image" content="img/stromboat-hero.webp">
+<link rel="icon" href="https://stromboat.com/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04101b; --bg2:#071a2a; --panel:#0a2133cc; --panel-solid:#0a2133;
+  --line:#ffffff1c; --line2:#ffffff30;
+  --txt:#eef4f1; --mut:#9db4bc; --dim:#6f8b96;
+  --gold:#f0b84a; --gold2:#ffd97a; --teal:#3ec6ba; --teal2:#7de8dc;
+  --ok:#4ade80; --bad:#fb7185;
+  --r:20px; --font:'Space Grotesk',system-ui,sans-serif; --serif:'Fraunces',Georgia,serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--font);line-height:1.6;overflow-x:hidden}
+::selection{background:var(--gold);color:#231703}
+a{color:var(--teal2)}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.mono{font-family:var(--mono)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- coded storm background ---------- */
+#stormCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#flash{position:absolute;inset:0;background:#cfe8ff;opacity:0;pointer-events:none;z-index:1}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
+
+/* ---------- nav ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.scrolled{background:#04101bd9;backdrop-filter:blur(14px);border-color:var(--line)}
+.nav{display:flex;align-items:center;gap:16px;padding:15px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--txt);text-decoration:none;font-weight:700;letter-spacing:.18em;font-size:16px}
+.brand .lamp{width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px 4px #f0b84a88;animation:pulse 2.6s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 10px 2px #f0b84a66}50%{box-shadow:0 0 20px 7px #f0b84a99}}
+.brand span{color:var(--gold)}
+.nav nav{margin-left:auto;display:flex;gap:22px}
+.nav nav a{color:var(--mut);text-decoration:none;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase}
+.nav nav a:hover{color:var(--txt)}
+@media(max-width:760px){.nav nav{display:none}}
+.pill{font-family:var(--mono);font-size:11.5px;border:1px solid var(--line2);border-radius:999px;padding:5px 12px;color:var(--mut);white-space:nowrap}
+.pill.live{border-color:#4ade8066;color:var(--ok)}
+.pill .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:6px;animation:pulse 2s infinite}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:linear-gradient(180deg,#030b14 0%,#071a2a 55%,#0a2a3f 100%)}
+.hero-inner{padding:150px 0 34px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);display:flex;align-items:center;gap:14px}
+.kicker::before{content:"";width:44px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--serif);font-weight:340;font-size:clamp(52px,9.5vw,118px);line-height:.98;letter-spacing:-.01em;margin:20px 0 18px}
+.hero h1 em{font-style:italic;font-weight:560;background:linear-gradient(100deg,var(--gold2),var(--gold) 55%,#c77f2a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{max-width:590px;font-size:clamp(16px,2vw,19px);color:#c3d4d8}
+.hero .lede b{color:var(--txt);font-weight:600}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 8px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;border:1px solid var(--line2);font-family:var(--font);font-size:16px;font-weight:600;cursor:pointer;text-decoration:none;color:var(--txt);background:#ffffff0d;transition:transform .18s,box-shadow .18s,background .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:linear-gradient(120deg,var(--gold2),var(--gold));color:#231703;border-color:transparent;box-shadow:0 12px 34px #f0b84a38}
+.btn.gold:hover{box-shadow:0 18px 44px #f0b84a55}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:34px 0 46px;backdrop-filter:blur(8px)}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:#071a2acc;padding:18px 20px}
+.stat b{display:block;font-family:var(--serif);font-size:30px;font-weight:500;line-height:1.1}
+.stat small{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+
+/* ---------- marquee ---------- */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#030b14;overflow:hidden;padding:13px 0;position:relative;z-index:2}
+.marquee .track{display:flex;gap:0;width:max-content;animation:mq 30s linear infinite;font-family:var(--mono);font-size:13px;letter-spacing:.22em;color:var(--dim);text-transform:uppercase;white-space:nowrap}
+.marquee span{padding:0 22px}
+.marquee b{color:var(--gold);font-weight:500}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0;position:relative}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head .no{font-family:var(--mono);font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--teal)}
+.sec-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5vw,54px);line-height:1.08;margin:12px 0 12px}
+.sec-head h2 em{font-style:italic;color:var(--gold2)}
+.sec-head p{color:var(--mut);font-size:17px}
+
+/* ---------- mint ---------- */
+#mint{background:radial-gradient(1000px 480px at 85% -10%,#f0b84a17,transparent 60%),radial-gradient(900px 500px at 0% 110%,#3ec6ba14,transparent 60%),linear-gradient(180deg,#030b14,var(--bg2))}
+.mintgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+@media(max-width:900px){.mintgrid{grid-template-columns:1fr}}
+.showcase{position:relative;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-height:480px;background:#000}
+.showcase img.art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;transition:opacity .7s,transform 8s}
+.showcase:hover img.art{transform:scale(1.05)}
+.showcase .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,#020a12e6)}
+.showcase .meta{position:absolute;left:0;right:0;bottom:0;padding:24px;z-index:2}
+.showcase .meta .tag{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--gold2);text-transform:uppercase}
+.showcase .meta h3{font-family:var(--serif);font-size:34px;font-weight:500;margin:4px 0 8px}
+.traits{display:flex;gap:8px;flex-wrap:wrap}
+.traits span{font-family:var(--mono);font-size:11.5px;border:1px solid var(--line2);background:#04101b99;border-radius:999px;padding:4px 11px;color:#d7e5e8}
+.dots{position:absolute;top:18px;right:18px;display:flex;gap:7px;z-index:2}
+.dots i{width:8px;height:8px;border-radius:50%;background:#ffffff40;cursor:pointer}
+.dots i.on{background:var(--gold)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:30px;backdrop-filter:blur(14px);display:flex;flex-direction:column}
+.panel h3{font-family:var(--serif);font-size:26px;font-weight:500}
+.panel .sub{color:var(--mut);font-size:13.5px;margin-top:3px}
+.panel .sub a{font-family:var(--mono);font-size:12.5px}
+.progress{margin:24px 0 6px}
+.progress .bar{height:10px;border-radius:99px;background:#ffffff14;overflow:hidden}
+.progress .bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--teal),var(--gold));transition:width 1s cubic-bezier(.2,.7,.2,1)}
+.progress .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12.5px;color:var(--mut);margin-top:9px}
+.progress .row b{color:var(--txt);font-weight:600}
+.pricerow{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-top:1px dashed var(--line2);border-bottom:1px dashed var(--line2);margin:18px 0}
+.pricerow small{font-family:var(--mono);letter-spacing:.16em;text-transform:uppercase;font-size:11px;color:var(--dim)}
+.pricerow b{font-family:var(--serif);font-size:30px;font-weight:500}
+.qtyrow{display:flex;align-items:center;gap:16px;margin:6px 0 4px}
+.stepper{display:flex;align-items:center;gap:4px;border:1px solid var(--line2);border-radius:999px;padding:4px}
+.stepper button{width:40px;height:40px;border-radius:50%;border:none;background:#ffffff10;color:var(--txt);font-size:20px;cursor:pointer;transition:background .15s}
+.stepper button:hover{background:var(--gold);color:#231703}
+.stepper output{font-family:var(--serif);font-size:26px;min-width:38px;text-align:center}
+.qtyrow small{color:var(--dim);font-size:13px}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 20px}
+.total span{color:var(--mut)} .total b{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--gold2)}
+.panel .btn{width:100%;justify-content:center}
+.panel .btn + .btn{margin-top:11px}
+.btn.ghosty{background:transparent}
+.log{font-family:var(--mono);font-size:12.5px;line-height:1.7;background:#020a12;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:18px;min-height:66px;color:#a9c6ad;white-space:pre-wrap;word-break:break-word}
+.log .bad{color:var(--bad)} .log a{color:var(--gold2)}
+.note{font-size:13px;color:var(--dim);margin-top:14px}
+.checkrow{display:flex;gap:9px;margin-top:20px}
+.checkrow input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line2);border-radius:11px;font-family:var(--mono);font-size:12.5px;background:#020a12;color:var(--txt)}
+.checkrow button{padding:12px 18px;border-radius:11px;border:1px solid var(--line2);background:#ffffff0d;color:var(--txt);cursor:pointer;font-family:var(--font);font-weight:600}
+.checkout{font-family:var(--mono);font-size:12.5px;margin-top:9px;color:var(--mut)}
+
+/* ---------- steps / hulls / seas ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.step{border:1px solid var(--line);border-radius:var(--r);padding:26px;background:linear-gradient(180deg,#ffffff08,#ffffff02);transition:transform .25s,border-color .25s}
+.step:hover{transform:translateY(-5px);border-color:#f0b84a55}
+.step .n{font-family:var(--mono);color:var(--gold);font-size:13px;letter-spacing:.2em}
+.step h4{font-family:var(--serif);font-size:22px;font-weight:500;margin:10px 0 7px}
+.step p{color:var(--mut);font-size:14.5px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:900px){.grid4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.grid4{grid-template-columns:1fr}}
+.tile{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--panel-solid);transition:transform .3s,border-color .3s,box-shadow .3s}
+.tile:hover{transform:translateY(-7px);border-color:#3ec6ba66;box-shadow:0 24px 50px #00000070}
+.tile .im{overflow:hidden}
+.tile img{width:100%;aspect-ratio:1;object-fit:cover;image-rendering:pixelated;transition:transform .6s}
+.tile:hover img{transform:scale(1.08)}
+.tile .t{padding:17px 19px}
+.tile h4{font-family:var(--serif);font-weight:500;font-size:20px}
+.tile p{color:var(--mut);font-size:14px;margin-top:3px}
+.tile .fig{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.18em;text-transform:uppercase}
+.searow{display:flex;align-items:center;gap:16px;padding:16px 4px;border-bottom:1px solid var(--line)}
+.searow img{width:56px;height:56px;border-radius:12px;object-fit:cover;image-rendering:pixelated;flex:none;border:1px solid var(--line)}
+.searow .nm{width:180px;flex:none}
+.searow .nm b{font-family:var(--serif);font-weight:500;font-size:19px;display:block}
+.searow .nm small{color:var(--dim);font-size:12.5px}
+.searow .bar2{flex:1;height:8px;background:#ffffff10;border-radius:99px;overflow:hidden}
+.searow .bar2 i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--teal),var(--teal2));transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.searow.gold .bar2 i{background:linear-gradient(90deg,#c77f2a,var(--gold2))}
+.searow .pc{font-family:var(--mono);font-size:13px;width:118px;text-align:right;flex:none;color:var(--mut)}
+@media(max-width:600px){.searow .nm{width:118px}.searow .pc{width:88px;font-size:11.5px}}
+
+/* ---------- agent / terminal ---------- */
+#agent{background:linear-gradient(180deg,var(--bg2),#030b14)}
+.term{background:#02090f;border:1px solid var(--line2);border-radius:16px;overflow:hidden;box-shadow:0 30px 70px #00000080}
+.term .bar2{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#071522;border-bottom:1px solid var(--line)}
+.term .bar2 i{width:12px;height:12px;border-radius:50%}
+.term .bar2 .fn{margin-left:10px;font-family:var(--mono);font-size:12px;color:var(--dim)}
+.term .tabs{margin-left:auto;display:flex;gap:6px}
+.term .tabs button{font-family:var(--mono);font-size:12px;padding:6px 13px;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--mut);cursor:pointer}
+.term .tabs button.on{background:#ffffff10;border-color:var(--line2);color:var(--txt)}
+.term pre{padding:22px;font-family:var(--mono);font-size:13px;line-height:1.75;overflow-x:auto;color:#c9d8ce;min-height:238px}
+.term .cm{color:#5f7d72}.term .kw{color:var(--gold2)}.term .st{color:#8fd0ff}.term .fn2{color:var(--teal2)}
+.termfoot{display:flex;align-items:center;gap:12px;padding:13px 16px;border-top:1px solid var(--line);background:#071522}
+.copybtn{padding:9px 18px;border-radius:9px;border:1px solid #3ec6ba66;color:var(--teal2);background:transparent;cursor:pointer;font-family:var(--font);font-weight:600;font-size:14px}
+.copybtn:hover{background:#3ec6ba18}
+.termfoot small{color:var(--dim);font-size:12.5px}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+@media(max-width:820px){.flow{grid-template-columns:1fr}}
+
+/* ---------- faq / footer ---------- */
+details{border:1px solid var(--line);border-radius:14px;padding:19px 22px;margin-bottom:12px;background:#ffffff05;transition:border-color .2s}
+details[open]{border-color:#f0b84a44}
+summary{cursor:pointer;font-family:var(--serif);font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--gold);font-family:var(--mono)}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin-top:9px;max-width:700px}
+footer{background:#02090f;border-top:1px solid var(--line);padding:52px 0 40px}
+footer .brand{font-size:15px}
+footer .mono{font-size:12px;word-break:break-all;color:var(--mut)}
+.warn{color:var(--gold);font-size:14px;margin-top:12px;border:1px solid #f0b84a33;background:#f0b84a0d;border-radius:11px;padding:12px 15px}
+.footrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:flex-start}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="lamp"></span>STROM<span>BOAT</span></a>
+    <span class="pill live" id="hdrStatus"><span class="dot"></span>Reading contract…</span>
+    <nav>
+      <a href="#mint">Mint</a><a href="#hulls">Hulls</a><a href="#seas">Seas</a>
+      <a href="#gallery">Gallery</a><a href="#agent">Agents</a><a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO · coded storm -->
+<div class="hero" id="top">
+  <canvas id="stormCanvas" aria-hidden="true"></canvas>
+  <div id="flash"></div>
+  <div class="wrap hero-inner">
+    <p class="kicker">Series I · Generative · BNB Chain</p>
+    <h1>Small boats.<br><em>Endless storms.</em></h1>
+    <p class="lede"><b>3,333 generative NFTs.</b> Every Stromboat is one token: one hull, one sail, one lantern — and the storm it was born into, fixed forever by a single seed.</p>
+    <div class="cta">
+      <a class="btn gold" href="#mint">Mint a Stromboat ↓</a>
+      <a class="btn" href="#agent">&lt;/&gt; Mint with an agent</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>3,333</b><small>Total works</small></div>
+      <div class="stat"><b id="stMinted">…</b><small>Minted on-chain</small></div>
+      <div class="stat"><b id="stPrice">…</b><small>Per boat · live</small></div>
+      <div class="stat"><b>4</b><small>Hulls</small></div>
+      <div class="stat"><b>5</b><small>Seas</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="mqTrack"></div></div>
+
+<!-- MINT -->
+<section id="mint">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="no">01 · Mint</p>
+      <h2>Claim your boat<br>before the <em>storm takes it.</em></h2>
+      <p>One call, straight from your wallet. The page reads the price from the contract itself — your wallet always shows the exact value before you sign.</p>
+    </div>
+    <div class="mintgrid">
+      <div class="showcase reveal">
+        <img class="art" id="showImg" src="img/storm-junk.webp" alt="Featured Stromboat artwork">
+        <div class="dots" id="showDots"></div>
+        <div class="shade"></div>
+        <div class="meta">
+          <p class="tag" id="showTag">Featured work</p>
+          <h3 id="showName">Junk · Thunder Gold</h3>
+          <div class="traits" id="showTraits"></div>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <h3>Stromboat · Series I</h3>
+        <p class="sub">Contract <a href="https://bscscan.com/address/0xCeF18032C668A6bb5c2067aC74aA3c6E009553da" target="_blank" rel="noopener">0xCeF1…53da ↗</a> · BNB Chain (56) · $STORM</p>
+        <div class="progress">
+          <div class="bar"><i id="barFill"></i></div>
+          <div class="row"><span><b id="sbMinted">…</b> minted</span><span id="sbPct">…</span><span><b id="sbLeft">…</b> remaining</span></div>
+        </div>
+        <div class="pricerow"><small>Price per boat</small><b id="sbPrice">…</b></div>
+        <div class="qtyrow">
+          <div class="stepper">
+            <button type="button" id="qMinus" aria-label="Less">−</button>
+            <output id="qVal">1</output>
+            <button type="button" id="qPlus" aria-label="More">+</button>
+          </div>
+          <small>boat(s) — max 4 per wallet, ever</small>
+        </div>
+        <div class="total"><span>Total due</span><b id="sbTotal">…</b></div>
+        <button class="btn ghosty" id="btnConnect" type="button">Connect wallet</button>
+        <button class="btn gold" id="btnMint" type="button" disabled>Mint — connect wallet first</button>
+        <div class="log" id="mintStatus">&gt; awaiting connection…</div>
+        <div class="checkrow">
+          <input id="sbAddr" placeholder="Check a wallet · 0x…" spellcheck="false">
+          <button type="button" id="sbCheck">Check</button>
+        </div>
+        <p class="checkout" id="sbCheckOut"></p>
+        <p class="note">Use a normal wallet or a Binance Agentic Wallet — the contract turns away other contracts on-chain. Quantity 1–4 per call.</p>
+      </div>
+    </div>
+
+    <div class="steps" style="margin-top:26px">
+      <div class="step reveal"><p class="n">STEP 01</p><h4>Connect on BNB Chain</h4><p>MetaMask, Binance Wallet, or any EOA wallet. The page switches you to chain 56 automatically.</p></div>
+      <div class="step reveal"><p class="n">STEP 02</p><h4>Pick 1–4 and mint</h4><p>The page reads <span class="mono">currentPrice()</span> live and sends exactly price × quantity with <span class="mono">mint(quantity)</span>.</p></div>
+      <div class="step reveal"><p class="n">STEP 03</p><h4>Your storm is fixed</h4><p>Each token number decides its sea and hull on-chain. Nothing is curated after the fact.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HULLS -->
+<section id="hulls" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="no">02 · Hulls</p>
+      <h2>Four kinds of <em>hull.</em></h2>
+    </div>
+    <div class="grid4">
+      <div class="tile reveal"><div class="im"><img src="img/storm-dinghy.webp" alt="A dinghy with a lit lantern on a teal wave under violet lightning"></div><div class="t"><p class="fig">Hull · 01</p><h4>Dinghy</h4><p>Small and stubborn. Rides every wave.</p></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-junk.webp" alt="A red-sailed junk in a golden lightning storm"></div><div class="t"><p class="fig">Hull · 02</p><h4>Junk</h4><p>Battened sails. Built for long nights.</p></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-longship.webp" alt="A longship in violet midnight swells"></div><div class="t"><p class="fig">Hull · 03</p><h4>Longship</h4><p>Narrow and fast. Cuts through swells.</p></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-eye-raft.webp" alt="A lantern raft in the calm eye of a hurricane"></div><div class="t"><p class="fig">Hull · 04</p><h4>Lantern Raft</h4><p>Barely a boat. Always glowing.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEAS -->
+<section id="seas" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="no">03 · Seas</p>
+      <h2>Five seas. <em>One seed decides.</em></h2>
+      <p>How often each sea rises from a seed, and roughly how many of the 3,333.</p>
+    </div>
+    <div class="reveal">
+      <div class="searow"><img src="img/storm-calm-grey.webp" alt="Calm Grey sea"><span class="nm"><b>Calm Grey</b><small>The quiet water</small></span><span class="bar2"><i data-w="50"></i></span><span class="pc">50% · ~1,667</span></div>
+      <div class="searow"><img src="img/storm-squall-junk.webp" alt="Squall Teal sea"><span class="nm"><b>Squall Teal</b><small>Wind picking up</small></span><span class="bar2"><i data-w="25"></i></span><span class="pc">25% · ~833</span></div>
+      <div class="searow"><img src="img/storm-violet-dinghy.webp" alt="Night Violet sea"><span class="nm"><b>Night Violet</b><small>Lightning country</small></span><span class="bar2"><i data-w="15"></i></span><span class="pc">15% · ~500</span></div>
+      <div class="searow gold"><img src="img/storm-junk.webp" alt="Thunder Gold sea"><span class="nm"><b>Thunder Gold</b><small>The loud sea</small></span><span class="bar2"><i data-w="8"></i></span><span class="pc">8% · ~267</span></div>
+      <div class="searow gold"><img src="img/storm-eye-raft.webp" alt="Eye of the Storm"><span class="nm"><b>Eye of the Storm</b><small>The sea goes still</small></span><span class="bar2"><i data-w="2"></i></span><span class="pc">2% · ~67</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="no">04 · Gallery</p>
+      <h2>Featured <em>works.</em></h2>
+      <p>Every hull, across all five seas. Series I is painted from nine pixel artworks — boats of the same sea and hull share a picture, each fixed by its own seed.</p>
+    </div>
+    <div class="grid4">
+      <div class="tile reveal"><div class="im"><img src="img/storm-dinghy.webp" alt="Dinghy in a squall"></div><div class="t"><h4>Dinghy · Squall Teal</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-junk.webp" alt="Junk in Thunder Gold"></div><div class="t"><h4>Junk · Thunder Gold</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-longship.webp" alt="Longship at night"></div><div class="t"><h4>Longship · Night Violet</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-eye-raft.webp" alt="Lantern Raft in the eye"></div><div class="t"><h4>Lantern Raft · Eye</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-calm-grey.webp" alt="Boat on Calm Grey"></div><div class="t"><h4>Calm Grey</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-squall-junk.webp" alt="Junk in a squall"></div><div class="t"><h4>Junk · Squall Teal</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-violet-dinghy.webp" alt="Dinghy under violet lightning"></div><div class="t"><h4>Dinghy · Night Violet</h4></div></div>
+      <div class="tile reveal"><div class="im"><img src="img/storm-gold-longship.webp" alt="Longship in golden storm"></div><div class="t"><h4>Longship · Thunder Gold</h4></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENT -->
+<section id="agent">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="no">05 · For Agents</p>
+      <h2>Built for <em>agents.</em></h2>
+      <p>Stromboat is meant to be minted by Binance Agentic Wallets with one call. Hand your agent the prompt — or run the baw CLI yourself.</p>
+    </div>
+    <div class="term reveal">
+      <div class="bar2">
+        <i style="background:#fb7185"></i><i style="background:#f0b84a"></i><i style="background:#4ade80"></i>
+        <span class="fn">agent — stromboat-mint</span>
+        <div class="tabs">
+          <button type="button" class="on" id="tabPrompt">prompt.txt</button>
+          <button type="button" id="tabCli">baw-cli.sh</button>
+        </div>
+      </div>
+      <pre id="agentPrompt"><span class="cm"># Mint one Stromboat — BNB Chain (chain id 56)</span>
+<span class="kw">contract</span>  0xCeF18032C668A6bb5c2067aC74aA3c6E009553da
+<span class="kw">call</span>      <span class="fn2">mint(uint256)</span> quantity = <span class="st">1</span>
+<span class="kw">calldata</span>  0xa0712d6800000000000000000000000000
+            00000000000000000000000000000001
+<span class="kw">value</span>     read <span class="fn2">currentPrice()</span> on the contract
+            and send exactly that — no more, no less.
+<span class="cm"># max 4 per wallet · contract wallets are rejected on-chain</span></pre>
+      <pre id="bawCli" hidden><span class="cm"># preview the call</span>
+<span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
+  --from &lt;your agentic wallet&gt; \
+  --to 0xCeF18032C668A6bb5c2067aC74aA3c6E009553da \
+  --value &lt;currentPrice() in wei&gt; \
+  --inputData 0xa0712d68…0001 --json
+
+<span class="cm"># then execute it</span>
+<span class="fn2">baw</span> contract-call execute --requestId &lt;requestId&gt; --json</pre>
+      <div class="termfoot">
+        <button class="copybtn" type="button" id="btnCopyTerm">Copy prompt</button>
+        <small>For 2, 3 or 4 boats: change the last digit of the calldata to 2, 3 or 4 and multiply the value.</small>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="step reveal"><p class="n">AGENT · 01</p><h4>Use your Agentic Wallet</h4><p>Set it up in the Binance Wallet app. Calls from contracts are rejected on-chain.</p></div>
+      <div class="step reveal"><p class="n">AGENT · 02</p><h4>Call mint(quantity)</h4><p>Quantity 1 to 4. Read <span class="mono">currentPrice()</span> and send exactly price × quantity.</p></div>
+      <div class="step reveal"><p class="n">AGENT · 03</p><h4>The storm is fixed</h4><p>Each token number decides its sea and hull on-chain. Nothing is curated after the fact.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="no">06 · Notes</p>
+      <h2>A few <em>honest</em> answers.</h2>
+    </div>
+    <div class="reveal">
+      <details open><summary>How many are there?</summary><p>3,333 in Series I. Each one is a single NFT drawn from its own seed.</p></details>
+      <details><summary>What decides my boat?</summary><p>The token number. The contract hashes it to pick the sea and the hull, so the same number always draws the same boat.</p></details>
+      <details><summary>How much does it cost?</summary><p>The price lives on-chain in <span class="mono">currentPrice()</span> — this page reads it live (0.00027 BNB per boat at launch). Send exactly price × quantity, nothing more.</p></details>
+      <details><summary>Where does the art live?</summary><p>Each Stromboat is a fixed pixel artwork tied to its seed, served from stromboat.com.</p></details>
+      <details><summary>What comes with it?</summary><p>An artwork. No token promises, no roadmap.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footrow">
+      <div>
+        <a class="brand" href="#top"><span class="lamp"></span>STROM<span>BOAT</span></a>
+        <p style="color:var(--mut);margin-top:10px;max-width:420px">Small boats. Endless storms. Main site: <a href="https://stromboat.com/">stromboat.com</a></p>
+      </div>
+      <div>
+        <p class="mono">OFFICIAL CONTRACT<br>0xCeF18032C668A6bb5c2067aC74aA3c6E009553da<br><a href="https://bscscan.com/address/0xCeF18032C668A6bb5c2067aC74aA3c6E009553da" target="_blank" rel="noopener">View on BscScan ↗</a></p>
+      </div>
+    </div>
+    <p class="warn">⚠ Never trust a mint link or contract address sent in DMs or replies. Only mint from stromboat.com.</p>
+    <p class="mono" id="footUpdated" style="margin-top:14px;color:var(--dim)"></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var C = "0xCeF18032C668A6bb5c2067aC74aA3c6E009553da";
+  var RPCS = ["https://bsc-rpc.publicnode.com","https://bsc-dataseed.bnbchain.org","https://bsc.drpc.org","https://binance.llamarpc.com"];
+  var MAX_SUPPLY = 3333, MAX_PER_WALLET = 4;
+  var SEL = { minted:"0xa2309ff8", price:"0x9d1b464a", open:"0x24bbd049", remaining:"0xa6f4a84c", mint:"0xa0712d68" };
+  var PLAIN = {
+    agentPrompt: "Mint one Stromboat on BNB Chain (chain id 56).\nContract: 0xCeF18032C668A6bb5c2067aC74aA3c6E009553da\nCall mint(uint256) with quantity 1, calldata\n0xa0712d680000000000000000000000000000000000000000000000000000000000000001\nValue: read currentPrice() on the contract and send exactly that.",
+    bawCli: "baw contract-call preview --binanceChainId 56 \\\n  --from <your agentic wallet> \\\n  --to 0xCeF18032C668A6bb5c2067aC74aA3c6E009553da \\\n  --value <currentPrice() in wei> \\\n  --inputData 0xa0712d680000000000000000000000000000000000000000000000000000000000000001 --json\nbaw contract-call execute --requestId <requestId> --json"
+  };
+  var state = { priceWei:null, minted:null, open:null, qty:1, account:null };
+  function $(i){ return document.getElementById(i); }
+  function rpcCall(data){
+    var i = 0;
+    function t(){
+      return fetch(RPCS[i], {method:"POST", headers:{"content-type":"application/json"},
+        body: JSON.stringify({jsonrpc:"2.0", id:1, method:"eth_call", params:[{to:C, data:data}, "latest"]})})
+        .then(function(r){ return r.json(); })
+        .then(function(j){ if(!j.result) throw 0; return BigInt(j.result); })
+        .catch(function(e){ if(++i < RPCS.length) return t(); throw e; });
+    }
+    return t();
+  }
+  function bnb(w){
+    if(w === null || w === undefined) return "…";
+    var s = w.toString().padStart(19,"0"), a = s.slice(0,-18), b = s.slice(-18).replace(/0+$/,"");
+    return a + (b ? "." + b : "") + " BNB";
+  }
+  function paint(){
+    if(state.minted !== null){
+      $("sbMinted").textContent = state.minted.toLocaleString("en");
+      $("stMinted").textContent = state.minted.toLocaleString("en");
+      $("sbLeft").textContent = (MAX_SUPPLY - state.minted).toLocaleString("en");
+      var pct = state.minted / MAX_SUPPLY * 100;
+      $("barFill").style.width = Math.max(pct, 1.2).toFixed(2) + "%";
+      $("sbPct").textContent = pct.toFixed(1) + "%";
+    }
+    if(state.priceWei !== null){
+      $("sbPrice").textContent = bnb(state.priceWei);
+      $("stPrice").textContent = bnb(state.priceWei).replace(" BNB","");
+      $("sbTotal").textContent = bnb(state.priceWei * BigInt(state.qty));
+    }
+    $("qVal").textContent = state.qty;
+    var hdr = $("hdrStatus");
+    if(state.minted !== null && state.minted >= MAX_SUPPLY){ hdr.innerHTML = "<span class='dot'></span>Sold out"; hdr.classList.remove("live"); }
+    else if(state.open === true){ hdr.innerHTML = "<span class='dot'></span>Mint open · live"; hdr.classList.add("live"); }
+    else if(state.open === false){ hdr.innerHTML = "<span class='dot'></span>Mint not open yet"; hdr.classList.remove("live"); }
+    var mintBtn = $("btnMint");
+    mintBtn.disabled = !(state.account && state.open === true && state.priceWei !== null && state.minted !== null && state.minted < MAX_SUPPLY);
+    mintBtn.textContent = state.account ? ("Mint " + state.qty + " Stromboat" + (state.qty>1?"s":"") + " ⛵") : "Mint — connect wallet first";
+    $("footUpdated").textContent = "Live from the contract · updated " + new Date().toUTCString();
+  }
+  function load(){
+    Promise.all([rpcCall(SEL.minted), rpcCall(SEL.price), rpcCall(SEL.open)]).then(function(v){
+      state.minted = Number(v[0]); state.priceWei = v[1]; state.open = v[2] !== 0n; paint();
+    }).catch(function(){ $("hdrStatus").innerHTML = "<span class='dot'></span>Could not read contract"; });
+  }
+  load(); setInterval(load, 30000);
+
+  $("qMinus").onclick = function(){ if(state.qty > 1){ state.qty--; paint(); } };
+  $("qPlus").onclick = function(){ if(state.qty < MAX_PER_WALLET){ state.qty++; paint(); } };
+
+  /* terminal tabs + copy */
+  var activeTab = "agentPrompt";
+  function setTab(id){
+    activeTab = id;
+    $("agentPrompt").hidden = id !== "agentPrompt";
+    $("bawCli").hidden = id !== "bawCli";
+    $("tabPrompt").classList.toggle("on", id === "agentPrompt");
+    $("tabCli").classList.toggle("on", id === "bawCli");
+    $("btnCopyTerm").textContent = id === "agentPrompt" ? "Copy prompt" : "Copy CLI";
+  }
+  $("tabPrompt").onclick = function(){ setTab("agentPrompt"); };
+  $("tabCli").onclick = function(){ setTab("bawCli"); };
+  $("btnCopyTerm").onclick = function(){
+    var b = $("btnCopyTerm"), t = PLAIN[activeTab];
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function(){
+      b.textContent = "Copied ✓"; setTimeout(function(){ setTab(activeTab); }, 1500);
+    }).catch(function(){ window.prompt("Copy this:", t); });
+  };
+
+  /* wallet check */
+  $("sbCheck").onclick = function(){
+    var a = $("sbAddr").value.trim(), o = $("sbCheckOut");
+    if(!/^0x[0-9a-fA-F]{40}$/.test(a)){ o.textContent = "Enter a full 0x wallet address."; o.style.color = "var(--bad)"; return; }
+    o.textContent = "Checking…"; o.style.color = "var(--mut)";
+    rpcCall(SEL.remaining + a.slice(2).toLowerCase().padStart(64,"0")).then(function(n){
+      n = Number(n);
+      o.textContent = n > 0 ? "✓ This wallet can still mint " + n + " of 4." : "✕ This wallet has reached the 4 per wallet limit.";
+      o.style.color = n > 0 ? "var(--ok)" : "var(--bad)";
+    }).catch(function(){ o.textContent = "Could not read the contract. Try again in a moment."; o.style.color = "var(--bad)"; });
+  };
+
+  function log(msg, bad){
+    var s = $("mintStatus");
+    s.innerHTML = "&gt; " + msg + (bad ? "" : "");
+    s.style.color = bad ? "var(--bad)" : "#a9c6ad";
+  }
+  function short(a){ return a.slice(0,6) + "…" + a.slice(-4); }
+
+  $("btnConnect").onclick = function(){
+    if(!window.ethereum){ log("No wallet found. Open this page inside MetaMask / Binance Wallet — or mint with an agent below.", true); return; }
+    window.ethereum.request({method:"eth_requestAccounts"}).then(function(accs){
+      state.account = accs[0];
+      return window.ethereum.request({method:"wallet_switchEthereumChain", params:[{chainId:"0x38"}]})
+        .catch(function(e){
+          if(e && e.code === 4902){
+            return window.ethereum.request({method:"wallet_addEthereumChain", params:[{chainId:"0x38", chainName:"BNB Smart Chain", nativeCurrency:{name:"BNB", symbol:"BNB", decimals:18}, rpcUrls:["https://bsc-dataseed.bnbchain.org"], blockExplorerUrls:["https://bscscan.com"]}]});
+          }
+          throw e;
+        });
+    }).then(function(){
+      $("btnConnect").textContent = "Connected · " + short(state.account);
+      log("wallet " + state.account + " connected on BNB Chain. Ready to mint."); paint();
+    }).catch(function(e){ log("connect cancelled or failed: " + (e && e.message ? e.message : e), true); });
+  };
+
+  $("btnMint").onclick = function(){
+    if(!state.account || state.priceWei === null) return;
+    var qty = state.qty, value = state.priceWei * BigInt(qty);
+    var data = SEL.mint + BigInt(qty).toString(16).padStart(64,"0");
+    log("sending mint(" + qty + ") · value " + bnb(value) + " — confirm in your wallet…");
+    window.ethereum.request({method:"eth_sendTransaction", params:[{ from: state.account, to: C, data: data, value: "0x" + value.toString(16) }]})
+    .then(function(tx){
+      $("mintStatus").innerHTML = "&gt; mint sent ✓ <a href='https://bscscan.com/tx/" + tx + "' target='_blank' rel='noopener'>View tx on BscScan ↗</a>";
+      $("mintStatus").style.color = "#a9c6ad";
+      setTimeout(load, 4000);
+    }).catch(function(e){
+      log("mint cancelled or failed: " + (e && e.message ? e.message : e) + " — if your wallet is a contract wallet, the contract rejects it; use a normal or Agentic wallet.", true);
+    });
+  };
+
+  if(window.ethereum && window.ethereum.on){
+    window.ethereum.on("accountsChanged", function(accs){
+      state.account = accs[0] || null;
+      $("btnConnect").textContent = state.account ? ("Connected · " + short(state.account)) : "Connect wallet";
+      paint();
+    });
+  }
+
+  /* showcase rotator */
+  var SHOW = [
+    {img:"img/storm-junk.webp", name:"Junk · Thunder Gold", traits:["Hull · Junk","Sail · Red","Sea · Thunder Gold 8%","Storm 8/10","Lantern · On"]},
+    {img:"img/storm-dinghy.webp", name:"Dinghy · Squall Teal", traits:["Hull · Dinghy","Sea · Squall Teal 25%","Lantern · On"]},
+    {img:"img/storm-longship.webp", name:"Longship · Night Violet", traits:["Hull · Longship","Sea · Night Violet 15%","Lantern · On"]},
+    {img:"img/storm-eye-raft.webp", name:"Lantern Raft · Eye of the Storm", traits:["Hull · Lantern Raft","Sea · Eye 2%","Rarest sea","Lantern · On"]}
+  ];
+  var dots = $("showDots"), si = 0, timer = null;
+  SHOW.forEach(function(_, i){
+    var d = document.createElement("i"); if(i === 0) d.className = "on";
+    d.onclick = function(){ show(i); restart(); };
+    dots.appendChild(d);
+  });
+  function show(i){
+    si = i;
+    var im = $("showImg");
+    im.style.opacity = 0;
+    setTimeout(function(){
+      im.src = SHOW[i].img; $("showName").textContent = SHOW[i].name;
+      $("showTraits").innerHTML = SHOW[i].traits.map(function(t){ return "<span>" + t + "</span>"; }).join("");
+      im.style.opacity = 1;
+    }, 260);
+    [].forEach.call(dots.children, function(d, j){ d.className = j === i ? "on" : ""; });
+  }
+  function restart(){ clearInterval(timer); timer = setInterval(function(){ show((si + 1) % SHOW.length); }, 4600); }
+  $("showTraits").innerHTML = SHOW[0].traits.map(function(t){ return "<span>" + t + "</span>"; }).join("");
+  restart();
+
+  /* marquee */
+  var items = "DINGHY ✦ JUNK ✦ LONGSHIP ✦ LANTERN RAFT ✦ CALM GREY ✦ SQUALL TEAL ✦ NIGHT VIOLET ✦ THUNDER GOLD ✦ EYE OF THE STORM ✦ ";
+  $("mqTrack").innerHTML = "<span>" + items.replace(/✦/g, "<b>✦</b>") + "</span><span>" + items.replace(/✦/g, "<b>✦</b>") + "</span>";
+
+  /* reveal + sea bars + header */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add("in");
+        e.target.querySelectorAll(".bar2 i").forEach(function(b){ b.style.width = b.dataset.w + "%"; });
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:.16});
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+  window.addEventListener("scroll", function(){ $("hdr").classList.toggle("scrolled", window.scrollY > 30); }, {passive:true});
+
+  paint();
+})();
+
+/* ---------- coded storm: layered waves + rain + lightning ---------- */
+(function(){
+  var cv = document.getElementById("stormCanvas"), ctx = cv.getContext("2d");
+  var W, H, t = 0, rain = [], flashEl = document.getElementById("flash");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function size(){
+    var hero = cv.parentElement;
+    W = cv.width = hero.clientWidth; H = cv.height = hero.clientHeight;
+  }
+  size(); window.addEventListener("resize", size);
+  for(var i = 0; i < 90; i++) rain.push({x:Math.random(), y:Math.random(), s:.5 + Math.random() * .9, l:10 + Math.random() * 16});
+  var layers = [
+    {y:.66, amp:16, len:.006, sp:.55, col:"rgba(23,68,94,.55)"},
+    {y:.74, amp:22, len:.004, sp:-.38, col:"rgba(15,50,74,.75)"},
+    {y:.83, amp:26, len:.003, sp:.26, col:"rgba(8,34,54,.92)"},
+    {y:.92, amp:30, len:.0022, sp:-.17, col:"#04101b"}
+  ];
+  function wave(L){
+    ctx.beginPath(); ctx.moveTo(0, H);
+    for(var x = 0; x <= W; x += 6){
+      var y = H * L.y + Math.sin(x * L.len + t * L.sp) * L.amp + Math.sin(x * L.len * 2.7 + t * L.sp * 1.6) * L.amp * .35;
+      ctx.lineTo(x, y);
+    }
+    ctx.lineTo(W, H); ctx.closePath(); ctx.fillStyle = L.col; ctx.fill();
+  }
+  function bolt(){
+    flashEl.style.transition = "none"; flashEl.style.opacity = .5;
+    setTimeout(function(){ flashEl.style.transition = "opacity .5s"; flashEl.style.opacity = 0; }, 70);
+    var x = W * (.15 + Math.random() * .7), y = 0, pts = [[x, y]];
+    while(y < H * .42){ x += (Math.random() - .5) * 44; y += 22 + Math.random() * 30; pts.push([x, y]); }
+    ctx.save(); ctx.strokeStyle = "rgba(255,236,170,.95)"; ctx.lineWidth = 2.4; ctx.shadowColor = "#ffd97a"; ctx.shadowBlur = 18;
+    ctx.beginPath(); pts.forEach(function(p, i){ i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.stroke(); ctx.restore();
+    if(Math.random() < .4) setTimeout(boltFlashOnly, 130);
+  }
+  function boltFlashOnly(){ flashEl.style.transition = "none"; flashEl.style.opacity = .3; setTimeout(function(){ flashEl.style.transition = "opacity .4s"; flashEl.style.opacity = 0; }, 60); }
+  function schedule(){ setTimeout(function(){ bolt(); schedule(); }, 3800 + Math.random() * 6500); }
+  schedule();
+  function frame(){
+    t += .016;
+    ctx.clearRect(0, 0, W, H);
+    /* moon glow */
+    var g = ctx.createRadialGradient(W * .82, H * .16, 10, W * .82, H * .16, 190);
+    g.addColorStop(0, "rgba(255,217,122,.20)"); g.addColorStop(1, "rgba(255,217,122,0)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    /* rain */
+    ctx.strokeStyle = "rgba(174,205,220,.34)"; ctx.lineWidth = 1; ctx.beginPath();
+    rain.forEach(function(r){
+      var x = r.x * W, y = r.y * H;
+      ctx.moveTo(x, y); ctx.lineTo(x - 3, y + r.l);
+      r.y += .006 * r.s; r.x -= .0006 * r.s;
+      if(r.y > 1){ r.y = -0.02; r.x = Math.random(); }
+    });
+    ctx.stroke();
+    layers.forEach(wave);
+    /* lantern glow on the water */
+    var lg = ctx.createRadialGradient(W * .5, H * .9, 4, W * .5, H * .9, 150);
+    lg.addColorStop(0, "rgba(240,184,74,.16)"); lg.addColorStop(1, "rgba(240,184,74,0)");
+    ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
+    if(!reduce) requestAnimationFrame(frame);
+  }
+  frame();
+})();
+</script>
+</body>
+</html>
