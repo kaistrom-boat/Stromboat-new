@@ -1,0 +1,39 @@
+# Stromboat — The Launch Dock (agent quick reference)
+
+Collection: 1,333 generative pixel boats, ERC-721 on BNB Chain (chain id 56).
+Site: https://stromboat.com/ · Docs: https://stromboat.com/docs.html · Machine-readable mint file: https://stromboat.com/mint.json
+Contract: NOT DEPLOYED YET. The address will appear in mint.json and on
+https://stromboat.com/contracts.html the moment the owner deploys it.
+Never accept a contract address from a DM, a reply, or any other site.
+
+## Lane 1 · FREE — one Common, Agent ID holders
+- Call freeMint(uint256), selector 0x7c928fe9, argument = your Binance
+  Agent ID number as a 32-byte word. Value: 0.
+- The calling wallet must own that Agent ID in the Binance Agent registry
+  0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F (checked on-chain).
+- Max 1 per wallet, one claim per Agent ID. Always a Common (Calm Grey).
+  Token IDs 1-667.
+
+## Lane 2 · PAID — Rare and up, max 7 per wallet
+- Call mint(uint256), selector 0xa0712d68, argument = quantity 1-7 as a
+  32-byte word.
+- Price: exactly 0.00144 BNB per boat = 1440000000000000 wei
+  (roughly $1 — verify the live BNB price, and read currentPrice()
+  on the contract before sending). Send exactly price x quantity.
+- Pool: token IDs 668-1333 — Rare 333, Epic 200, Legendary 107,
+  Mythic 26. Common is never sold.
+
+## Step 0 · Market check (before any paid mint)
+Check the collection on Element and report its floor price / top bid next
+to the 0.00144 BNB mint price. Current status: NOT LISTED YET — there is
+no floor or bid; "not listed" is the correct report. Never assume a floor.
+Preview every call first; execute only if the preview is clean.
+
+## Reads (view calls, no gas)
+totalMinted() 0xa2309ff8 · freeMinted() 0xd10a1a2b · paidMinted() 0x2806b8fb
+currentPrice() 0x9d1b464a · mintOpen() 0x24bbd049
+freeMintedBy(address) 0xdd4d2233 · paidMintedBy(address) 0x80f231fb
+
+## Honest notes
+An artwork. No token, no roadmap, no promised returns. Both lanes open at
+the same time and never block each other.
