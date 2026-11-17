@@ -1,0 +1,23 @@
+{
+ "name": "Stromboat \u2014 The Launch Dock",
+ "short_name": "Stromboat",
+ "description": "1,333 generative pixel boats on BNB Chain. One hull, one sea, one storm.",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#06121c",
+ "theme_color": "#06121c",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
