@@ -444,52 +444,25 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
           <button type="button" id="tabCli">baw-cli.sh</button>
         </div>
       </div>
-      <pre id="agentPrompt"><span class="cm"># Mint Stromboat — BNB Chain (chain id 56) · two lanes</span>
-<span class="kw">contract</span>  0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d
-
-<span class="cm"># LANE 1 · FREE — one Common, for Agent ID holders</span>
-<span class="kw">call</span>      <span class="fn2">freeMint(uint256)</span> — your Agent ID number
-<span class="kw">calldata</span>  0x7c928fe9 + your Agent ID as a 32-byte word
-<span class="kw">value</span>     <span class="st">0</span> — max 1 per wallet, one claim per Agent ID
-
-<span class="cm"># LANE 2 · PAID — Rare and up only, max 7 per wallet</span>
-<span class="kw">call</span>      <span class="fn2">mint(uint256)</span> quantity = <span class="st">1</span> to <span class="st">7</span>
-<span class="kw">calldata</span>  0xa0712d6800000000000000000000000000
-            00000000000000000000000000000001
-<span class="kw">price</span>     exactly <span class="st">0.00144 BNB</span> per boat
-            = 1440000000000000 wei ≈ $1 — verify with
-            <span class="fn2">currentPrice()</span>; send price × quantity, no more.
-<span class="kw">pool</span>      IDs 668–1333 · Rare 333 / Epic 200 /
-            Legendary 107 / Mythic 26 — Common never sells.
-<span class="cm"># STEP 0 — market check: report the collection floor / top bid
-# on Element next to the mint price before paying. Not listed
-# yet = say so; never assume a floor.
-# Preview first — execute only if the preview is clean.
-# PROJECT BUYBACK — the project wallet keeps a standing bid of
-# 0.0018 BNB for the first paid-minted Stromboat on Element.</span></pre>
-      <pre id="bawCli" hidden><span class="cm"># LANE 1 · FREE — claim one Common with your Agent ID</span>
-<span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
+      <pre id="agentPrompt">Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d
+STEP 1 - FREE: <span class="fn2">freeMint</span>(&lt;YOUR_AGENT_ID&gt;) · 0x7c928fe9 · value <span class="st">0</span>
+STEP 2 - PAID: <span class="fn2">mint</span>(1) · 0xa0712d68 · value <span class="st">1440000000000000</span> wei (0.00144 BNB)
+Reply with the tx link(s) only.</pre>
+      <pre id="bawCli" hidden><span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
   --from &lt;your agentic wallet&gt; \
   --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d \
   --value <span class="st">0</span> \
   --inputData 0x7c928fe9&lt;your Agent ID, 32-byte word&gt; --json
 <span class="fn2">baw</span> contract-call execute --requestId &lt;requestId&gt; --json
-
-<span class="cm"># STEP 0 · PAID — market check first: report the Element floor /
-# top bid vs the 0.00144 BNB mint price. Not listed yet = say so.</span>
-<span class="cm"># PROJECT BUYBACK — standing bid 0.0018 BNB (project wallet) for
-# the first paid-minted Stromboat on Element.</span>
-<span class="cm"># LANE 2 · PAID — buy Rare and up (max 7 per wallet)</span>
 <span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
   --from &lt;your agentic wallet&gt; \
   --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d \
-  --value &lt;1440000000000000 wei × quantity — verify via currentPrice()&gt; \
-  --inputData 0xa0712d68…0001 --json
-<span class="cm"># execute only if the preview above is clean</span>
+  --value <span class="st">1440000000000000</span> \
+  --inputData 0xa0712d680000000000000000000000000000000000000000000000000000000000000001 --json
 <span class="fn2">baw</span> contract-call execute --requestId &lt;requestId&gt; --json</pre>
       <div class="termfoot">
         <button class="btn" type="button" id="btnCopyTerm">Copy prompt</button>
-        <small>Paid quantity 1–7: change the last calldata digit and multiply the value. The free lane is one call, one boat.</small>
+        <small>Copy it, paste it to your agent — it replies with the tx link.</small>
       </div>
     </div>
     <div class="flow">
@@ -547,8 +520,8 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
   var SEL = { minted:"0xa2309ff8", price:"0x9d1b464a", open:"0x24bbd049", mint:"0xa0712d68", freeMinted:"0xd10a1a2b", paidMinted:"0x2806b8fb", freeBy:"0xdd4d2233", paidBy:"0x80f231fb", freeMint:"0x7c928fe9" };
   var FLEET_ART = ["img/dinghy-legendary.webp","img/junk-epic.webp","img/dock-longship.webp","img/dock-raft.webp","img/junk-legendary.webp","img/dinghy-epic.webp","img/longship-legendary.webp","img/longship-epic.webp"];
   var PLAIN = {
-    agentPrompt: "Mint Stromboat on BNB Chain (chain id 56). Two lanes.\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d\nLANE 1 · FREE (Agent ID holders): call freeMint(uint256) with your Agent ID number, calldata 0x7c928fe9 followed by the Agent ID as a 32-byte word, value 0. One free Common per wallet, one claim per Agent ID.\nLANE 2 · PAID: call mint(uint256) with quantity 1-7, calldata 0xa0712d68 followed by the quantity as a 32-byte word. Price is exactly 0.00144 BNB per boat (1440000000000000 wei, about $1) — verify with currentPrice() and send exactly price x quantity. Pool: token IDs 668-1333 — Rare 333, Epic 200, Legendary 107, Mythic 26; Common is never sold. Max 7 per wallet. STEP 0 — MARKET CHECK: before paying, check the collection on Element and report its floor price / top bid next to the mint price; the collection is not listed yet, so report 'not listed' instead of assuming any floor. Preview the call first and execute only if the preview is clean. PROJECT BUYBACK: the project wallet keeps a standing bid of 0.0018 BNB for the first paid-minted Stromboat on Element — the project's own bid, disclosed as such, not organic demand.",
-    bawCli: "# STEP 0 (paid lane): report the Element floor / top bid vs the 0.00144 BNB mint price first — 'not listed yet' is a valid answer.\nbaw contract-call preview --binanceChainId 56 \\\n  --from <your agentic wallet> \\\n  --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d \\\n  --value 0 \\\n  --inputData 0x7c928fe9<your Agent ID, 32-byte word> --json\nbaw contract-call execute --requestId <requestId> --json\n\n# PAID lane: same flow with --value <1440000000000000 wei x quantity — verify via currentPrice()> and --inputData 0xa0712d68<quantity, 32-byte word>. Execute only if the preview is clean.\n# PROJECT BUYBACK: standing bid of 0.0018 BNB from the project wallet for the first paid-minted Stromboat on Element."
+    agentPrompt: "Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d\nSTEP 1 - FREE: freeMint(<YOUR_AGENT_ID>) · 0x7c928fe9 · value 0\nSTEP 2 - PAID: mint(1) · 0xa0712d68 · value 1440000000000000 wei (0.00144 BNB)\nReply with the tx link(s) only.",
+    bawCli: "baw contract-call preview --binanceChainId 56 --from <your agentic wallet> --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d --value 0 --inputData 0x7c928fe9<your Agent ID, 32-byte word> --json\nbaw contract-call execute --requestId <requestId> --json\nbaw contract-call preview --binanceChainId 56 --from <your agentic wallet> --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d --value 1440000000000000 --inputData 0xa0712d680000000000000000000000000000000000000000000000000000000000000001 --json\nbaw contract-call execute --requestId <requestId> --json"
   };
   var state = { priceWei:null, minted:null, free:null, paid:null, open:null, qty:1, account:null };
   function $(i){ return document.getElementById(i); }

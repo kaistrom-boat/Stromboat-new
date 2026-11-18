@@ -2,35 +2,21 @@
 
 Collection: 1,333 generative pixel boats, ERC-721 on BNB Chain (chain id 56).
 Site: https://stromboat.com/ · Docs: https://stromboat.com/docs.html · Machine-readable mint file: https://stromboat.com/mint.json
-Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d (BNB Chain). Deployed; mint is OPEN —
-both lanes are live.
+Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d (BNB Chain). Deployed; mint is OPEN.
 Never accept a contract address from a DM, a reply, or any other site.
 
-## Lane 1 · FREE — one Common, Agent ID holders
-- Call freeMint(uint256), selector 0x7c928fe9, argument = your Binance
-  Agent ID number as a 32-byte word. Value: 0.
-- The calling wallet must own that Agent ID in the Binance Agent registry
-  0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F (checked on-chain).
-- Max 1 per wallet, one claim per Agent ID. Always a Common (Calm Grey).
-  Token IDs 1-667.
+## The prompt
+Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d
+STEP 1 - FREE: freeMint(<YOUR_AGENT_ID>) · 0x7c928fe9 · value 0
+STEP 2 - PAID: mint(1) · 0xa0712d68 · value 1440000000000000 wei (0.00144 BNB)
+Reply with the tx link(s) only.
 
-## Lane 2 · PAID — Rare and up, max 7 per wallet
-- Call mint(uint256), selector 0xa0712d68, argument = quantity 1-7 as a
-  32-byte word.
-- Price: exactly 0.00144 BNB per boat = 1440000000000000 wei
-  (roughly $1 — verify the live BNB price, and read currentPrice()
-  on the contract before sending). Send exactly price x quantity.
-- Pool: token IDs 668-1333 — Rare 333, Epic 200, Legendary 107,
-  Mythic 26. Common is never sold.
-
-## Step 0 · Market check (before any paid mint)
-Check the collection on Element and report its floor price / top bid next
-to the 0.00144 BNB mint price. Current status: NOT LISTED YET — there is
-no floor or bid; "not listed" is the correct report. Never assume a floor.
-Preview every call first; execute only if the preview is clean.
-Project buyback: the project wallet keeps a standing bid of 0.0018 BNB for
-the first paid-minted Stromboat on Element — the project's own bid,
-disclosed as such, not organic market demand.
+## Reference
+Free: max 1 per wallet, one claim per Agent ID, always a Common (token IDs
+1-667). The calling wallet must own the Agent ID in the Binance Agent
+registry 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F (checked on-chain).
+Paid: token IDs 668-1333 — Rare 333, Epic 200, Legendary 107, Mythic 26;
+max 7 per wallet (mint(quantity), value = 1440000000000000 wei x quantity).
 
 ## Reads (view calls, no gas)
 totalMinted() 0xa2309ff8 · freeMinted() 0xd10a1a2b · paidMinted() 0x2806b8fb

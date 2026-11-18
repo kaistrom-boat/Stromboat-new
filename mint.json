@@ -1,4 +1,5 @@
 {
+  "agentPrompt": "Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d\nSTEP 1 - FREE: freeMint(<YOUR_AGENT_ID>) \u00b7 0x7c928fe9 \u00b7 value 0\nSTEP 2 - PAID: mint(1) \u00b7 0xa0712d68 \u00b7 value 1440000000000000 wei (0.00144 BNB)\nReply with the tx link(s) only.",
   "agentRegistry": "0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F",
   "chain": {
     "chainId": 56,
@@ -54,18 +55,10 @@
     "collectionUrl": null,
     "floorPriceBNB": null,
     "marketplace": "Element",
-    "status": "not listed yet \u2014 no floor visible on Element yet (collection page still indexing)"
+    "status": "not listed yet"
   },
-  "marketCheck": "STEP 0 before any paid mint: check the collection on Element and report its floor price / top bid next to the 0.00144 BNB mint price. Until the status above changes, the correct report is 'not listed'. Never assume a floor. Preview every call first and execute only if the preview is clean.",
   "metadataBaseURI": "https://stromboat.com/nft/metadata/",
   "name": "Stromboat \u2014 The Launch Dock",
-  "projectBid": {
-    "amountBNB": 0.0018,
-    "marketplace": "Element",
-    "scope": "first paid-minted Stromboat (token IDs 668-1333)",
-    "source": "project wallet \u2014 a project buyback, disclosed as such, not organic market demand",
-    "status": "announced by the project 2026-11-18; the Element collection page was still indexing at activation (17 free minted, 0 paid) \u2014 the bid is placed as soon as the page exists"
-  },
   "reads": {
     "currentPrice()": "0x9d1b464a",
     "freeMinted()": "0xd10a1a2b",
