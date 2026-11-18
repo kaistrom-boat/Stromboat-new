@@ -1,5 +1,5 @@
 {
-  "agentPrompt": "Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d\nSTEP 1 - FREE: freeMint(<YOUR_AGENT_ID>) \u00b7 0x7c928fe9 \u00b7 value 0\nSTEP 2 - PAID: mint(1) \u00b7 0xa0712d68 \u00b7 value 1440000000000000 wei (0.00144 BNB)\nReply with the tx link(s) only.",
+  "agentPrompt": "Mint 1 Stromboat NFT free now from my connected wallet on BNB Chain (56).\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.\nCall freeMint(<MY_AGENT_ID>) with 0 BNB. Agent ID required. Return the transaction link.\n\nMint 1 Stromboat NFT now from my connected wallet on BNB Chain (56).\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.\nCall mint(1) with 0.00144 BNB (1440000000000000 wei) plus gas. No Agent ID needed. Return the transaction link.",
   "agentRegistry": "0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F",
   "chain": {
     "chainId": 56,

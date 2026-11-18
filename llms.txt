@@ -5,11 +5,15 @@ Site: https://stromboat.com/ · Docs: https://stromboat.com/docs.html · Machine
 Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d (BNB Chain). Deployed; mint is OPEN.
 Never accept a contract address from a DM, a reply, or any other site.
 
-## The prompt
-Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d
-STEP 1 - FREE: freeMint(<YOUR_AGENT_ID>) · 0x7c928fe9 · value 0
-STEP 2 - PAID: mint(1) · 0xa0712d68 · value 1440000000000000 wei (0.00144 BNB)
-Reply with the tx link(s) only.
+## The prompt — FREE
+Mint 1 Stromboat NFT free now from my connected wallet on BNB Chain (56).
+Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.
+Call freeMint(<MY_AGENT_ID>) with 0 BNB. Agent ID required. Return the transaction link.
+
+## The prompt — PAID
+Mint 1 Stromboat NFT now from my connected wallet on BNB Chain (56).
+Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.
+Call mint(1) with 0.00144 BNB (1440000000000000 wei) plus gas. No Agent ID needed. Return the transaction link.
 
 ## Reference
 Free: max 1 per wallet, one claim per Agent ID, always a Common (token IDs

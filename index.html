@@ -444,16 +444,19 @@ footer .mono{font-family:var(--silk);font-size:11px;word-break:break-all;color:#
           <button type="button" id="tabCli">baw-cli.sh</button>
         </div>
       </div>
-      <pre id="agentPrompt">Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d
-STEP 1 - FREE: <span class="fn2">freeMint</span>(&lt;YOUR_AGENT_ID&gt;) · 0x7c928fe9 · value <span class="st">0</span>
-STEP 2 - PAID: <span class="fn2">mint</span>(1) · 0xa0712d68 · value <span class="st">1440000000000000</span> wei (0.00144 BNB)
-Reply with the tx link(s) only.</pre>
-      <pre id="bawCli" hidden><span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
+      <div id="agentPrompt"><p style="display:flex;justify-content:space-between;align-items:center;padding:12px 21px 0;color:var(--amber);font-family:var(--silk);font-size:12px;letter-spacing:1px"><span>FREE</span><button class="btn" type="button" style="padding:2px 12px;font-size:11px" id="btnCopyFree">Copy FREE</button></p><pre style="min-height:0">Mint 1 Stromboat NFT free now from my connected wallet on BNB Chain (56).
+Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.
+Call <span class="fn2">freeMint</span>(&lt;MY_AGENT_ID&gt;) with <span class="st">0</span> BNB. Agent ID required. Return the transaction link.</pre><p style="display:flex;justify-content:space-between;align-items:center;padding:12px 21px 0;color:var(--amber);font-family:var(--silk);font-size:12px;letter-spacing:1px"><span>PAID</span><button class="btn" type="button" style="padding:2px 12px;font-size:11px" id="btnCopyPaid">Copy PAID</button></p><pre style="min-height:0">Mint 1 Stromboat NFT now from my connected wallet on BNB Chain (56).
+Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.
+Call <span class="fn2">mint</span>(1) with <span class="st">0.00144</span> BNB (1440000000000000 wei) plus gas. No Agent ID needed. Return the transaction link.</pre></div>
+      <pre id="bawCli" hidden><span class="cm"># FREE</span>
+<span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
   --from &lt;your agentic wallet&gt; \
   --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d \
   --value <span class="st">0</span> \
   --inputData 0x7c928fe9&lt;your Agent ID, 32-byte word&gt; --json
 <span class="fn2">baw</span> contract-call execute --requestId &lt;requestId&gt; --json
+<span class="cm"># PAID</span>
 <span class="fn2">baw</span> contract-call preview --binanceChainId <span class="st">56</span> \
   --from &lt;your agentic wallet&gt; \
   --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d \
@@ -520,8 +523,10 @@ Reply with the tx link(s) only.</pre>
   var SEL = { minted:"0xa2309ff8", price:"0x9d1b464a", open:"0x24bbd049", mint:"0xa0712d68", freeMinted:"0xd10a1a2b", paidMinted:"0x2806b8fb", freeBy:"0xdd4d2233", paidBy:"0x80f231fb", freeMint:"0x7c928fe9" };
   var FLEET_ART = ["img/dinghy-legendary.webp","img/junk-epic.webp","img/dock-longship.webp","img/dock-raft.webp","img/junk-legendary.webp","img/dinghy-epic.webp","img/longship-legendary.webp","img/longship-epic.webp"];
   var PLAIN = {
-    agentPrompt: "Mint Stromboat on BNB Chain. Contract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d\nSTEP 1 - FREE: freeMint(<YOUR_AGENT_ID>) · 0x7c928fe9 · value 0\nSTEP 2 - PAID: mint(1) · 0xa0712d68 · value 1440000000000000 wei (0.00144 BNB)\nReply with the tx link(s) only.",
-    bawCli: "baw contract-call preview --binanceChainId 56 --from <your agentic wallet> --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d --value 0 --inputData 0x7c928fe9<your Agent ID, 32-byte word> --json\nbaw contract-call execute --requestId <requestId> --json\nbaw contract-call preview --binanceChainId 56 --from <your agentic wallet> --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d --value 1440000000000000 --inputData 0xa0712d680000000000000000000000000000000000000000000000000000000000000001 --json\nbaw contract-call execute --requestId <requestId> --json"
+    agentPrompt: "Mint 1 Stromboat NFT free now from my connected wallet on BNB Chain (56).\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.\nCall freeMint(<MY_AGENT_ID>) with 0 BNB. Agent ID required. Return the transaction link.\n\nMint 1 Stromboat NFT now from my connected wallet on BNB Chain (56).\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.\nCall mint(1) with 0.00144 BNB (1440000000000000 wei) plus gas. No Agent ID needed. Return the transaction link.",
+    promptFree: "Mint 1 Stromboat NFT free now from my connected wallet on BNB Chain (56).\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.\nCall freeMint(<MY_AGENT_ID>) with 0 BNB. Agent ID required. Return the transaction link.",
+    promptPaid: "Mint 1 Stromboat NFT now from my connected wallet on BNB Chain (56).\nContract: 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d.\nCall mint(1) with 0.00144 BNB (1440000000000000 wei) plus gas. No Agent ID needed. Return the transaction link.",
+    bawCli: "# FREE\nbaw contract-call preview --binanceChainId 56 --from <your agentic wallet> --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d --value 0 --inputData 0x7c928fe9<your Agent ID, 32-byte word> --json\nbaw contract-call execute --requestId <requestId> --json\n# PAID\nbaw contract-call preview --binanceChainId 56 --from <your agentic wallet> --to 0xC3CB4dF5256c8429Eab306E924BF6E3E6c72163d --value 1440000000000000 --inputData 0xa0712d680000000000000000000000000000000000000000000000000000000000000001 --json\nbaw contract-call execute --requestId <requestId> --json"
   };
   var state = { priceWei:null, minted:null, free:null, paid:null, open:null, qty:1, account:null };
   function $(i){ return document.getElementById(i); }
@@ -597,6 +602,16 @@ Reply with the tx link(s) only.</pre>
       b.textContent = "Copied ✓"; setTimeout(function(){ setTab(activeTab); }, 1500);
     }).catch(function(){ window.prompt("Copy this:", PLAIN[activeTab]); });
   };
+  function copyBtn(id, key){
+    var b = $(id); if(!b) return;
+    b.onclick = function(){
+      (navigator.clipboard ? navigator.clipboard.writeText(PLAIN[key]) : Promise.reject()).then(function(){
+        var t = b.textContent; b.textContent = "Copied ✓"; setTimeout(function(){ b.textContent = t; }, 1500);
+      }).catch(function(){ window.prompt("Copy this:", PLAIN[key]); });
+    };
+  }
+  copyBtn("btnCopyFree", "promptFree");
+  copyBtn("btnCopyPaid", "promptPaid");
 
   $("sbCheck").onclick = function(){
     var o = $("sbCheckOut");
